@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strata Student Progress</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 30px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    select {
+      padding: 12px 16px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #16213e;
+      color: #fff;
+      min-width: 300px;
+      cursor: pointer;
+    }
+
+    select:focus {
+      outline: 2px solid #4a9eff;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #4a9eff;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #3a8eef;
+    }
+
+    .chart-container {
+      background: #16213e;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+
+    canvas {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .student-info {
+      background: #16213e;
+      border-radius: 12px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .info-card {
+      text-align: center;
+      padding: 15px;
+      background: #1a1a2e;
+      border-radius: 8px;
+    }
+
+    .info-card .label {
+      color: #888;
+      font-size: 0.85rem;
+      margin-bottom: 5px;
+    }
+
+    .info-card .value {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #4a9eff;
+    }
+
+    .info-card .value.gold {
+      color: #ffd700;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Strata Student Progress</h1>
+    <p class="subtitle">High-growth students (CGI &gt; 0.8)</p>
+
+    <div class="controls">
+      <select id="studentSelect">
+        <option value="">Select a student...</option>
+      </select>
+      <button id="animateBtn">Animate</button>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="chart" width="800" height="450"></canvas>
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background: #4a9eff;"></div>
+          <span>Percentile</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background: #ffd700;"></div>
+          <span>99th + Grade Levels Ahead</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="student-info" id="studentInfo" style="display: none;">
+      <div class="info-card">
+        <div class="label">School</div>
+        <div class="value" id="infoSchool">-</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Grade</div>
+        <div class="value" id="infoGrade">-</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Subject</div>
+        <div class="value" id="infoCourse">-</div>
+      </div>
+      <div class="info-card">
+        <div class="label">CGI</div>
+        <div class="value gold" id="infoCGI">-</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let students = [];
+    let currentStudent = null;
+    let animationFrame = null;
+
+    const canvas = document.getElementById('chart');
+    const ctx = canvas.getContext('2d');
+    const select = document.getElementById('studentSelect');
+    const animateBtn = document.getElementById('animateBtn');
+    const studentInfo = document.getElementById('studentInfo');
+
+    // Chart dimensions
+    const margin = { top: 40, right: 40, bottom: 60, left: 70 };
+    const width = canvas.width - margin.left - margin.right;
+    const height = canvas.height - margin.top - margin.bottom;
+
+    // Load data
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        students = data;
+        populateSelect();
+      });
+
+    function populateSelect() {
+      students.forEach((s, i) => {
+        const opt = document.createElement('option');
+        opt.value = i;
+        const name = s.email.split('@')[0].replace('.', ' ');
+        opt.textContent = `${name} - ${s.course} (Grade ${s.grade}, CGI: ${s.cgi.toFixed(2)})`;
+        select.appendChild(opt);
+      });
+    }
+
+    select.addEventListener('change', () => {
+      if (select.value === '') {
+        currentStudent = null;
+        drawEmptyChart();
+        studentInfo.style.display = 'none';
+        return;
+      }
+      currentStudent = students[parseInt(select.value)];
+      updateStudentInfo();
+      drawChart(currentStudent, 3); // Show all points immediately
+    });
+
+    animateBtn.addEventListener('click', () => {
+      if (!currentStudent) return;
+      animateChart(currentStudent);
+    });
+
+    function updateStudentInfo() {
+      if (!currentStudent) return;
+      document.getElementById('infoSchool').textContent = currentStudent.school;
+      document.getElementById('infoGrade').textContent = currentStudent.grade;
+      document.getElementById('infoCourse').textContent = currentStudent.course;
+      document.getElementById('infoCGI').textContent = currentStudent.cgi.toFixed(2);
+      studentInfo.style.display = 'grid';
+    }
+
+    function drawEmptyChart() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawAxes();
+
+      ctx.fillStyle = '#666';
+      ctx.font = '16px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Select a student to view progress', canvas.width / 2, canvas.height / 2);
+    }
+
+    function drawAxes() {
+      ctx.strokeStyle = '#444';
+      ctx.lineWidth = 1;
+
+      // Y-axis
+      ctx.beginPath();
+      ctx.moveTo(margin.left, margin.top);
+      ctx.lineTo(margin.left, margin.top + height);
+      ctx.stroke();
+
+      // X-axis
+      ctx.beginPath();
+      ctx.moveTo(margin.left, margin.top + height);
+      ctx.lineTo(margin.left + width, margin.top + height);
+      ctx.stroke();
+
+      // Y-axis labels (percentiles + 99th grade levels)
+      ctx.fillStyle = '#888';
+      ctx.font = '12px sans-serif';
+      ctx.textAlign = 'right';
+
+      const yLabels = [0, 25, 50, 75, 99];
+      yLabels.forEach(pct => {
+        const y = percentileToY(pct, 0);
+        ctx.fillText(pct.toString(), margin.left - 10, y + 4);
+
+        // Grid line
+        ctx.strokeStyle = '#333';
+        ctx.beginPath();
+        ctx.moveTo(margin.left, y);
+        ctx.lineTo(margin.left + width, y);
+        ctx.stroke();
+      });
+
+      // 99th + levels labels
+      ctx.fillStyle = '#ffd700';
+      for (let lvl = 1; lvl <= 8; lvl++) {
+        const y = percentileToY(99, lvl);
+        if (y >= margin.top) {
+          ctx.fillText(`99+${lvl}`, margin.left - 10, y + 4);
+        }
+      }
+
+      // X-axis labels
+      ctx.fillStyle = '#888';
+      ctx.textAlign = 'center';
+      const terms = ['Fall', 'Winter', 'Spring (Projected)'];
+      terms.forEach((term, i) => {
+        const x = margin.left + (i + 0.5) * (width / 3);
+        ctx.fillText(term, x, margin.top + height + 30);
+      });
+
+      // Axis titles
+      ctx.save();
+      ctx.translate(20, margin.top + height / 2);
+      ctx.rotate(-Math.PI / 2);
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#888';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Percentile / 99th + Grade Levels', 0, 0);
+      ctx.restore();
+    }
+
+    function percentileToY(pct, levels99 = 0) {
+      // Map 0-99 to bottom portion, 99+levels to top
+      const baseHeight = height * 0.75; // 75% for 0-99
+      const extendedHeight = height * 0.25; // 25% for 99+levels
+
+      if (pct < 99 || levels99 === 0) {
+        // Regular percentile (0-99)
+        const ratio = pct / 99;
+        return margin.top + height - (ratio * baseHeight);
+      } else {
+        // 99th + levels (up to 8 levels)
+        const maxLevels = 8;
+        const levelRatio = Math.min(levels99, maxLevels) / maxLevels;
+        return margin.top + (1 - levelRatio) * extendedHeight;
+      }
+    }
+
+    function drawChart(student, visiblePoints = 3) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawAxes();
+
+      const points = [
+        { term: 0, pct: student.fall_pct, levels: student.fall_99_levels },
+        { term: 1, pct: student.winter_pct, levels: student.winter_99_levels },
+        { term: 2, pct: student.projected_pct, levels: student.projected_99_levels }
+      ];
+
+      // Draw connecting line
+      ctx.strokeStyle = '#4a9eff';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+
+      for (let i = 0; i < Math.min(visiblePoints, points.length); i++) {
+        const p = points[i];
+        const x = margin.left + (p.term + 0.5) * (width / 3);
+        const y = percentileToY(p.pct, p.levels);
+
+        if (i === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      }
+      ctx.stroke();
+
+      // Draw points
+      for (let i = 0; i < Math.min(visiblePoints, points.length); i++) {
+        const p = points[i];
+        const x = margin.left + (p.term + 0.5) * (width / 3);
+        const y = percentileToY(p.pct, p.levels);
+
+        // Outer circle
+        ctx.beginPath();
+        ctx.arc(x, y, 12, 0, Math.PI * 2);
+        ctx.fillStyle = p.pct >= 99 && p.levels > 0 ? '#ffd700' : '#4a9eff';
+        ctx.fill();
+
+        // Inner circle
+        ctx.beginPath();
+        ctx.arc(x, y, 6, 0, Math.PI * 2);
+        ctx.fillStyle = '#16213e';
+        ctx.fill();
+
+        // Label
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 14px sans-serif';
+        ctx.textAlign = 'center';
+
+        let label;
+        if (p.pct >= 99 && p.levels > 0) {
+          label = `99+${p.levels}`;
+        } else {
+          label = `${p.pct}`;
+        }
+        ctx.fillText(label, x, y - 22);
+      }
+    }
+
+    function animateChart(student) {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+
+      let step = 0;
+      const steps = [1, 2, 3];
+      const delays = [0, 800, 1600];
+      const startTime = performance.now();
+
+      function animate(time) {
+        const elapsed = time - startTime;
+
+        let visiblePoints = 1;
+        if (elapsed >= delays[2]) visiblePoints = 3;
+        else if (elapsed >= delays[1]) visiblePoints = 2;
+
+        drawChart(student, visiblePoints);
+
+        if (visiblePoints < 3) {
+          animationFrame = requestAnimationFrame(animate);
+        }
+      }
+
+      animationFrame = requestAnimationFrame(animate);
+    }
+
+    // Initial empty chart
+    drawEmptyChart();
+  </script>
+</body>
+</html>
