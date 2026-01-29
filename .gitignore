@@ -1,0 +1,25 @@
+# Generated outputs
+data/output/
+webapp/data.json
+
+# Large binary files
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Claude local settings
+.claude/
