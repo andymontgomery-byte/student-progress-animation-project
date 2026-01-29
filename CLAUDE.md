@@ -4,7 +4,7 @@
 Web app showing student growth animations for high-growth MAP test takers (CGI > 0.8).
 
 ## Live URL
-https://andymontgomery-byte.github.io/student-progress-animation/
+https://andymontgomery-byte.github.io/student-progress-animation-project/
 
 ## Project Structure
 ```
@@ -21,10 +21,14 @@ student_progress_animation/
 ├── norms_tables/
 │   ├── CLAUDE.md                # Norms extraction docs
 │   ├── NormsTables.pdf          # NWEA 2020 norms (NOT checked in, too large)
+│   ├── norms_2025.xlsx          # NWEA 2025 norms (checked in)
+│   ├── norms_comparison.html    # 2020 vs 2025 visual comparison
 │   ├── csv/
-│   │   └── student_status_percentiles.csv  # Extracted norms (checked in)
-│   └── test_extraction.py       # Norms extraction tests
-├── webapp/
+│   │   ├── student_status_percentiles.csv       # 2020 norms (13,365 rows)
+│   │   └── student_status_percentiles_2025.csv  # 2025 norms (13,365 rows)
+│   ├── test_extraction.py       # 2020 norms tests (8 tests)
+│   └── test_extraction_2025.py  # 2025 norms tests (10 tests)
+├── docs/                        # GitHub Pages (was: webapp/)
 │   ├── index.html               # Web app (checked in)
 │   └── data.json                # Filtered data (NOT checked in, generated)
 └── tests/
@@ -86,3 +90,26 @@ git push
 - **Webapp**: 11 tests (files exist, JSON valid, filtering, sorting, HTML structure)
 
 Run all tests: `python3 tests/run_all_tests.py`
+
+## Lessons Learned
+
+### Always run tests before claiming something works
+- Don't assume extraction/transformation worked just because it ran without errors
+- Run the full test suite after every change
+- Spot checks alone are not sufficient - they can miss systematic errors
+
+### Use aggregation to verify table data
+When working with tables, verify with multiple methods:
+1. **Spot checks**: Random individual cell comparisons
+2. **Row sums**: Sum across all columns for specific rows
+3. **Column sums**: Sum across all rows for specific columns
+4. **Total sums**: Sum of entire table by category
+5. **Count checks**: Verify expected number of rows/columns
+
+Example: The 2025 norms extraction initially missed Kindergarten (grade 0). Spot checks passed because they only tested grades 1-12. The aggregate sum check caught the bug because the total was lower than expected.
+
+### Test at multiple levels
+- Unit tests: Individual functions
+- Integration tests: Data flows between components
+- Aggregate tests: Overall data integrity
+- Source comparison: Verify against original source files
