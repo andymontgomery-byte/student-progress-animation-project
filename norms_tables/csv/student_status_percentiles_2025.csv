@@ -1,4 +1,5 @@
 subject,term,grade,percentile,rit_score
+Mathematics,Fall,K,1,113
 Mathematics,Fall,1,1,128
 Mathematics,Fall,2,1,137
 Mathematics,Fall,3,1,148
@@ -11,6 +12,7 @@ Mathematics,Fall,9,1,184
 Mathematics,Fall,10,1,184
 Mathematics,Fall,11,1,182
 Mathematics,Fall,12,1,179
+Mathematics,Winter,K,1,121
 Mathematics,Winter,1,1,136
 Mathematics,Winter,2,1,145
 Mathematics,Winter,3,1,155
@@ -23,6 +25,7 @@ Mathematics,Winter,9,1,183
 Mathematics,Winter,10,1,182
 Mathematics,Winter,11,1,181
 Mathematics,Winter,12,1,179
+Mathematics,Spring,K,1,127
 Mathematics,Spring,1,1,142
 Mathematics,Spring,2,1,150
 Mathematics,Spring,3,1,159
@@ -35,6 +38,7 @@ Mathematics,Spring,9,1,180
 Mathematics,Spring,10,1,180
 Mathematics,Spring,11,1,179
 Mathematics,Spring,12,1,177
+Mathematics,Fall,K,2,116
 Mathematics,Fall,1,2,132
 Mathematics,Fall,2,2,141
 Mathematics,Fall,3,2,152
@@ -47,6 +51,7 @@ Mathematics,Fall,9,2,189
 Mathematics,Fall,10,2,189
 Mathematics,Fall,11,2,187
 Mathematics,Fall,12,2,185
+Mathematics,Winter,K,2,125
 Mathematics,Winter,1,2,140
 Mathematics,Winter,2,2,149
 Mathematics,Winter,3,2,159
@@ -59,6 +64,7 @@ Mathematics,Winter,9,2,188
 Mathematics,Winter,10,2,188
 Mathematics,Winter,11,2,186
 Mathematics,Winter,12,2,185
+Mathematics,Spring,K,2,131
 Mathematics,Spring,1,2,146
 Mathematics,Spring,2,2,154
 Mathematics,Spring,3,2,164
@@ -71,6 +77,7 @@ Mathematics,Spring,9,2,186
 Mathematics,Spring,10,2,186
 Mathematics,Spring,11,2,185
 Mathematics,Spring,12,2,183
+Mathematics,Fall,K,3,118
 Mathematics,Fall,1,3,134
 Mathematics,Fall,2,3,144
 Mathematics,Fall,3,3,155
@@ -83,6 +90,7 @@ Mathematics,Fall,9,3,192
 Mathematics,Fall,10,3,192
 Mathematics,Fall,11,3,191
 Mathematics,Fall,12,3,189
+Mathematics,Winter,K,3,127
 Mathematics,Winter,1,3,142
 Mathematics,Winter,2,3,152
 Mathematics,Winter,3,3,162
@@ -95,6 +103,7 @@ Mathematics,Winter,9,3,191
 Mathematics,Winter,10,3,191
 Mathematics,Winter,11,3,190
 Mathematics,Winter,12,3,189
+Mathematics,Spring,K,3,133
 Mathematics,Spring,1,3,148
 Mathematics,Spring,2,3,157
 Mathematics,Spring,3,3,167
@@ -107,6 +116,7 @@ Mathematics,Spring,9,3,189
 Mathematics,Spring,10,3,190
 Mathematics,Spring,11,3,189
 Mathematics,Spring,12,3,187
+Mathematics,Fall,K,4,120
 Mathematics,Fall,1,4,136
 Mathematics,Fall,2,4,146
 Mathematics,Fall,3,4,157
@@ -119,6 +129,7 @@ Mathematics,Fall,9,4,194
 Mathematics,Fall,10,4,194
 Mathematics,Fall,11,4,193
 Mathematics,Fall,12,4,191
+Mathematics,Winter,K,4,129
 Mathematics,Winter,1,4,144
 Mathematics,Winter,2,4,154
 Mathematics,Winter,3,4,164
@@ -131,6 +142,7 @@ Mathematics,Winter,9,4,194
 Mathematics,Winter,10,4,194
 Mathematics,Winter,11,4,193
 Mathematics,Winter,12,4,192
+Mathematics,Spring,K,4,135
 Mathematics,Spring,1,4,150
 Mathematics,Spring,2,4,159
 Mathematics,Spring,3,4,169
@@ -143,6 +155,7 @@ Mathematics,Spring,9,4,192
 Mathematics,Spring,10,4,192
 Mathematics,Spring,11,4,192
 Mathematics,Spring,12,4,190
+Mathematics,Fall,K,5,121
 Mathematics,Fall,1,5,137
 Mathematics,Fall,2,5,147
 Mathematics,Fall,3,5,158
@@ -155,6 +168,7 @@ Mathematics,Fall,9,5,196
 Mathematics,Fall,10,5,196
 Mathematics,Fall,11,5,196
 Mathematics,Fall,12,5,194
+Mathematics,Winter,K,5,130
 Mathematics,Winter,1,5,146
 Mathematics,Winter,2,5,155
 Mathematics,Winter,3,5,166
@@ -167,6 +181,7 @@ Mathematics,Winter,9,5,196
 Mathematics,Winter,10,5,196
 Mathematics,Winter,11,5,195
 Mathematics,Winter,12,5,194
+Mathematics,Spring,K,5,136
 Mathematics,Spring,1,5,151
 Mathematics,Spring,2,5,161
 Mathematics,Spring,3,5,171
@@ -179,6 +194,7 @@ Mathematics,Spring,9,5,194
 Mathematics,Spring,10,5,195
 Mathematics,Spring,11,5,195
 Mathematics,Spring,12,5,193
+Mathematics,Fall,K,6,122
 Mathematics,Fall,1,6,138
 Mathematics,Fall,2,6,149
 Mathematics,Fall,3,6,160
@@ -191,6 +207,7 @@ Mathematics,Fall,9,6,197
 Mathematics,Fall,10,6,198
 Mathematics,Fall,11,6,197
 Mathematics,Fall,12,6,196
+Mathematics,Winter,K,6,131
 Mathematics,Winter,1,6,147
 Mathematics,Winter,2,6,157
 Mathematics,Winter,3,6,167
@@ -203,6 +220,7 @@ Mathematics,Winter,9,6,197
 Mathematics,Winter,10,6,198
 Mathematics,Winter,11,6,197
 Mathematics,Winter,12,6,196
+Mathematics,Spring,K,6,137
 Mathematics,Spring,1,6,153
 Mathematics,Spring,2,6,162
 Mathematics,Spring,3,6,173
@@ -215,6 +233,7 @@ Mathematics,Spring,9,6,196
 Mathematics,Spring,10,6,197
 Mathematics,Spring,11,6,197
 Mathematics,Spring,12,6,195
+Mathematics,Fall,K,7,123
 Mathematics,Fall,1,7,140
 Mathematics,Fall,2,7,150
 Mathematics,Fall,3,7,161
@@ -227,6 +246,7 @@ Mathematics,Fall,9,7,199
 Mathematics,Fall,10,7,199
 Mathematics,Fall,11,7,199
 Mathematics,Fall,12,7,197
+Mathematics,Winter,K,7,132
 Mathematics,Winter,1,7,148
 Mathematics,Winter,2,7,158
 Mathematics,Winter,3,7,169
@@ -239,6 +259,7 @@ Mathematics,Winter,9,7,199
 Mathematics,Winter,10,7,200
 Mathematics,Winter,11,7,199
 Mathematics,Winter,12,7,198
+Mathematics,Spring,K,7,139
 Mathematics,Spring,1,7,154
 Mathematics,Spring,2,7,164
 Mathematics,Spring,3,7,174
@@ -251,6 +272,7 @@ Mathematics,Spring,9,7,198
 Mathematics,Spring,10,7,199
 Mathematics,Spring,11,7,199
 Mathematics,Spring,12,7,197
+Mathematics,Fall,K,8,124
 Mathematics,Fall,1,8,140
 Mathematics,Fall,2,8,151
 Mathematics,Fall,3,8,162
@@ -263,6 +285,7 @@ Mathematics,Fall,9,8,200
 Mathematics,Fall,10,8,201
 Mathematics,Fall,11,8,200
 Mathematics,Fall,12,8,199
+Mathematics,Winter,K,8,133
 Mathematics,Winter,1,8,149
 Mathematics,Winter,2,8,159
 Mathematics,Winter,3,8,170
@@ -275,6 +298,7 @@ Mathematics,Winter,9,8,200
 Mathematics,Winter,10,8,201
 Mathematics,Winter,11,8,201
 Mathematics,Winter,12,8,199
+Mathematics,Spring,K,8,139
 Mathematics,Spring,1,8,155
 Mathematics,Spring,2,8,165
 Mathematics,Spring,3,8,175
@@ -287,6 +311,7 @@ Mathematics,Spring,9,8,199
 Mathematics,Spring,10,8,200
 Mathematics,Spring,11,8,200
 Mathematics,Spring,12,8,198
+Mathematics,Fall,K,9,125
 Mathematics,Fall,1,9,141
 Mathematics,Fall,2,9,152
 Mathematics,Fall,3,9,163
@@ -299,6 +324,7 @@ Mathematics,Fall,9,9,201
 Mathematics,Fall,10,9,202
 Mathematics,Fall,11,9,202
 Mathematics,Fall,12,9,200
+Mathematics,Winter,K,9,134
 Mathematics,Winter,1,9,150
 Mathematics,Winter,2,9,160
 Mathematics,Winter,3,9,171
@@ -311,6 +337,7 @@ Mathematics,Winter,9,9,201
 Mathematics,Winter,10,9,202
 Mathematics,Winter,11,9,202
 Mathematics,Winter,12,9,201
+Mathematics,Spring,K,9,140
 Mathematics,Spring,1,9,156
 Mathematics,Spring,2,9,166
 Mathematics,Spring,3,9,176
@@ -323,6 +350,7 @@ Mathematics,Spring,9,9,201
 Mathematics,Spring,10,9,202
 Mathematics,Spring,11,9,202
 Mathematics,Spring,12,9,200
+Mathematics,Fall,K,10,125
 Mathematics,Fall,1,10,142
 Mathematics,Fall,2,10,153
 Mathematics,Fall,3,10,164
@@ -335,6 +363,7 @@ Mathematics,Fall,9,10,202
 Mathematics,Fall,10,10,203
 Mathematics,Fall,11,10,203
 Mathematics,Fall,12,10,201
+Mathematics,Winter,K,10,135
 Mathematics,Winter,1,10,151
 Mathematics,Winter,2,10,161
 Mathematics,Winter,3,10,172
@@ -347,6 +376,7 @@ Mathematics,Winter,9,10,203
 Mathematics,Winter,10,10,204
 Mathematics,Winter,11,10,203
 Mathematics,Winter,12,10,202
+Mathematics,Spring,K,10,141
 Mathematics,Spring,1,10,157
 Mathematics,Spring,2,10,167
 Mathematics,Spring,3,10,177
@@ -359,6 +389,7 @@ Mathematics,Spring,9,10,202
 Mathematics,Spring,10,10,203
 Mathematics,Spring,11,10,203
 Mathematics,Spring,12,10,201
+Mathematics,Fall,K,11,126
 Mathematics,Fall,1,11,143
 Mathematics,Fall,2,11,154
 Mathematics,Fall,3,11,165
@@ -371,6 +402,7 @@ Mathematics,Fall,9,11,203
 Mathematics,Fall,10,11,204
 Mathematics,Fall,11,11,204
 Mathematics,Fall,12,11,202
+Mathematics,Winter,K,11,135
 Mathematics,Winter,1,11,151
 Mathematics,Winter,2,11,162
 Mathematics,Winter,3,11,173
@@ -383,6 +415,7 @@ Mathematics,Winter,9,11,204
 Mathematics,Winter,10,11,205
 Mathematics,Winter,11,11,205
 Mathematics,Winter,12,11,203
+Mathematics,Spring,K,11,142
 Mathematics,Spring,1,11,157
 Mathematics,Spring,2,11,168
 Mathematics,Spring,3,11,178
@@ -395,6 +428,7 @@ Mathematics,Spring,9,11,203
 Mathematics,Spring,10,11,204
 Mathematics,Spring,11,11,205
 Mathematics,Spring,12,11,203
+Mathematics,Fall,K,12,127
 Mathematics,Fall,1,12,144
 Mathematics,Fall,2,12,155
 Mathematics,Fall,3,12,166
@@ -407,6 +441,7 @@ Mathematics,Fall,9,12,204
 Mathematics,Fall,10,12,205
 Mathematics,Fall,11,12,205
 Mathematics,Fall,12,12,204
+Mathematics,Winter,K,12,136
 Mathematics,Winter,1,12,152
 Mathematics,Winter,2,12,163
 Mathematics,Winter,3,12,173
@@ -419,6 +454,7 @@ Mathematics,Winter,9,12,205
 Mathematics,Winter,10,12,206
 Mathematics,Winter,11,12,206
 Mathematics,Winter,12,12,204
+Mathematics,Spring,K,12,142
 Mathematics,Spring,1,12,158
 Mathematics,Spring,2,12,169
 Mathematics,Spring,3,12,179
@@ -431,6 +467,7 @@ Mathematics,Spring,9,12,204
 Mathematics,Spring,10,12,205
 Mathematics,Spring,11,12,206
 Mathematics,Spring,12,12,204
+Mathematics,Fall,K,13,127
 Mathematics,Fall,1,13,144
 Mathematics,Fall,2,13,155
 Mathematics,Fall,3,13,167
@@ -443,6 +480,7 @@ Mathematics,Fall,9,13,205
 Mathematics,Fall,10,13,206
 Mathematics,Fall,11,13,206
 Mathematics,Fall,12,13,205
+Mathematics,Winter,K,13,136
 Mathematics,Winter,1,13,153
 Mathematics,Winter,2,13,164
 Mathematics,Winter,3,13,174
@@ -455,6 +493,7 @@ Mathematics,Winter,9,13,206
 Mathematics,Winter,10,13,207
 Mathematics,Winter,11,13,207
 Mathematics,Winter,12,13,205
+Mathematics,Spring,K,13,143
 Mathematics,Spring,1,13,159
 Mathematics,Spring,2,13,169
 Mathematics,Spring,3,13,180
@@ -467,6 +506,7 @@ Mathematics,Spring,9,13,205
 Mathematics,Spring,10,13,206
 Mathematics,Spring,11,13,207
 Mathematics,Spring,12,13,205
+Mathematics,Fall,K,14,128
 Mathematics,Fall,1,14,145
 Mathematics,Fall,2,14,156
 Mathematics,Fall,3,14,167
@@ -479,6 +519,7 @@ Mathematics,Fall,9,14,206
 Mathematics,Fall,10,14,207
 Mathematics,Fall,11,14,207
 Mathematics,Fall,12,14,206
+Mathematics,Winter,K,14,137
 Mathematics,Winter,1,14,153
 Mathematics,Winter,2,14,164
 Mathematics,Winter,3,14,175
@@ -491,6 +532,7 @@ Mathematics,Winter,9,14,206
 Mathematics,Winter,10,14,208
 Mathematics,Winter,11,14,208
 Mathematics,Winter,12,14,206
+Mathematics,Spring,K,14,144
 Mathematics,Spring,1,14,160
 Mathematics,Spring,2,14,170
 Mathematics,Spring,3,14,181
@@ -503,6 +545,7 @@ Mathematics,Spring,9,14,206
 Mathematics,Spring,10,14,207
 Mathematics,Spring,11,14,208
 Mathematics,Spring,12,14,206
+Mathematics,Fall,K,15,128
 Mathematics,Fall,1,15,145
 Mathematics,Fall,2,15,157
 Mathematics,Fall,3,15,168
@@ -515,6 +558,7 @@ Mathematics,Fall,9,15,207
 Mathematics,Fall,10,15,208
 Mathematics,Fall,11,15,208
 Mathematics,Fall,12,15,206
+Mathematics,Winter,K,15,138
 Mathematics,Winter,1,15,154
 Mathematics,Winter,2,15,165
 Mathematics,Winter,3,15,176
@@ -527,6 +571,7 @@ Mathematics,Winter,9,15,207
 Mathematics,Winter,10,15,208
 Mathematics,Winter,11,15,209
 Mathematics,Winter,12,15,207
+Mathematics,Spring,K,15,144
 Mathematics,Spring,1,15,160
 Mathematics,Spring,2,15,171
 Mathematics,Spring,3,15,181
@@ -539,6 +584,7 @@ Mathematics,Spring,9,15,207
 Mathematics,Spring,10,15,208
 Mathematics,Spring,11,15,209
 Mathematics,Spring,12,15,207
+Mathematics,Fall,K,16,129
 Mathematics,Fall,1,16,146
 Mathematics,Fall,2,16,158
 Mathematics,Fall,3,16,169
@@ -551,6 +597,7 @@ Mathematics,Fall,9,16,207
 Mathematics,Fall,10,16,208
 Mathematics,Fall,11,16,209
 Mathematics,Fall,12,16,207
+Mathematics,Winter,K,16,138
 Mathematics,Winter,1,16,155
 Mathematics,Winter,2,16,166
 Mathematics,Winter,3,16,176
@@ -563,6 +610,7 @@ Mathematics,Winter,9,16,208
 Mathematics,Winter,10,16,209
 Mathematics,Winter,11,16,210
 Mathematics,Winter,12,16,208
+Mathematics,Spring,K,16,145
 Mathematics,Spring,1,16,161
 Mathematics,Spring,2,16,171
 Mathematics,Spring,3,16,182
@@ -575,6 +623,7 @@ Mathematics,Spring,9,16,208
 Mathematics,Spring,10,16,209
 Mathematics,Spring,11,16,210
 Mathematics,Spring,12,16,208
+Mathematics,Fall,K,17,129
 Mathematics,Fall,1,17,147
 Mathematics,Fall,2,17,158
 Mathematics,Fall,3,17,169
@@ -587,6 +636,7 @@ Mathematics,Fall,9,17,208
 Mathematics,Fall,10,17,209
 Mathematics,Fall,11,17,210
 Mathematics,Fall,12,17,208
+Mathematics,Winter,K,17,139
 Mathematics,Winter,1,17,155
 Mathematics,Winter,2,17,166
 Mathematics,Winter,3,17,177
@@ -599,6 +649,7 @@ Mathematics,Winter,9,17,209
 Mathematics,Winter,10,17,210
 Mathematics,Winter,11,17,211
 Mathematics,Winter,12,17,209
+Mathematics,Spring,K,17,145
 Mathematics,Spring,1,17,161
 Mathematics,Spring,2,17,172
 Mathematics,Spring,3,17,183
@@ -611,6 +662,7 @@ Mathematics,Spring,9,17,209
 Mathematics,Spring,10,17,210
 Mathematics,Spring,11,17,211
 Mathematics,Spring,12,17,209
+Mathematics,Fall,K,18,130
 Mathematics,Fall,1,18,147
 Mathematics,Fall,2,18,159
 Mathematics,Fall,3,18,170
@@ -623,6 +675,7 @@ Mathematics,Fall,9,18,209
 Mathematics,Fall,10,18,210
 Mathematics,Fall,11,18,210
 Mathematics,Fall,12,18,209
+Mathematics,Winter,K,18,139
 Mathematics,Winter,1,18,156
 Mathematics,Winter,2,18,167
 Mathematics,Winter,3,18,178
@@ -635,6 +688,7 @@ Mathematics,Winter,9,18,210
 Mathematics,Winter,10,18,211
 Mathematics,Winter,11,18,211
 Mathematics,Winter,12,18,210
+Mathematics,Spring,K,18,146
 Mathematics,Spring,1,18,162
 Mathematics,Spring,2,18,173
 Mathematics,Spring,3,18,184
@@ -647,6 +701,7 @@ Mathematics,Spring,9,18,210
 Mathematics,Spring,10,18,211
 Mathematics,Spring,11,18,212
 Mathematics,Spring,12,18,210
+Mathematics,Fall,K,19,130
 Mathematics,Fall,1,19,148
 Mathematics,Fall,2,19,159
 Mathematics,Fall,3,19,170
@@ -659,6 +714,7 @@ Mathematics,Fall,9,19,209
 Mathematics,Fall,10,19,210
 Mathematics,Fall,11,19,211
 Mathematics,Fall,12,19,210
+Mathematics,Winter,K,19,140
 Mathematics,Winter,1,19,156
 Mathematics,Winter,2,19,167
 Mathematics,Winter,3,19,178
@@ -671,6 +727,7 @@ Mathematics,Winter,9,19,210
 Mathematics,Winter,10,19,212
 Mathematics,Winter,11,19,212
 Mathematics,Winter,12,19,211
+Mathematics,Spring,K,19,146
 Mathematics,Spring,1,19,162
 Mathematics,Spring,2,19,173
 Mathematics,Spring,3,19,184
@@ -683,6 +740,7 @@ Mathematics,Spring,9,19,210
 Mathematics,Spring,10,19,212
 Mathematics,Spring,11,19,213
 Mathematics,Spring,12,19,211
+Mathematics,Fall,K,20,131
 Mathematics,Fall,1,20,148
 Mathematics,Fall,2,20,160
 Mathematics,Fall,3,20,171
@@ -695,6 +753,7 @@ Mathematics,Fall,9,20,210
 Mathematics,Fall,10,20,211
 Mathematics,Fall,11,20,212
 Mathematics,Fall,12,20,211
+Mathematics,Winter,K,20,140
 Mathematics,Winter,1,20,157
 Mathematics,Winter,2,20,168
 Mathematics,Winter,3,20,179
@@ -707,6 +766,7 @@ Mathematics,Winter,9,20,211
 Mathematics,Winter,10,20,212
 Mathematics,Winter,11,20,213
 Mathematics,Winter,12,20,211
+Mathematics,Spring,K,20,147
 Mathematics,Spring,1,20,163
 Mathematics,Spring,2,20,174
 Mathematics,Spring,3,20,185
@@ -719,6 +779,7 @@ Mathematics,Spring,9,20,211
 Mathematics,Spring,10,20,213
 Mathematics,Spring,11,20,214
 Mathematics,Spring,12,20,212
+Mathematics,Fall,K,21,131
 Mathematics,Fall,1,21,148
 Mathematics,Fall,2,21,160
 Mathematics,Fall,3,21,172
@@ -731,6 +792,7 @@ Mathematics,Fall,9,21,211
 Mathematics,Fall,10,21,212
 Mathematics,Fall,11,21,213
 Mathematics,Fall,12,21,211
+Mathematics,Winter,K,21,141
 Mathematics,Winter,1,21,157
 Mathematics,Winter,2,21,169
 Mathematics,Winter,3,21,179
@@ -743,6 +805,7 @@ Mathematics,Winter,9,21,212
 Mathematics,Winter,10,21,213
 Mathematics,Winter,11,21,214
 Mathematics,Winter,12,21,212
+Mathematics,Spring,K,21,147
 Mathematics,Spring,1,21,163
 Mathematics,Spring,2,21,175
 Mathematics,Spring,3,21,185
@@ -755,6 +818,7 @@ Mathematics,Spring,9,21,212
 Mathematics,Spring,10,21,213
 Mathematics,Spring,11,21,214
 Mathematics,Spring,12,21,212
+Mathematics,Fall,K,22,132
 Mathematics,Fall,1,22,149
 Mathematics,Fall,2,22,161
 Mathematics,Fall,3,22,172
@@ -767,6 +831,7 @@ Mathematics,Fall,9,22,211
 Mathematics,Fall,10,22,212
 Mathematics,Fall,11,22,213
 Mathematics,Fall,12,22,212
+Mathematics,Winter,K,22,141
 Mathematics,Winter,1,22,158
 Mathematics,Winter,2,22,169
 Mathematics,Winter,3,22,180
@@ -779,6 +844,7 @@ Mathematics,Winter,9,22,212
 Mathematics,Winter,10,22,214
 Mathematics,Winter,11,22,214
 Mathematics,Winter,12,22,213
+Mathematics,Spring,K,22,148
 Mathematics,Spring,1,22,164
 Mathematics,Spring,2,22,175
 Mathematics,Spring,3,22,186
@@ -791,6 +857,7 @@ Mathematics,Spring,9,22,213
 Mathematics,Spring,10,22,214
 Mathematics,Spring,11,22,215
 Mathematics,Spring,12,22,213
+Mathematics,Fall,K,23,132
 Mathematics,Fall,1,23,149
 Mathematics,Fall,2,23,161
 Mathematics,Fall,3,23,173
@@ -803,6 +870,7 @@ Mathematics,Fall,9,23,212
 Mathematics,Fall,10,23,213
 Mathematics,Fall,11,23,214
 Mathematics,Fall,12,23,213
+Mathematics,Winter,K,23,141
 Mathematics,Winter,1,23,158
 Mathematics,Winter,2,23,170
 Mathematics,Winter,3,23,181
@@ -815,6 +883,7 @@ Mathematics,Winter,9,23,213
 Mathematics,Winter,10,23,214
 Mathematics,Winter,11,23,215
 Mathematics,Winter,12,23,214
+Mathematics,Spring,K,23,148
 Mathematics,Spring,1,23,164
 Mathematics,Spring,2,23,176
 Mathematics,Spring,3,23,187
@@ -827,6 +896,7 @@ Mathematics,Spring,9,23,213
 Mathematics,Spring,10,23,215
 Mathematics,Spring,11,23,216
 Mathematics,Spring,12,23,214
+Mathematics,Fall,K,24,132
 Mathematics,Fall,1,24,150
 Mathematics,Fall,2,24,162
 Mathematics,Fall,3,24,173
@@ -839,6 +909,7 @@ Mathematics,Fall,9,24,212
 Mathematics,Fall,10,24,214
 Mathematics,Fall,11,24,215
 Mathematics,Fall,12,24,213
+Mathematics,Winter,K,24,142
 Mathematics,Winter,1,24,158
 Mathematics,Winter,2,24,170
 Mathematics,Winter,3,24,181
@@ -851,6 +922,7 @@ Mathematics,Winter,9,24,214
 Mathematics,Winter,10,24,215
 Mathematics,Winter,11,24,216
 Mathematics,Winter,12,24,214
+Mathematics,Spring,K,24,149
 Mathematics,Spring,1,24,165
 Mathematics,Spring,2,24,176
 Mathematics,Spring,3,24,187
@@ -863,6 +935,7 @@ Mathematics,Spring,9,24,214
 Mathematics,Spring,10,24,216
 Mathematics,Spring,11,24,217
 Mathematics,Spring,12,24,215
+Mathematics,Fall,K,25,133
 Mathematics,Fall,1,25,150
 Mathematics,Fall,2,25,162
 Mathematics,Fall,3,25,174
@@ -875,6 +948,7 @@ Mathematics,Fall,9,25,213
 Mathematics,Fall,10,25,214
 Mathematics,Fall,11,25,215
 Mathematics,Fall,12,25,214
+Mathematics,Winter,K,25,142
 Mathematics,Winter,1,25,159
 Mathematics,Winter,2,25,171
 Mathematics,Winter,3,25,182
@@ -887,6 +961,7 @@ Mathematics,Winter,9,25,214
 Mathematics,Winter,10,25,216
 Mathematics,Winter,11,25,217
 Mathematics,Winter,12,25,215
+Mathematics,Spring,K,25,149
 Mathematics,Spring,1,25,165
 Mathematics,Spring,2,25,177
 Mathematics,Spring,3,25,188
@@ -899,6 +974,7 @@ Mathematics,Spring,9,25,215
 Mathematics,Spring,10,25,216
 Mathematics,Spring,11,25,217
 Mathematics,Spring,12,25,215
+Mathematics,Fall,K,26,133
 Mathematics,Fall,1,26,151
 Mathematics,Fall,2,26,163
 Mathematics,Fall,3,26,174
@@ -911,6 +987,7 @@ Mathematics,Fall,9,26,214
 Mathematics,Fall,10,26,215
 Mathematics,Fall,11,26,216
 Mathematics,Fall,12,26,215
+Mathematics,Winter,K,26,143
 Mathematics,Winter,1,26,159
 Mathematics,Winter,2,26,171
 Mathematics,Winter,3,26,182
@@ -923,6 +1000,7 @@ Mathematics,Winter,9,26,215
 Mathematics,Winter,10,26,216
 Mathematics,Winter,11,26,217
 Mathematics,Winter,12,26,216
+Mathematics,Spring,K,26,149
 Mathematics,Spring,1,26,166
 Mathematics,Spring,2,26,177
 Mathematics,Spring,3,26,188
@@ -935,6 +1013,7 @@ Mathematics,Spring,9,26,215
 Mathematics,Spring,10,26,217
 Mathematics,Spring,11,26,218
 Mathematics,Spring,12,26,216
+Mathematics,Fall,K,27,134
 Mathematics,Fall,1,27,151
 Mathematics,Fall,2,27,163
 Mathematics,Fall,3,27,175
@@ -947,6 +1026,7 @@ Mathematics,Fall,9,27,214
 Mathematics,Fall,10,27,215
 Mathematics,Fall,11,27,217
 Mathematics,Fall,12,27,215
+Mathematics,Winter,K,27,143
 Mathematics,Winter,1,27,160
 Mathematics,Winter,2,27,172
 Mathematics,Winter,3,27,183
@@ -959,6 +1039,7 @@ Mathematics,Winter,9,27,215
 Mathematics,Winter,10,27,217
 Mathematics,Winter,11,27,218
 Mathematics,Winter,12,27,216
+Mathematics,Spring,K,27,150
 Mathematics,Spring,1,27,166
 Mathematics,Spring,2,27,178
 Mathematics,Spring,3,27,189
@@ -971,6 +1052,7 @@ Mathematics,Spring,9,27,216
 Mathematics,Spring,10,27,218
 Mathematics,Spring,11,27,219
 Mathematics,Spring,12,27,217
+Mathematics,Fall,K,28,134
 Mathematics,Fall,1,28,151
 Mathematics,Fall,2,28,164
 Mathematics,Fall,3,28,175
@@ -983,6 +1065,7 @@ Mathematics,Fall,9,28,215
 Mathematics,Fall,10,28,216
 Mathematics,Fall,11,28,217
 Mathematics,Fall,12,28,216
+Mathematics,Winter,K,28,143
 Mathematics,Winter,1,28,160
 Mathematics,Winter,2,28,172
 Mathematics,Winter,3,28,183
@@ -995,6 +1078,7 @@ Mathematics,Winter,9,28,216
 Mathematics,Winter,10,28,218
 Mathematics,Winter,11,28,219
 Mathematics,Winter,12,28,217
+Mathematics,Spring,K,28,150
 Mathematics,Spring,1,28,167
 Mathematics,Spring,2,28,178
 Mathematics,Spring,3,28,189
@@ -1007,6 +1091,7 @@ Mathematics,Spring,9,28,217
 Mathematics,Spring,10,28,218
 Mathematics,Spring,11,28,220
 Mathematics,Spring,12,28,218
+Mathematics,Fall,K,29,134
 Mathematics,Fall,1,29,152
 Mathematics,Fall,2,29,164
 Mathematics,Fall,3,29,175
@@ -1019,6 +1104,7 @@ Mathematics,Fall,9,29,215
 Mathematics,Fall,10,29,217
 Mathematics,Fall,11,29,218
 Mathematics,Fall,12,29,217
+Mathematics,Winter,K,29,144
 Mathematics,Winter,1,29,161
 Mathematics,Winter,2,29,173
 Mathematics,Winter,3,29,184
@@ -1031,6 +1117,7 @@ Mathematics,Winter,9,29,217
 Mathematics,Winter,10,29,218
 Mathematics,Winter,11,29,219
 Mathematics,Winter,12,29,218
+Mathematics,Spring,K,29,151
 Mathematics,Spring,1,29,167
 Mathematics,Spring,2,29,179
 Mathematics,Spring,3,29,190
@@ -1043,6 +1130,7 @@ Mathematics,Spring,9,29,217
 Mathematics,Spring,10,29,219
 Mathematics,Spring,11,29,220
 Mathematics,Spring,12,29,218
+Mathematics,Fall,K,30,135
 Mathematics,Fall,1,30,152
 Mathematics,Fall,2,30,165
 Mathematics,Fall,3,30,176
@@ -1055,6 +1143,7 @@ Mathematics,Fall,9,30,216
 Mathematics,Fall,10,30,217
 Mathematics,Fall,11,30,218
 Mathematics,Fall,12,30,217
+Mathematics,Winter,K,30,144
 Mathematics,Winter,1,30,161
 Mathematics,Winter,2,30,173
 Mathematics,Winter,3,30,184
@@ -1067,6 +1156,7 @@ Mathematics,Winter,9,30,217
 Mathematics,Winter,10,30,219
 Mathematics,Winter,11,30,220
 Mathematics,Winter,12,30,218
+Mathematics,Spring,K,30,151
 Mathematics,Spring,1,30,167
 Mathematics,Spring,2,30,179
 Mathematics,Spring,3,30,190
@@ -1079,6 +1169,7 @@ Mathematics,Spring,9,30,218
 Mathematics,Spring,10,30,220
 Mathematics,Spring,11,30,221
 Mathematics,Spring,12,30,219
+Mathematics,Fall,K,31,135
 Mathematics,Fall,1,31,153
 Mathematics,Fall,2,31,165
 Mathematics,Fall,3,31,176
@@ -1091,6 +1182,7 @@ Mathematics,Fall,9,31,216
 Mathematics,Fall,10,31,218
 Mathematics,Fall,11,31,219
 Mathematics,Fall,12,31,218
+Mathematics,Winter,K,31,144
 Mathematics,Winter,1,31,161
 Mathematics,Winter,2,31,173
 Mathematics,Winter,3,31,185
@@ -1103,6 +1195,7 @@ Mathematics,Winter,9,31,218
 Mathematics,Winter,10,31,219
 Mathematics,Winter,11,31,221
 Mathematics,Winter,12,31,219
+Mathematics,Spring,K,31,151
 Mathematics,Spring,1,31,168
 Mathematics,Spring,2,31,179
 Mathematics,Spring,3,31,191
@@ -1115,6 +1208,7 @@ Mathematics,Spring,9,31,218
 Mathematics,Spring,10,31,220
 Mathematics,Spring,11,31,222
 Mathematics,Spring,12,31,220
+Mathematics,Fall,K,32,135
 Mathematics,Fall,1,32,153
 Mathematics,Fall,2,32,166
 Mathematics,Fall,3,32,177
@@ -1127,6 +1221,7 @@ Mathematics,Fall,9,32,217
 Mathematics,Fall,10,32,218
 Mathematics,Fall,11,32,220
 Mathematics,Fall,12,32,218
+Mathematics,Winter,K,32,145
 Mathematics,Winter,1,32,162
 Mathematics,Winter,2,32,174
 Mathematics,Winter,3,32,185
@@ -1139,6 +1234,7 @@ Mathematics,Winter,9,32,218
 Mathematics,Winter,10,32,220
 Mathematics,Winter,11,32,221
 Mathematics,Winter,12,32,220
+Mathematics,Spring,K,32,152
 Mathematics,Spring,1,32,168
 Mathematics,Spring,2,32,180
 Mathematics,Spring,3,32,191
@@ -1151,6 +1247,7 @@ Mathematics,Spring,9,32,219
 Mathematics,Spring,10,32,221
 Mathematics,Spring,11,32,222
 Mathematics,Spring,12,32,220
+Mathematics,Fall,K,33,136
 Mathematics,Fall,1,33,153
 Mathematics,Fall,2,33,166
 Mathematics,Fall,3,33,177
@@ -1163,6 +1260,7 @@ Mathematics,Fall,9,33,217
 Mathematics,Fall,10,33,219
 Mathematics,Fall,11,33,220
 Mathematics,Fall,12,33,219
+Mathematics,Winter,K,33,145
 Mathematics,Winter,1,33,162
 Mathematics,Winter,2,33,174
 Mathematics,Winter,3,33,185
@@ -1175,6 +1273,7 @@ Mathematics,Winter,9,33,219
 Mathematics,Winter,10,33,221
 Mathematics,Winter,11,33,222
 Mathematics,Winter,12,33,220
+Mathematics,Spring,K,33,152
 Mathematics,Spring,1,33,169
 Mathematics,Spring,2,33,180
 Mathematics,Spring,3,33,192
@@ -1187,6 +1286,7 @@ Mathematics,Spring,9,33,220
 Mathematics,Spring,10,33,222
 Mathematics,Spring,11,33,223
 Mathematics,Spring,12,33,221
+Mathematics,Fall,K,34,136
 Mathematics,Fall,1,34,154
 Mathematics,Fall,2,34,167
 Mathematics,Fall,3,34,178
@@ -1199,6 +1299,7 @@ Mathematics,Fall,9,34,218
 Mathematics,Fall,10,34,219
 Mathematics,Fall,11,34,221
 Mathematics,Fall,12,34,219
+Mathematics,Winter,K,34,145
 Mathematics,Winter,1,34,163
 Mathematics,Winter,2,34,175
 Mathematics,Winter,3,34,186
@@ -1211,6 +1312,7 @@ Mathematics,Winter,9,34,219
 Mathematics,Winter,10,34,221
 Mathematics,Winter,11,34,222
 Mathematics,Winter,12,34,221
+Mathematics,Spring,K,34,152
 Mathematics,Spring,1,34,169
 Mathematics,Spring,2,34,181
 Mathematics,Spring,3,34,192
@@ -1223,6 +1325,7 @@ Mathematics,Spring,9,34,220
 Mathematics,Spring,10,34,222
 Mathematics,Spring,11,34,223
 Mathematics,Spring,12,34,222
+Mathematics,Fall,K,35,136
 Mathematics,Fall,1,35,154
 Mathematics,Fall,2,35,167
 Mathematics,Fall,3,35,178
@@ -1235,6 +1338,7 @@ Mathematics,Fall,9,35,218
 Mathematics,Fall,10,35,220
 Mathematics,Fall,11,35,221
 Mathematics,Fall,12,35,220
+Mathematics,Winter,K,35,146
 Mathematics,Winter,1,35,163
 Mathematics,Winter,2,35,175
 Mathematics,Winter,3,35,186
@@ -1247,6 +1351,7 @@ Mathematics,Winter,9,35,220
 Mathematics,Winter,10,35,222
 Mathematics,Winter,11,35,223
 Mathematics,Winter,12,35,221
+Mathematics,Spring,K,35,153
 Mathematics,Spring,1,35,169
 Mathematics,Spring,2,35,181
 Mathematics,Spring,3,35,193
@@ -1259,6 +1364,7 @@ Mathematics,Spring,9,35,221
 Mathematics,Spring,10,35,223
 Mathematics,Spring,11,35,224
 Mathematics,Spring,12,35,222
+Mathematics,Fall,K,36,137
 Mathematics,Fall,1,36,154
 Mathematics,Fall,2,36,167
 Mathematics,Fall,3,36,178
@@ -1271,6 +1377,7 @@ Mathematics,Fall,9,36,219
 Mathematics,Fall,10,36,220
 Mathematics,Fall,11,36,222
 Mathematics,Fall,12,36,221
+Mathematics,Winter,K,36,146
 Mathematics,Winter,1,36,163
 Mathematics,Winter,2,36,176
 Mathematics,Winter,3,36,187
@@ -1283,6 +1390,7 @@ Mathematics,Winter,9,36,220
 Mathematics,Winter,10,36,222
 Mathematics,Winter,11,36,224
 Mathematics,Winter,12,36,222
+Mathematics,Spring,K,36,153
 Mathematics,Spring,1,36,170
 Mathematics,Spring,2,36,182
 Mathematics,Spring,3,36,193
@@ -1295,6 +1403,7 @@ Mathematics,Spring,9,36,221
 Mathematics,Spring,10,36,223
 Mathematics,Spring,11,36,225
 Mathematics,Spring,12,36,223
+Mathematics,Fall,K,37,137
 Mathematics,Fall,1,37,155
 Mathematics,Fall,2,37,168
 Mathematics,Fall,3,37,179
@@ -1307,6 +1416,7 @@ Mathematics,Fall,9,37,219
 Mathematics,Fall,10,37,221
 Mathematics,Fall,11,37,222
 Mathematics,Fall,12,37,221
+Mathematics,Winter,K,37,146
 Mathematics,Winter,1,37,164
 Mathematics,Winter,2,37,176
 Mathematics,Winter,3,37,187
@@ -1319,6 +1429,7 @@ Mathematics,Winter,9,37,221
 Mathematics,Winter,10,37,223
 Mathematics,Winter,11,37,224
 Mathematics,Winter,12,37,223
+Mathematics,Spring,K,37,153
 Mathematics,Spring,1,37,170
 Mathematics,Spring,2,37,182
 Mathematics,Spring,3,37,193
@@ -1331,6 +1442,7 @@ Mathematics,Spring,9,37,222
 Mathematics,Spring,10,37,224
 Mathematics,Spring,11,37,225
 Mathematics,Spring,12,37,223
+Mathematics,Fall,K,38,137
 Mathematics,Fall,1,38,155
 Mathematics,Fall,2,38,168
 Mathematics,Fall,3,38,179
@@ -1343,6 +1455,7 @@ Mathematics,Fall,9,38,220
 Mathematics,Fall,10,38,221
 Mathematics,Fall,11,38,223
 Mathematics,Fall,12,38,222
+Mathematics,Winter,K,38,147
 Mathematics,Winter,1,38,164
 Mathematics,Winter,2,38,176
 Mathematics,Winter,3,38,188
@@ -1355,6 +1468,7 @@ Mathematics,Winter,9,38,221
 Mathematics,Winter,10,38,223
 Mathematics,Winter,11,38,225
 Mathematics,Winter,12,38,223
+Mathematics,Spring,K,38,154
 Mathematics,Spring,1,38,171
 Mathematics,Spring,2,38,183
 Mathematics,Spring,3,38,194
@@ -1367,6 +1481,7 @@ Mathematics,Spring,9,38,222
 Mathematics,Spring,10,38,225
 Mathematics,Spring,11,38,226
 Mathematics,Spring,12,38,224
+Mathematics,Fall,K,39,138
 Mathematics,Fall,1,39,156
 Mathematics,Fall,2,39,169
 Mathematics,Fall,3,39,180
@@ -1379,6 +1494,7 @@ Mathematics,Fall,9,39,220
 Mathematics,Fall,10,39,222
 Mathematics,Fall,11,39,223
 Mathematics,Fall,12,39,222
+Mathematics,Winter,K,39,147
 Mathematics,Winter,1,39,164
 Mathematics,Winter,2,39,177
 Mathematics,Winter,3,39,188
@@ -1391,6 +1507,7 @@ Mathematics,Winter,9,39,222
 Mathematics,Winter,10,39,224
 Mathematics,Winter,11,39,225
 Mathematics,Winter,12,39,224
+Mathematics,Spring,K,39,154
 Mathematics,Spring,1,39,171
 Mathematics,Spring,2,39,183
 Mathematics,Spring,3,39,194
@@ -1403,6 +1520,7 @@ Mathematics,Spring,9,39,223
 Mathematics,Spring,10,39,225
 Mathematics,Spring,11,39,227
 Mathematics,Spring,12,39,225
+Mathematics,Fall,K,40,138
 Mathematics,Fall,1,40,156
 Mathematics,Fall,2,40,169
 Mathematics,Fall,3,40,180
@@ -1415,6 +1533,7 @@ Mathematics,Fall,9,40,220
 Mathematics,Fall,10,40,222
 Mathematics,Fall,11,40,224
 Mathematics,Fall,12,40,223
+Mathematics,Winter,K,40,147
 Mathematics,Winter,1,40,165
 Mathematics,Winter,2,40,177
 Mathematics,Winter,3,40,189
@@ -1427,6 +1546,7 @@ Mathematics,Winter,9,40,222
 Mathematics,Winter,10,40,224
 Mathematics,Winter,11,40,226
 Mathematics,Winter,12,40,224
+Mathematics,Spring,K,40,154
 Mathematics,Spring,1,40,171
 Mathematics,Spring,2,40,183
 Mathematics,Spring,3,40,195
@@ -1439,6 +1559,7 @@ Mathematics,Spring,9,40,223
 Mathematics,Spring,10,40,226
 Mathematics,Spring,11,40,227
 Mathematics,Spring,12,40,225
+Mathematics,Fall,K,41,138
 Mathematics,Fall,1,41,156
 Mathematics,Fall,2,41,169
 Mathematics,Fall,3,41,181
@@ -1451,6 +1572,7 @@ Mathematics,Fall,9,41,221
 Mathematics,Fall,10,41,223
 Mathematics,Fall,11,41,225
 Mathematics,Fall,12,41,223
+Mathematics,Winter,K,41,148
 Mathematics,Winter,1,41,165
 Mathematics,Winter,2,41,178
 Mathematics,Winter,3,41,189
@@ -1463,6 +1585,7 @@ Mathematics,Winter,9,41,223
 Mathematics,Winter,10,41,225
 Mathematics,Winter,11,41,226
 Mathematics,Winter,12,41,225
+Mathematics,Spring,K,41,155
 Mathematics,Spring,1,41,172
 Mathematics,Spring,2,41,184
 Mathematics,Spring,3,41,195
@@ -1475,6 +1598,7 @@ Mathematics,Spring,9,41,224
 Mathematics,Spring,10,41,226
 Mathematics,Spring,11,41,228
 Mathematics,Spring,12,41,226
+Mathematics,Fall,K,42,139
 Mathematics,Fall,1,42,157
 Mathematics,Fall,2,42,170
 Mathematics,Fall,3,42,181
@@ -1487,6 +1611,7 @@ Mathematics,Fall,9,42,221
 Mathematics,Fall,10,42,223
 Mathematics,Fall,11,42,225
 Mathematics,Fall,12,42,224
+Mathematics,Winter,K,42,148
 Mathematics,Winter,1,42,165
 Mathematics,Winter,2,42,178
 Mathematics,Winter,3,42,189
@@ -1499,6 +1624,7 @@ Mathematics,Winter,9,42,223
 Mathematics,Winter,10,42,225
 Mathematics,Winter,11,42,227
 Mathematics,Winter,12,42,225
+Mathematics,Spring,K,42,155
 Mathematics,Spring,1,42,172
 Mathematics,Spring,2,42,184
 Mathematics,Spring,3,42,196
@@ -1511,6 +1637,7 @@ Mathematics,Spring,9,42,225
 Mathematics,Spring,10,42,227
 Mathematics,Spring,11,42,228
 Mathematics,Spring,12,42,226
+Mathematics,Fall,K,43,139
 Mathematics,Fall,1,43,157
 Mathematics,Fall,2,43,170
 Mathematics,Fall,3,43,181
@@ -1523,6 +1650,7 @@ Mathematics,Fall,9,43,222
 Mathematics,Fall,10,43,224
 Mathematics,Fall,11,43,226
 Mathematics,Fall,12,43,224
+Mathematics,Winter,K,43,148
 Mathematics,Winter,1,43,166
 Mathematics,Winter,2,43,178
 Mathematics,Winter,3,43,190
@@ -1535,6 +1663,7 @@ Mathematics,Winter,9,43,224
 Mathematics,Winter,10,43,226
 Mathematics,Winter,11,43,228
 Mathematics,Winter,12,43,226
+Mathematics,Spring,K,43,155
 Mathematics,Spring,1,43,172
 Mathematics,Spring,2,43,185
 Mathematics,Spring,3,43,196
@@ -1547,6 +1676,7 @@ Mathematics,Spring,9,43,225
 Mathematics,Spring,10,43,227
 Mathematics,Spring,11,43,229
 Mathematics,Spring,12,43,227
+Mathematics,Fall,K,44,139
 Mathematics,Fall,1,44,157
 Mathematics,Fall,2,44,171
 Mathematics,Fall,3,44,182
@@ -1559,6 +1689,7 @@ Mathematics,Fall,9,44,222
 Mathematics,Fall,10,44,224
 Mathematics,Fall,11,44,226
 Mathematics,Fall,12,44,225
+Mathematics,Winter,K,44,149
 Mathematics,Winter,1,44,166
 Mathematics,Winter,2,44,179
 Mathematics,Winter,3,44,190
@@ -1571,6 +1702,7 @@ Mathematics,Winter,9,44,224
 Mathematics,Winter,10,44,226
 Mathematics,Winter,11,44,228
 Mathematics,Winter,12,44,227
+Mathematics,Spring,K,44,156
 Mathematics,Spring,1,44,173
 Mathematics,Spring,2,44,185
 Mathematics,Spring,3,44,197
@@ -1583,6 +1715,7 @@ Mathematics,Spring,9,44,226
 Mathematics,Spring,10,44,228
 Mathematics,Spring,11,44,230
 Mathematics,Spring,12,44,228
+Mathematics,Fall,K,45,140
 Mathematics,Fall,1,45,158
 Mathematics,Fall,2,45,171
 Mathematics,Fall,3,45,182
@@ -1595,6 +1728,7 @@ Mathematics,Fall,9,45,223
 Mathematics,Fall,10,45,224
 Mathematics,Fall,11,45,227
 Mathematics,Fall,12,45,226
+Mathematics,Winter,K,45,149
 Mathematics,Winter,1,45,167
 Mathematics,Winter,2,45,179
 Mathematics,Winter,3,45,191
@@ -1607,6 +1741,7 @@ Mathematics,Winter,9,45,225
 Mathematics,Winter,10,45,227
 Mathematics,Winter,11,45,229
 Mathematics,Winter,12,45,227
+Mathematics,Spring,K,45,156
 Mathematics,Spring,1,45,173
 Mathematics,Spring,2,45,185
 Mathematics,Spring,3,45,197
@@ -1619,6 +1754,7 @@ Mathematics,Spring,9,45,226
 Mathematics,Spring,10,45,229
 Mathematics,Spring,11,45,230
 Mathematics,Spring,12,45,228
+Mathematics,Fall,K,46,140
 Mathematics,Fall,1,46,158
 Mathematics,Fall,2,46,171
 Mathematics,Fall,3,46,182
@@ -1631,6 +1767,7 @@ Mathematics,Fall,9,46,223
 Mathematics,Fall,10,46,225
 Mathematics,Fall,11,46,227
 Mathematics,Fall,12,46,226
+Mathematics,Winter,K,46,149
 Mathematics,Winter,1,46,167
 Mathematics,Winter,2,46,180
 Mathematics,Winter,3,46,191
@@ -1643,6 +1780,7 @@ Mathematics,Winter,9,46,225
 Mathematics,Winter,10,46,227
 Mathematics,Winter,11,46,229
 Mathematics,Winter,12,46,228
+Mathematics,Spring,K,46,156
 Mathematics,Spring,1,46,174
 Mathematics,Spring,2,46,186
 Mathematics,Spring,3,46,197
@@ -1655,6 +1793,7 @@ Mathematics,Spring,9,46,227
 Mathematics,Spring,10,46,229
 Mathematics,Spring,11,46,231
 Mathematics,Spring,12,46,229
+Mathematics,Fall,K,47,140
 Mathematics,Fall,1,47,158
 Mathematics,Fall,2,47,172
 Mathematics,Fall,3,47,183
@@ -1667,6 +1806,7 @@ Mathematics,Fall,9,47,224
 Mathematics,Fall,10,47,225
 Mathematics,Fall,11,47,228
 Mathematics,Fall,12,47,227
+Mathematics,Winter,K,47,150
 Mathematics,Winter,1,47,167
 Mathematics,Winter,2,47,180
 Mathematics,Winter,3,47,191
@@ -1679,6 +1819,7 @@ Mathematics,Winter,9,47,226
 Mathematics,Winter,10,47,228
 Mathematics,Winter,11,47,230
 Mathematics,Winter,12,47,228
+Mathematics,Spring,K,47,157
 Mathematics,Spring,1,47,174
 Mathematics,Spring,2,47,186
 Mathematics,Spring,3,47,198
@@ -1691,6 +1832,7 @@ Mathematics,Spring,9,47,227
 Mathematics,Spring,10,47,230
 Mathematics,Spring,11,47,231
 Mathematics,Spring,12,47,229
+Mathematics,Fall,K,48,141
 Mathematics,Fall,1,48,159
 Mathematics,Fall,2,48,172
 Mathematics,Fall,3,48,183
@@ -1703,6 +1845,7 @@ Mathematics,Fall,9,48,224
 Mathematics,Fall,10,48,226
 Mathematics,Fall,11,48,228
 Mathematics,Fall,12,48,227
+Mathematics,Winter,K,48,150
 Mathematics,Winter,1,48,168
 Mathematics,Winter,2,48,180
 Mathematics,Winter,3,48,192
@@ -1715,6 +1858,7 @@ Mathematics,Winter,9,48,226
 Mathematics,Winter,10,48,228
 Mathematics,Winter,11,48,230
 Mathematics,Winter,12,48,229
+Mathematics,Spring,K,48,157
 Mathematics,Spring,1,48,174
 Mathematics,Spring,2,48,187
 Mathematics,Spring,3,48,198
@@ -1727,6 +1871,7 @@ Mathematics,Spring,9,48,228
 Mathematics,Spring,10,48,230
 Mathematics,Spring,11,48,232
 Mathematics,Spring,12,48,230
+Mathematics,Fall,K,49,141
 Mathematics,Fall,1,49,159
 Mathematics,Fall,2,49,172
 Mathematics,Fall,3,49,184
@@ -1739,6 +1884,7 @@ Mathematics,Fall,9,49,224
 Mathematics,Fall,10,49,226
 Mathematics,Fall,11,49,229
 Mathematics,Fall,12,49,228
+Mathematics,Winter,K,49,150
 Mathematics,Winter,1,49,168
 Mathematics,Winter,2,49,181
 Mathematics,Winter,3,49,192
@@ -1751,6 +1897,7 @@ Mathematics,Winter,9,49,227
 Mathematics,Winter,10,49,229
 Mathematics,Winter,11,49,231
 Mathematics,Winter,12,49,229
+Mathematics,Spring,K,49,157
 Mathematics,Spring,1,49,175
 Mathematics,Spring,2,49,187
 Mathematics,Spring,3,49,199
@@ -1763,6 +1910,7 @@ Mathematics,Spring,9,49,228
 Mathematics,Spring,10,49,231
 Mathematics,Spring,11,49,232
 Mathematics,Spring,12,49,231
+Mathematics,Fall,K,50,141
 Mathematics,Fall,1,50,159
 Mathematics,Fall,2,50,173
 Mathematics,Fall,3,50,184
@@ -1775,6 +1923,7 @@ Mathematics,Fall,9,50,225
 Mathematics,Fall,10,50,227
 Mathematics,Fall,11,50,229
 Mathematics,Fall,12,50,228
+Mathematics,Winter,K,50,151
 Mathematics,Winter,1,50,168
 Mathematics,Winter,2,50,181
 Mathematics,Winter,3,50,193
@@ -1787,6 +1936,7 @@ Mathematics,Winter,9,50,227
 Mathematics,Winter,10,50,229
 Mathematics,Winter,11,50,231
 Mathematics,Winter,12,50,230
+Mathematics,Spring,K,50,158
 Mathematics,Spring,1,50,175
 Mathematics,Spring,2,50,187
 Mathematics,Spring,3,50,199
@@ -1799,6 +1949,7 @@ Mathematics,Spring,9,50,229
 Mathematics,Spring,10,50,231
 Mathematics,Spring,11,50,233
 Mathematics,Spring,12,50,231
+Mathematics,Fall,K,51,141
 Mathematics,Fall,1,51,160
 Mathematics,Fall,2,51,173
 Mathematics,Fall,3,51,184
@@ -1811,6 +1962,7 @@ Mathematics,Fall,9,51,225
 Mathematics,Fall,10,51,227
 Mathematics,Fall,11,51,230
 Mathematics,Fall,12,51,229
+Mathematics,Winter,K,51,151
 Mathematics,Winter,1,51,169
 Mathematics,Winter,2,51,182
 Mathematics,Winter,3,51,193
@@ -1823,6 +1975,7 @@ Mathematics,Winter,9,51,228
 Mathematics,Winter,10,51,230
 Mathematics,Winter,11,51,232
 Mathematics,Winter,12,51,230
+Mathematics,Spring,K,51,158
 Mathematics,Spring,1,51,175
 Mathematics,Spring,2,51,188
 Mathematics,Spring,3,51,200
@@ -1835,6 +1988,7 @@ Mathematics,Spring,9,51,229
 Mathematics,Spring,10,51,232
 Mathematics,Spring,11,51,234
 Mathematics,Spring,12,51,232
+Mathematics,Fall,K,52,142
 Mathematics,Fall,1,52,160
 Mathematics,Fall,2,52,174
 Mathematics,Fall,3,52,185
@@ -1847,6 +2001,7 @@ Mathematics,Fall,9,52,226
 Mathematics,Fall,10,52,228
 Mathematics,Fall,11,52,230
 Mathematics,Fall,12,52,229
+Mathematics,Winter,K,52,151
 Mathematics,Winter,1,52,169
 Mathematics,Winter,2,52,182
 Mathematics,Winter,3,52,193
@@ -1859,6 +2014,7 @@ Mathematics,Winter,9,52,228
 Mathematics,Winter,10,52,230
 Mathematics,Winter,11,52,232
 Mathematics,Winter,12,52,231
+Mathematics,Spring,K,52,158
 Mathematics,Spring,1,52,176
 Mathematics,Spring,2,52,188
 Mathematics,Spring,3,52,200
@@ -1871,6 +2027,7 @@ Mathematics,Spring,9,52,230
 Mathematics,Spring,10,52,232
 Mathematics,Spring,11,52,234
 Mathematics,Spring,12,52,232
+Mathematics,Fall,K,53,142
 Mathematics,Fall,1,53,160
 Mathematics,Fall,2,53,174
 Mathematics,Fall,3,53,185
@@ -1883,6 +2040,7 @@ Mathematics,Fall,9,53,226
 Mathematics,Fall,10,53,228
 Mathematics,Fall,11,53,231
 Mathematics,Fall,12,53,230
+Mathematics,Winter,K,53,152
 Mathematics,Winter,1,53,169
 Mathematics,Winter,2,53,182
 Mathematics,Winter,3,53,194
@@ -1895,6 +2053,7 @@ Mathematics,Winter,9,53,229
 Mathematics,Winter,10,53,231
 Mathematics,Winter,11,53,233
 Mathematics,Winter,12,53,231
+Mathematics,Spring,K,53,159
 Mathematics,Spring,1,53,176
 Mathematics,Spring,2,53,189
 Mathematics,Spring,3,53,200
@@ -1907,6 +2066,7 @@ Mathematics,Spring,9,53,230
 Mathematics,Spring,10,53,233
 Mathematics,Spring,11,53,235
 Mathematics,Spring,12,53,233
+Mathematics,Fall,K,54,142
 Mathematics,Fall,1,54,161
 Mathematics,Fall,2,54,174
 Mathematics,Fall,3,54,186
@@ -1919,6 +2079,7 @@ Mathematics,Fall,9,54,227
 Mathematics,Fall,10,54,229
 Mathematics,Fall,11,54,231
 Mathematics,Fall,12,54,230
+Mathematics,Winter,K,54,152
 Mathematics,Winter,1,54,170
 Mathematics,Winter,2,54,183
 Mathematics,Winter,3,54,194
@@ -1931,6 +2092,7 @@ Mathematics,Winter,9,54,229
 Mathematics,Winter,10,54,231
 Mathematics,Winter,11,54,234
 Mathematics,Winter,12,54,232
+Mathematics,Spring,K,54,159
 Mathematics,Spring,1,54,176
 Mathematics,Spring,2,54,189
 Mathematics,Spring,3,54,201
@@ -1943,6 +2105,7 @@ Mathematics,Spring,9,54,231
 Mathematics,Spring,10,54,234
 Mathematics,Spring,11,54,235
 Mathematics,Spring,12,54,233
+Mathematics,Fall,K,55,143
 Mathematics,Fall,1,55,161
 Mathematics,Fall,2,55,175
 Mathematics,Fall,3,55,186
@@ -1955,6 +2118,7 @@ Mathematics,Fall,9,55,227
 Mathematics,Fall,10,55,229
 Mathematics,Fall,11,55,232
 Mathematics,Fall,12,55,231
+Mathematics,Winter,K,55,152
 Mathematics,Winter,1,55,170
 Mathematics,Winter,2,55,183
 Mathematics,Winter,3,55,195
@@ -1967,6 +2131,7 @@ Mathematics,Winter,9,55,230
 Mathematics,Winter,10,55,232
 Mathematics,Winter,11,55,234
 Mathematics,Winter,12,55,233
+Mathematics,Spring,K,55,159
 Mathematics,Spring,1,55,177
 Mathematics,Spring,2,55,189
 Mathematics,Spring,3,55,201
@@ -1979,6 +2144,7 @@ Mathematics,Spring,9,55,231
 Mathematics,Spring,10,55,234
 Mathematics,Spring,11,55,236
 Mathematics,Spring,12,55,234
+Mathematics,Fall,K,56,143
 Mathematics,Fall,1,56,161
 Mathematics,Fall,2,56,175
 Mathematics,Fall,3,56,186
@@ -1991,6 +2157,7 @@ Mathematics,Fall,9,56,228
 Mathematics,Fall,10,56,230
 Mathematics,Fall,11,56,232
 Mathematics,Fall,12,56,231
+Mathematics,Winter,K,56,153
 Mathematics,Winter,1,56,170
 Mathematics,Winter,2,56,184
 Mathematics,Winter,3,56,195
@@ -2003,6 +2170,7 @@ Mathematics,Winter,9,56,230
 Mathematics,Winter,10,56,232
 Mathematics,Winter,11,56,235
 Mathematics,Winter,12,56,233
+Mathematics,Spring,K,56,160
 Mathematics,Spring,1,56,177
 Mathematics,Spring,2,56,190
 Mathematics,Spring,3,56,202
@@ -2015,6 +2183,7 @@ Mathematics,Spring,9,56,232
 Mathematics,Spring,10,56,235
 Mathematics,Spring,11,56,236
 Mathematics,Spring,12,56,235
+Mathematics,Fall,K,57,143
 Mathematics,Fall,1,57,162
 Mathematics,Fall,2,57,176
 Mathematics,Fall,3,57,187
@@ -2027,6 +2196,7 @@ Mathematics,Fall,9,57,228
 Mathematics,Fall,10,57,230
 Mathematics,Fall,11,57,233
 Mathematics,Fall,12,57,232
+Mathematics,Winter,K,57,153
 Mathematics,Winter,1,57,171
 Mathematics,Winter,2,57,184
 Mathematics,Winter,3,57,196
@@ -2039,6 +2209,7 @@ Mathematics,Winter,9,57,231
 Mathematics,Winter,10,57,233
 Mathematics,Winter,11,57,235
 Mathematics,Winter,12,57,234
+Mathematics,Spring,K,57,160
 Mathematics,Spring,1,57,178
 Mathematics,Spring,2,57,190
 Mathematics,Spring,3,57,202
@@ -2051,6 +2222,7 @@ Mathematics,Spring,9,57,233
 Mathematics,Spring,10,57,235
 Mathematics,Spring,11,57,237
 Mathematics,Spring,12,57,235
+Mathematics,Fall,K,58,144
 Mathematics,Fall,1,58,162
 Mathematics,Fall,2,58,176
 Mathematics,Fall,3,58,187
@@ -2063,6 +2235,7 @@ Mathematics,Fall,9,58,228
 Mathematics,Fall,10,58,231
 Mathematics,Fall,11,58,233
 Mathematics,Fall,12,58,232
+Mathematics,Winter,K,58,153
 Mathematics,Winter,1,58,171
 Mathematics,Winter,2,58,184
 Mathematics,Winter,3,58,196
@@ -2075,6 +2248,7 @@ Mathematics,Winter,9,58,231
 Mathematics,Winter,10,58,233
 Mathematics,Winter,11,58,236
 Mathematics,Winter,12,58,234
+Mathematics,Spring,K,58,160
 Mathematics,Spring,1,58,178
 Mathematics,Spring,2,58,191
 Mathematics,Spring,3,58,203
@@ -2087,6 +2261,7 @@ Mathematics,Spring,9,58,233
 Mathematics,Spring,10,58,236
 Mathematics,Spring,11,58,238
 Mathematics,Spring,12,58,236
+Mathematics,Fall,K,59,144
 Mathematics,Fall,1,59,162
 Mathematics,Fall,2,59,176
 Mathematics,Fall,3,59,188
@@ -2099,6 +2274,7 @@ Mathematics,Fall,9,59,229
 Mathematics,Fall,10,59,231
 Mathematics,Fall,11,59,234
 Mathematics,Fall,12,59,233
+Mathematics,Winter,K,59,154
 Mathematics,Winter,1,59,171
 Mathematics,Winter,2,59,185
 Mathematics,Winter,3,59,196
@@ -2111,6 +2287,7 @@ Mathematics,Winter,9,59,232
 Mathematics,Winter,10,59,234
 Mathematics,Winter,11,59,236
 Mathematics,Winter,12,59,235
+Mathematics,Spring,K,59,161
 Mathematics,Spring,1,59,178
 Mathematics,Spring,2,59,191
 Mathematics,Spring,3,59,203
@@ -2123,6 +2300,7 @@ Mathematics,Spring,9,59,234
 Mathematics,Spring,10,59,236
 Mathematics,Spring,11,59,238
 Mathematics,Spring,12,59,236
+Mathematics,Fall,K,60,144
 Mathematics,Fall,1,60,163
 Mathematics,Fall,2,60,177
 Mathematics,Fall,3,60,188
@@ -2135,6 +2313,7 @@ Mathematics,Fall,9,60,229
 Mathematics,Fall,10,60,232
 Mathematics,Fall,11,60,234
 Mathematics,Fall,12,60,233
+Mathematics,Winter,K,60,154
 Mathematics,Winter,1,60,172
 Mathematics,Winter,2,60,185
 Mathematics,Winter,3,60,197
@@ -2147,6 +2326,7 @@ Mathematics,Winter,9,60,232
 Mathematics,Winter,10,60,235
 Mathematics,Winter,11,60,237
 Mathematics,Winter,12,60,235
+Mathematics,Spring,K,60,161
 Mathematics,Spring,1,60,179
 Mathematics,Spring,2,60,192
 Mathematics,Spring,3,60,203
@@ -2159,6 +2339,7 @@ Mathematics,Spring,9,60,234
 Mathematics,Spring,10,60,237
 Mathematics,Spring,11,60,239
 Mathematics,Spring,12,60,237
+Mathematics,Fall,K,61,145
 Mathematics,Fall,1,61,163
 Mathematics,Fall,2,61,177
 Mathematics,Fall,3,61,188
@@ -2171,6 +2352,7 @@ Mathematics,Fall,9,61,230
 Mathematics,Fall,10,61,232
 Mathematics,Fall,11,61,235
 Mathematics,Fall,12,61,234
+Mathematics,Winter,K,61,154
 Mathematics,Winter,1,61,172
 Mathematics,Winter,2,61,186
 Mathematics,Winter,3,61,197
@@ -2183,6 +2365,7 @@ Mathematics,Winter,9,61,232
 Mathematics,Winter,10,61,235
 Mathematics,Winter,11,61,237
 Mathematics,Winter,12,61,236
+Mathematics,Spring,K,61,161
 Mathematics,Spring,1,61,179
 Mathematics,Spring,2,61,192
 Mathematics,Spring,3,61,204
@@ -2195,6 +2378,7 @@ Mathematics,Spring,9,61,235
 Mathematics,Spring,10,61,238
 Mathematics,Spring,11,61,239
 Mathematics,Spring,12,61,238
+Mathematics,Fall,K,62,145
 Mathematics,Fall,1,62,163
 Mathematics,Fall,2,62,178
 Mathematics,Fall,3,62,189
@@ -2207,6 +2391,7 @@ Mathematics,Fall,9,62,230
 Mathematics,Fall,10,62,232
 Mathematics,Fall,11,62,235
 Mathematics,Fall,12,62,235
+Mathematics,Winter,K,62,154
 Mathematics,Winter,1,62,172
 Mathematics,Winter,2,62,186
 Mathematics,Winter,3,62,198
@@ -2219,6 +2404,7 @@ Mathematics,Winter,9,62,233
 Mathematics,Winter,10,62,236
 Mathematics,Winter,11,62,238
 Mathematics,Winter,12,62,237
+Mathematics,Spring,K,62,162
 Mathematics,Spring,1,62,179
 Mathematics,Spring,2,62,192
 Mathematics,Spring,3,62,204
@@ -2231,6 +2417,7 @@ Mathematics,Spring,9,62,235
 Mathematics,Spring,10,62,238
 Mathematics,Spring,11,62,240
 Mathematics,Spring,12,62,238
+Mathematics,Fall,K,63,145
 Mathematics,Fall,1,63,164
 Mathematics,Fall,2,63,178
 Mathematics,Fall,3,63,189
@@ -2243,6 +2430,7 @@ Mathematics,Fall,9,63,231
 Mathematics,Fall,10,63,233
 Mathematics,Fall,11,63,236
 Mathematics,Fall,12,63,235
+Mathematics,Winter,K,63,155
 Mathematics,Winter,1,63,173
 Mathematics,Winter,2,63,186
 Mathematics,Winter,3,63,198
@@ -2255,6 +2443,7 @@ Mathematics,Winter,9,63,234
 Mathematics,Winter,10,63,236
 Mathematics,Winter,11,63,239
 Mathematics,Winter,12,63,237
+Mathematics,Spring,K,63,162
 Mathematics,Spring,1,63,180
 Mathematics,Spring,2,63,193
 Mathematics,Spring,3,63,205
@@ -2267,6 +2456,7 @@ Mathematics,Spring,9,63,236
 Mathematics,Spring,10,63,239
 Mathematics,Spring,11,63,241
 Mathematics,Spring,12,63,239
+Mathematics,Fall,K,64,146
 Mathematics,Fall,1,64,164
 Mathematics,Fall,2,64,178
 Mathematics,Fall,3,64,190
@@ -2279,6 +2469,7 @@ Mathematics,Fall,9,64,231
 Mathematics,Fall,10,64,233
 Mathematics,Fall,11,64,237
 Mathematics,Fall,12,64,236
+Mathematics,Winter,K,64,155
 Mathematics,Winter,1,64,173
 Mathematics,Winter,2,64,187
 Mathematics,Winter,3,64,199
@@ -2291,6 +2482,7 @@ Mathematics,Winter,9,64,234
 Mathematics,Winter,10,64,237
 Mathematics,Winter,11,64,239
 Mathematics,Winter,12,64,238
+Mathematics,Spring,K,64,162
 Mathematics,Spring,1,64,180
 Mathematics,Spring,2,64,193
 Mathematics,Spring,3,64,205
@@ -2303,6 +2495,7 @@ Mathematics,Spring,9,64,236
 Mathematics,Spring,10,64,239
 Mathematics,Spring,11,64,241
 Mathematics,Spring,12,64,239
+Mathematics,Fall,K,65,146
 Mathematics,Fall,1,65,164
 Mathematics,Fall,2,65,179
 Mathematics,Fall,3,65,190
@@ -2315,6 +2508,7 @@ Mathematics,Fall,9,65,232
 Mathematics,Fall,10,65,234
 Mathematics,Fall,11,65,237
 Mathematics,Fall,12,65,236
+Mathematics,Winter,K,65,155
 Mathematics,Winter,1,65,174
 Mathematics,Winter,2,65,187
 Mathematics,Winter,3,65,199
@@ -2327,6 +2521,7 @@ Mathematics,Winter,9,65,235
 Mathematics,Winter,10,65,237
 Mathematics,Winter,11,65,240
 Mathematics,Winter,12,65,238
+Mathematics,Spring,K,65,163
 Mathematics,Spring,1,65,181
 Mathematics,Spring,2,65,194
 Mathematics,Spring,3,65,206
@@ -2339,6 +2534,7 @@ Mathematics,Spring,9,65,237
 Mathematics,Spring,10,65,240
 Mathematics,Spring,11,65,242
 Mathematics,Spring,12,65,240
+Mathematics,Fall,K,66,146
 Mathematics,Fall,1,66,165
 Mathematics,Fall,2,66,179
 Mathematics,Fall,3,66,190
@@ -2351,6 +2547,7 @@ Mathematics,Fall,9,66,232
 Mathematics,Fall,10,66,234
 Mathematics,Fall,11,66,238
 Mathematics,Fall,12,66,237
+Mathematics,Winter,K,66,156
 Mathematics,Winter,1,66,174
 Mathematics,Winter,2,66,188
 Mathematics,Winter,3,66,199
@@ -2363,6 +2560,7 @@ Mathematics,Winter,9,66,235
 Mathematics,Winter,10,66,238
 Mathematics,Winter,11,66,240
 Mathematics,Winter,12,66,239
+Mathematics,Spring,K,66,163
 Mathematics,Spring,1,66,181
 Mathematics,Spring,2,66,194
 Mathematics,Spring,3,66,206
@@ -2375,6 +2573,7 @@ Mathematics,Spring,9,66,238
 Mathematics,Spring,10,66,241
 Mathematics,Spring,11,66,243
 Mathematics,Spring,12,66,241
+Mathematics,Fall,K,67,147
 Mathematics,Fall,1,67,165
 Mathematics,Fall,2,67,180
 Mathematics,Fall,3,67,191
@@ -2387,6 +2586,7 @@ Mathematics,Fall,9,67,233
 Mathematics,Fall,10,67,235
 Mathematics,Fall,11,67,238
 Mathematics,Fall,12,67,237
+Mathematics,Winter,K,67,156
 Mathematics,Winter,1,67,174
 Mathematics,Winter,2,67,188
 Mathematics,Winter,3,67,200
@@ -2399,6 +2599,7 @@ Mathematics,Winter,9,67,236
 Mathematics,Winter,10,67,238
 Mathematics,Winter,11,67,241
 Mathematics,Winter,12,67,239
+Mathematics,Spring,K,67,164
 Mathematics,Spring,1,67,181
 Mathematics,Spring,2,67,195
 Mathematics,Spring,3,67,207
@@ -2411,6 +2612,7 @@ Mathematics,Spring,9,67,238
 Mathematics,Spring,10,67,241
 Mathematics,Spring,11,67,243
 Mathematics,Spring,12,67,241
+Mathematics,Fall,K,68,147
 Mathematics,Fall,1,68,166
 Mathematics,Fall,2,68,180
 Mathematics,Fall,3,68,191
@@ -2423,6 +2625,7 @@ Mathematics,Fall,9,68,233
 Mathematics,Fall,10,68,235
 Mathematics,Fall,11,68,239
 Mathematics,Fall,12,68,238
+Mathematics,Winter,K,68,157
 Mathematics,Winter,1,68,175
 Mathematics,Winter,2,68,189
 Mathematics,Winter,3,68,200
@@ -2435,6 +2638,7 @@ Mathematics,Winter,9,68,236
 Mathematics,Winter,10,68,239
 Mathematics,Winter,11,68,242
 Mathematics,Winter,12,68,240
+Mathematics,Spring,K,68,164
 Mathematics,Spring,1,68,182
 Mathematics,Spring,2,68,195
 Mathematics,Spring,3,68,207
@@ -2447,6 +2651,7 @@ Mathematics,Spring,9,68,239
 Mathematics,Spring,10,68,242
 Mathematics,Spring,11,68,244
 Mathematics,Spring,12,68,242
+Mathematics,Fall,K,69,147
 Mathematics,Fall,1,69,166
 Mathematics,Fall,2,69,181
 Mathematics,Fall,3,69,192
@@ -2459,6 +2664,7 @@ Mathematics,Fall,9,69,234
 Mathematics,Fall,10,69,236
 Mathematics,Fall,11,69,239
 Mathematics,Fall,12,69,239
+Mathematics,Winter,K,69,157
 Mathematics,Winter,1,69,175
 Mathematics,Winter,2,69,189
 Mathematics,Winter,3,69,201
@@ -2471,6 +2677,7 @@ Mathematics,Winter,9,69,237
 Mathematics,Winter,10,69,239
 Mathematics,Winter,11,69,242
 Mathematics,Winter,12,69,241
+Mathematics,Spring,K,69,164
 Mathematics,Spring,1,69,182
 Mathematics,Spring,2,69,195
 Mathematics,Spring,3,69,208
@@ -2483,6 +2690,7 @@ Mathematics,Spring,9,69,239
 Mathematics,Spring,10,69,242
 Mathematics,Spring,11,69,244
 Mathematics,Spring,12,69,243
+Mathematics,Fall,K,70,148
 Mathematics,Fall,1,70,166
 Mathematics,Fall,2,70,181
 Mathematics,Fall,3,70,192
@@ -2495,6 +2703,7 @@ Mathematics,Fall,9,70,234
 Mathematics,Fall,10,70,237
 Mathematics,Fall,11,70,240
 Mathematics,Fall,12,70,239
+Mathematics,Winter,K,70,157
 Mathematics,Winter,1,70,176
 Mathematics,Winter,2,70,189
 Mathematics,Winter,3,70,201
@@ -2507,6 +2716,7 @@ Mathematics,Winter,9,70,237
 Mathematics,Winter,10,70,240
 Mathematics,Winter,11,70,243
 Mathematics,Winter,12,70,241
+Mathematics,Spring,K,70,165
 Mathematics,Spring,1,70,182
 Mathematics,Spring,2,70,196
 Mathematics,Spring,3,70,208
@@ -2519,6 +2729,7 @@ Mathematics,Spring,9,70,240
 Mathematics,Spring,10,70,243
 Mathematics,Spring,11,70,245
 Mathematics,Spring,12,70,243
+Mathematics,Fall,K,71,148
 Mathematics,Fall,1,71,167
 Mathematics,Fall,2,71,181
 Mathematics,Fall,3,71,193
@@ -2531,6 +2742,7 @@ Mathematics,Fall,9,71,235
 Mathematics,Fall,10,71,237
 Mathematics,Fall,11,71,241
 Mathematics,Fall,12,71,240
+Mathematics,Winter,K,71,158
 Mathematics,Winter,1,71,176
 Mathematics,Winter,2,71,190
 Mathematics,Winter,3,71,202
@@ -2543,6 +2755,7 @@ Mathematics,Winter,9,71,238
 Mathematics,Winter,10,71,241
 Mathematics,Winter,11,71,243
 Mathematics,Winter,12,71,242
+Mathematics,Spring,K,71,165
 Mathematics,Spring,1,71,183
 Mathematics,Spring,2,71,196
 Mathematics,Spring,3,71,209
@@ -2555,6 +2768,7 @@ Mathematics,Spring,9,71,240
 Mathematics,Spring,10,71,244
 Mathematics,Spring,11,71,246
 Mathematics,Spring,12,71,244
+Mathematics,Fall,K,72,148
 Mathematics,Fall,1,72,167
 Mathematics,Fall,2,72,182
 Mathematics,Fall,3,72,193
@@ -2567,6 +2781,7 @@ Mathematics,Fall,9,72,235
 Mathematics,Fall,10,72,238
 Mathematics,Fall,11,72,241
 Mathematics,Fall,12,72,240
+Mathematics,Winter,K,72,158
 Mathematics,Winter,1,72,176
 Mathematics,Winter,2,72,190
 Mathematics,Winter,3,72,202
@@ -2579,6 +2794,7 @@ Mathematics,Winter,9,72,238
 Mathematics,Winter,10,72,241
 Mathematics,Winter,11,72,244
 Mathematics,Winter,12,72,243
+Mathematics,Spring,K,72,165
 Mathematics,Spring,1,72,183
 Mathematics,Spring,2,72,197
 Mathematics,Spring,3,72,209
@@ -2591,6 +2807,7 @@ Mathematics,Spring,9,72,241
 Mathematics,Spring,10,72,244
 Mathematics,Spring,11,72,246
 Mathematics,Spring,12,72,245
+Mathematics,Fall,K,73,149
 Mathematics,Fall,1,73,168
 Mathematics,Fall,2,73,182
 Mathematics,Fall,3,73,194
@@ -2603,6 +2820,7 @@ Mathematics,Fall,9,73,236
 Mathematics,Fall,10,73,238
 Mathematics,Fall,11,73,242
 Mathematics,Fall,12,73,241
+Mathematics,Winter,K,73,158
 Mathematics,Winter,1,73,177
 Mathematics,Winter,2,73,191
 Mathematics,Winter,3,73,203
@@ -2615,6 +2833,7 @@ Mathematics,Winter,9,73,239
 Mathematics,Winter,10,73,242
 Mathematics,Winter,11,73,245
 Mathematics,Winter,12,73,243
+Mathematics,Spring,K,73,166
 Mathematics,Spring,1,73,184
 Mathematics,Spring,2,73,197
 Mathematics,Spring,3,73,210
@@ -2627,6 +2846,7 @@ Mathematics,Spring,9,73,242
 Mathematics,Spring,10,73,245
 Mathematics,Spring,11,73,247
 Mathematics,Spring,12,73,245
+Mathematics,Fall,K,74,149
 Mathematics,Fall,1,74,168
 Mathematics,Fall,2,74,183
 Mathematics,Fall,3,74,194
@@ -2639,6 +2859,7 @@ Mathematics,Fall,9,74,236
 Mathematics,Fall,10,74,239
 Mathematics,Fall,11,74,242
 Mathematics,Fall,12,74,242
+Mathematics,Winter,K,74,159
 Mathematics,Winter,1,74,177
 Mathematics,Winter,2,74,191
 Mathematics,Winter,3,74,203
@@ -2651,6 +2872,7 @@ Mathematics,Winter,9,74,239
 Mathematics,Winter,10,74,242
 Mathematics,Winter,11,74,245
 Mathematics,Winter,12,74,244
+Mathematics,Spring,K,74,166
 Mathematics,Spring,1,74,184
 Mathematics,Spring,2,74,198
 Mathematics,Spring,3,74,210
@@ -2663,6 +2885,7 @@ Mathematics,Spring,9,74,242
 Mathematics,Spring,10,74,246
 Mathematics,Spring,11,74,248
 Mathematics,Spring,12,74,246
+Mathematics,Fall,K,75,149
 Mathematics,Fall,1,75,168
 Mathematics,Fall,2,75,183
 Mathematics,Fall,3,75,195
@@ -2675,6 +2898,7 @@ Mathematics,Fall,9,75,237
 Mathematics,Fall,10,75,239
 Mathematics,Fall,11,75,243
 Mathematics,Fall,12,75,242
+Mathematics,Winter,K,75,159
 Mathematics,Winter,1,75,178
 Mathematics,Winter,2,75,192
 Mathematics,Winter,3,75,204
@@ -2687,6 +2911,7 @@ Mathematics,Winter,9,75,240
 Mathematics,Winter,10,75,243
 Mathematics,Winter,11,75,246
 Mathematics,Winter,12,75,245
+Mathematics,Spring,K,75,167
 Mathematics,Spring,1,75,185
 Mathematics,Spring,2,75,198
 Mathematics,Spring,3,75,211
@@ -2699,6 +2924,7 @@ Mathematics,Spring,9,75,243
 Mathematics,Spring,10,75,246
 Mathematics,Spring,11,75,249
 Mathematics,Spring,12,75,247
+Mathematics,Fall,K,76,150
 Mathematics,Fall,1,76,169
 Mathematics,Fall,2,76,184
 Mathematics,Fall,3,76,195
@@ -2711,6 +2937,7 @@ Mathematics,Fall,9,76,237
 Mathematics,Fall,10,76,240
 Mathematics,Fall,11,76,244
 Mathematics,Fall,12,76,243
+Mathematics,Winter,K,76,160
 Mathematics,Winter,1,76,178
 Mathematics,Winter,2,76,192
 Mathematics,Winter,3,76,204
@@ -2723,6 +2950,7 @@ Mathematics,Winter,9,76,241
 Mathematics,Winter,10,76,244
 Mathematics,Winter,11,76,247
 Mathematics,Winter,12,76,245
+Mathematics,Spring,K,76,167
 Mathematics,Spring,1,76,185
 Mathematics,Spring,2,76,199
 Mathematics,Spring,3,76,211
@@ -2735,6 +2963,7 @@ Mathematics,Spring,9,76,244
 Mathematics,Spring,10,76,247
 Mathematics,Spring,11,76,249
 Mathematics,Spring,12,76,248
+Mathematics,Fall,K,77,150
 Mathematics,Fall,1,77,169
 Mathematics,Fall,2,77,184
 Mathematics,Fall,3,77,196
@@ -2747,6 +2976,7 @@ Mathematics,Fall,9,77,238
 Mathematics,Fall,10,77,241
 Mathematics,Fall,11,77,244
 Mathematics,Fall,12,77,244
+Mathematics,Winter,K,77,160
 Mathematics,Winter,1,77,178
 Mathematics,Winter,2,77,193
 Mathematics,Winter,3,77,205
@@ -2759,6 +2989,7 @@ Mathematics,Winter,9,77,241
 Mathematics,Winter,10,77,244
 Mathematics,Winter,11,77,248
 Mathematics,Winter,12,77,246
+Mathematics,Spring,K,77,167
 Mathematics,Spring,1,77,186
 Mathematics,Spring,2,77,199
 Mathematics,Spring,3,77,212
@@ -2771,6 +3002,7 @@ Mathematics,Spring,9,77,244
 Mathematics,Spring,10,77,248
 Mathematics,Spring,11,77,250
 Mathematics,Spring,12,77,248
+Mathematics,Fall,K,78,151
 Mathematics,Fall,1,78,170
 Mathematics,Fall,2,78,185
 Mathematics,Fall,3,78,196
@@ -2783,6 +3015,7 @@ Mathematics,Fall,9,78,239
 Mathematics,Fall,10,78,241
 Mathematics,Fall,11,78,245
 Mathematics,Fall,12,78,244
+Mathematics,Winter,K,78,160
 Mathematics,Winter,1,78,179
 Mathematics,Winter,2,78,193
 Mathematics,Winter,3,78,205
@@ -2795,6 +3028,7 @@ Mathematics,Winter,9,78,242
 Mathematics,Winter,10,78,245
 Mathematics,Winter,11,78,248
 Mathematics,Winter,12,78,247
+Mathematics,Spring,K,78,168
 Mathematics,Spring,1,78,186
 Mathematics,Spring,2,78,200
 Mathematics,Spring,3,78,212
@@ -2807,6 +3041,7 @@ Mathematics,Spring,9,78,245
 Mathematics,Spring,10,78,249
 Mathematics,Spring,11,78,251
 Mathematics,Spring,12,78,249
+Mathematics,Fall,K,79,151
 Mathematics,Fall,1,79,170
 Mathematics,Fall,2,79,185
 Mathematics,Fall,3,79,197
@@ -2819,6 +3054,7 @@ Mathematics,Fall,9,79,239
 Mathematics,Fall,10,79,242
 Mathematics,Fall,11,79,246
 Mathematics,Fall,12,79,245
+Mathematics,Winter,K,79,161
 Mathematics,Winter,1,79,179
 Mathematics,Winter,2,79,194
 Mathematics,Winter,3,79,206
@@ -2831,6 +3067,7 @@ Mathematics,Winter,9,79,243
 Mathematics,Winter,10,79,246
 Mathematics,Winter,11,79,249
 Mathematics,Winter,12,79,247
+Mathematics,Spring,K,79,168
 Mathematics,Spring,1,79,187
 Mathematics,Spring,2,79,200
 Mathematics,Spring,3,79,213
@@ -2843,6 +3080,7 @@ Mathematics,Spring,9,79,246
 Mathematics,Spring,10,79,249
 Mathematics,Spring,11,79,252
 Mathematics,Spring,12,79,250
+Mathematics,Fall,K,80,152
 Mathematics,Fall,1,80,171
 Mathematics,Fall,2,80,186
 Mathematics,Fall,3,80,197
@@ -2855,6 +3093,7 @@ Mathematics,Fall,9,80,240
 Mathematics,Fall,10,80,242
 Mathematics,Fall,11,80,246
 Mathematics,Fall,12,80,246
+Mathematics,Winter,K,80,161
 Mathematics,Winter,1,80,180
 Mathematics,Winter,2,80,194
 Mathematics,Winter,3,80,206
@@ -2867,6 +3106,7 @@ Mathematics,Winter,9,80,243
 Mathematics,Winter,10,80,246
 Mathematics,Winter,11,80,250
 Mathematics,Winter,12,80,248
+Mathematics,Spring,K,80,169
 Mathematics,Spring,1,80,187
 Mathematics,Spring,2,80,201
 Mathematics,Spring,3,80,213
@@ -2879,6 +3119,7 @@ Mathematics,Spring,9,80,247
 Mathematics,Spring,10,80,250
 Mathematics,Spring,11,80,252
 Mathematics,Spring,12,80,251
+Mathematics,Fall,K,81,152
 Mathematics,Fall,1,81,171
 Mathematics,Fall,2,81,186
 Mathematics,Fall,3,81,198
@@ -2891,6 +3132,7 @@ Mathematics,Fall,9,81,240
 Mathematics,Fall,10,81,243
 Mathematics,Fall,11,81,247
 Mathematics,Fall,12,81,247
+Mathematics,Winter,K,81,162
 Mathematics,Winter,1,81,180
 Mathematics,Winter,2,81,195
 Mathematics,Winter,3,81,207
@@ -2903,6 +3145,7 @@ Mathematics,Winter,9,81,244
 Mathematics,Winter,10,81,247
 Mathematics,Winter,11,81,251
 Mathematics,Winter,12,81,249
+Mathematics,Spring,K,81,169
 Mathematics,Spring,1,81,188
 Mathematics,Spring,2,81,202
 Mathematics,Spring,3,81,214
@@ -2915,6 +3158,7 @@ Mathematics,Spring,9,81,247
 Mathematics,Spring,10,81,251
 Mathematics,Spring,11,81,253
 Mathematics,Spring,12,81,252
+Mathematics,Fall,K,82,152
 Mathematics,Fall,1,82,172
 Mathematics,Fall,2,82,187
 Mathematics,Fall,3,82,198
@@ -2927,6 +3171,7 @@ Mathematics,Fall,9,82,241
 Mathematics,Fall,10,82,244
 Mathematics,Fall,11,82,248
 Mathematics,Fall,12,82,247
+Mathematics,Winter,K,82,162
 Mathematics,Winter,1,82,181
 Mathematics,Winter,2,82,196
 Mathematics,Winter,3,82,208
@@ -2939,6 +3184,7 @@ Mathematics,Winter,9,82,245
 Mathematics,Winter,10,82,248
 Mathematics,Winter,11,82,251
 Mathematics,Winter,12,82,250
+Mathematics,Spring,K,82,170
 Mathematics,Spring,1,82,188
 Mathematics,Spring,2,82,202
 Mathematics,Spring,3,82,215
@@ -2951,6 +3197,7 @@ Mathematics,Spring,9,82,248
 Mathematics,Spring,10,82,252
 Mathematics,Spring,11,82,254
 Mathematics,Spring,12,82,252
+Mathematics,Fall,K,83,153
 Mathematics,Fall,1,83,172
 Mathematics,Fall,2,83,188
 Mathematics,Fall,3,83,199
@@ -2963,6 +3210,7 @@ Mathematics,Fall,9,83,242
 Mathematics,Fall,10,83,245
 Mathematics,Fall,11,83,249
 Mathematics,Fall,12,83,248
+Mathematics,Winter,K,83,163
 Mathematics,Winter,1,83,181
 Mathematics,Winter,2,83,196
 Mathematics,Winter,3,83,208
@@ -2975,6 +3223,7 @@ Mathematics,Winter,9,83,245
 Mathematics,Winter,10,83,249
 Mathematics,Winter,11,83,252
 Mathematics,Winter,12,83,251
+Mathematics,Spring,K,83,170
 Mathematics,Spring,1,83,189
 Mathematics,Spring,2,83,203
 Mathematics,Spring,3,83,215
@@ -2987,6 +3236,7 @@ Mathematics,Spring,9,83,249
 Mathematics,Spring,10,83,253
 Mathematics,Spring,11,83,255
 Mathematics,Spring,12,83,253
+Mathematics,Fall,K,84,153
 Mathematics,Fall,1,84,173
 Mathematics,Fall,2,84,188
 Mathematics,Fall,3,84,200
@@ -2999,6 +3249,7 @@ Mathematics,Fall,9,84,242
 Mathematics,Fall,10,84,245
 Mathematics,Fall,11,84,250
 Mathematics,Fall,12,84,249
+Mathematics,Winter,K,84,163
 Mathematics,Winter,1,84,182
 Mathematics,Winter,2,84,197
 Mathematics,Winter,3,84,209
@@ -3011,6 +3262,7 @@ Mathematics,Winter,9,84,246
 Mathematics,Winter,10,84,249
 Mathematics,Winter,11,84,253
 Mathematics,Winter,12,84,252
+Mathematics,Spring,K,84,171
 Mathematics,Spring,1,84,189
 Mathematics,Spring,2,84,203
 Mathematics,Spring,3,84,216
@@ -3023,6 +3275,7 @@ Mathematics,Spring,9,84,250
 Mathematics,Spring,10,84,253
 Mathematics,Spring,11,84,256
 Mathematics,Spring,12,84,254
+Mathematics,Fall,K,85,154
 Mathematics,Fall,1,85,173
 Mathematics,Fall,2,85,189
 Mathematics,Fall,3,85,200
@@ -3035,6 +3288,7 @@ Mathematics,Fall,9,85,243
 Mathematics,Fall,10,85,246
 Mathematics,Fall,11,85,250
 Mathematics,Fall,12,85,250
+Mathematics,Winter,K,85,164
 Mathematics,Winter,1,85,183
 Mathematics,Winter,2,85,197
 Mathematics,Winter,3,85,210
@@ -3047,6 +3301,7 @@ Mathematics,Winter,9,85,247
 Mathematics,Winter,10,85,250
 Mathematics,Winter,11,85,254
 Mathematics,Winter,12,85,252
+Mathematics,Spring,K,85,171
 Mathematics,Spring,1,85,190
 Mathematics,Spring,2,85,204
 Mathematics,Spring,3,85,217
@@ -3059,6 +3314,7 @@ Mathematics,Spring,9,85,251
 Mathematics,Spring,10,85,254
 Mathematics,Spring,11,85,257
 Mathematics,Spring,12,85,255
+Mathematics,Fall,K,86,154
 Mathematics,Fall,1,86,174
 Mathematics,Fall,2,86,190
 Mathematics,Fall,3,86,201
@@ -3071,6 +3327,7 @@ Mathematics,Fall,9,86,244
 Mathematics,Fall,10,86,247
 Mathematics,Fall,11,86,251
 Mathematics,Fall,12,86,251
+Mathematics,Winter,K,86,164
 Mathematics,Winter,1,86,183
 Mathematics,Winter,2,86,198
 Mathematics,Winter,3,86,210
@@ -3083,6 +3340,7 @@ Mathematics,Winter,9,86,248
 Mathematics,Winter,10,86,251
 Mathematics,Winter,11,86,255
 Mathematics,Winter,12,86,253
+Mathematics,Spring,K,86,172
 Mathematics,Spring,1,86,190
 Mathematics,Spring,2,86,205
 Mathematics,Spring,3,86,217
@@ -3095,6 +3353,7 @@ Mathematics,Spring,9,86,252
 Mathematics,Spring,10,86,255
 Mathematics,Spring,11,86,258
 Mathematics,Spring,12,86,256
+Mathematics,Fall,K,87,155
 Mathematics,Fall,1,87,174
 Mathematics,Fall,2,87,190
 Mathematics,Fall,3,87,202
@@ -3107,6 +3366,7 @@ Mathematics,Fall,9,87,245
 Mathematics,Fall,10,87,248
 Mathematics,Fall,11,87,252
 Mathematics,Fall,12,87,252
+Mathematics,Winter,K,87,165
 Mathematics,Winter,1,87,184
 Mathematics,Winter,2,87,199
 Mathematics,Winter,3,87,211
@@ -3119,6 +3379,7 @@ Mathematics,Winter,9,87,249
 Mathematics,Winter,10,87,252
 Mathematics,Winter,11,87,256
 Mathematics,Winter,12,87,254
+Mathematics,Spring,K,87,172
 Mathematics,Spring,1,87,191
 Mathematics,Spring,2,87,206
 Mathematics,Spring,3,87,218
@@ -3131,6 +3392,7 @@ Mathematics,Spring,9,87,253
 Mathematics,Spring,10,87,256
 Mathematics,Spring,11,87,259
 Mathematics,Spring,12,87,257
+Mathematics,Fall,K,88,156
 Mathematics,Fall,1,88,175
 Mathematics,Fall,2,88,191
 Mathematics,Fall,3,88,202
@@ -3143,6 +3405,7 @@ Mathematics,Fall,9,88,246
 Mathematics,Fall,10,88,249
 Mathematics,Fall,11,88,253
 Mathematics,Fall,12,88,253
+Mathematics,Winter,K,88,165
 Mathematics,Winter,1,88,185
 Mathematics,Winter,2,88,200
 Mathematics,Winter,3,88,212
@@ -3155,6 +3418,7 @@ Mathematics,Winter,9,88,250
 Mathematics,Winter,10,88,253
 Mathematics,Winter,11,88,257
 Mathematics,Winter,12,88,255
+Mathematics,Spring,K,88,173
 Mathematics,Spring,1,88,192
 Mathematics,Spring,2,88,206
 Mathematics,Spring,3,88,219
@@ -3167,6 +3431,7 @@ Mathematics,Spring,9,88,254
 Mathematics,Spring,10,88,257
 Mathematics,Spring,11,88,260
 Mathematics,Spring,12,88,258
+Mathematics,Fall,K,89,156
 Mathematics,Fall,1,89,176
 Mathematics,Fall,2,89,192
 Mathematics,Fall,3,89,203
@@ -3179,6 +3444,7 @@ Mathematics,Fall,9,89,247
 Mathematics,Fall,10,89,250
 Mathematics,Fall,11,89,254
 Mathematics,Fall,12,89,254
+Mathematics,Winter,K,89,166
 Mathematics,Winter,1,89,185
 Mathematics,Winter,2,89,200
 Mathematics,Winter,3,89,213
@@ -3191,6 +3457,7 @@ Mathematics,Winter,9,89,251
 Mathematics,Winter,10,89,254
 Mathematics,Winter,11,89,258
 Mathematics,Winter,12,89,257
+Mathematics,Spring,K,89,174
 Mathematics,Spring,1,89,193
 Mathematics,Spring,2,89,207
 Mathematics,Spring,3,89,220
@@ -3203,6 +3470,7 @@ Mathematics,Spring,9,89,255
 Mathematics,Spring,10,89,259
 Mathematics,Spring,11,89,261
 Mathematics,Spring,12,89,260
+Mathematics,Fall,K,90,157
 Mathematics,Fall,1,90,176
 Mathematics,Fall,2,90,193
 Mathematics,Fall,3,90,204
@@ -3215,6 +3483,7 @@ Mathematics,Fall,9,90,248
 Mathematics,Fall,10,90,251
 Mathematics,Fall,11,90,255
 Mathematics,Fall,12,90,255
+Mathematics,Winter,K,90,167
 Mathematics,Winter,1,90,186
 Mathematics,Winter,2,90,201
 Mathematics,Winter,3,90,214
@@ -3227,6 +3496,7 @@ Mathematics,Winter,9,90,252
 Mathematics,Winter,10,90,255
 Mathematics,Winter,11,90,259
 Mathematics,Winter,12,90,258
+Mathematics,Spring,K,90,174
 Mathematics,Spring,1,90,193
 Mathematics,Spring,2,90,208
 Mathematics,Spring,3,90,221
@@ -3239,6 +3509,7 @@ Mathematics,Spring,9,90,256
 Mathematics,Spring,10,90,260
 Mathematics,Spring,11,90,263
 Mathematics,Spring,12,90,261
+Mathematics,Fall,K,91,158
 Mathematics,Fall,1,91,177
 Mathematics,Fall,2,91,194
 Mathematics,Fall,3,91,205
@@ -3251,6 +3522,7 @@ Mathematics,Fall,9,91,249
 Mathematics,Fall,10,91,252
 Mathematics,Fall,11,91,257
 Mathematics,Fall,12,91,256
+Mathematics,Winter,K,91,168
 Mathematics,Winter,1,91,187
 Mathematics,Winter,2,91,202
 Mathematics,Winter,3,91,215
@@ -3263,6 +3535,7 @@ Mathematics,Winter,9,91,253
 Mathematics,Winter,10,91,256
 Mathematics,Winter,11,91,261
 Mathematics,Winter,12,91,259
+Mathematics,Spring,K,91,175
 Mathematics,Spring,1,91,194
 Mathematics,Spring,2,91,209
 Mathematics,Spring,3,91,222
@@ -3275,6 +3548,7 @@ Mathematics,Spring,9,91,257
 Mathematics,Spring,10,91,261
 Mathematics,Spring,11,91,264
 Mathematics,Spring,12,91,262
+Mathematics,Fall,K,92,158
 Mathematics,Fall,1,92,178
 Mathematics,Fall,2,92,195
 Mathematics,Fall,3,92,206
@@ -3287,6 +3561,7 @@ Mathematics,Fall,9,92,250
 Mathematics,Fall,10,92,253
 Mathematics,Fall,11,92,258
 Mathematics,Fall,12,92,258
+Mathematics,Winter,K,92,168
 Mathematics,Winter,1,92,188
 Mathematics,Winter,2,92,203
 Mathematics,Winter,3,92,216
@@ -3299,6 +3574,7 @@ Mathematics,Winter,9,92,254
 Mathematics,Winter,10,92,258
 Mathematics,Winter,11,92,262
 Mathematics,Winter,12,92,260
+Mathematics,Spring,K,92,176
 Mathematics,Spring,1,92,195
 Mathematics,Spring,2,92,210
 Mathematics,Spring,3,92,223
@@ -3311,6 +3587,7 @@ Mathematics,Spring,9,92,258
 Mathematics,Spring,10,92,263
 Mathematics,Spring,11,92,266
 Mathematics,Spring,12,92,264
+Mathematics,Fall,K,93,159
 Mathematics,Fall,1,93,179
 Mathematics,Fall,2,93,196
 Mathematics,Fall,3,93,207
@@ -3323,6 +3600,7 @@ Mathematics,Fall,9,93,251
 Mathematics,Fall,10,93,254
 Mathematics,Fall,11,93,259
 Mathematics,Fall,12,93,259
+Mathematics,Winter,K,93,169
 Mathematics,Winter,1,93,189
 Mathematics,Winter,2,93,204
 Mathematics,Winter,3,93,217
@@ -3335,6 +3613,7 @@ Mathematics,Winter,9,93,255
 Mathematics,Winter,10,93,259
 Mathematics,Winter,11,93,264
 Mathematics,Winter,12,93,262
+Mathematics,Spring,K,93,177
 Mathematics,Spring,1,93,196
 Mathematics,Spring,2,93,211
 Mathematics,Spring,3,93,224
@@ -3347,6 +3626,7 @@ Mathematics,Spring,9,93,260
 Mathematics,Spring,10,93,264
 Mathematics,Spring,11,93,267
 Mathematics,Spring,12,93,265
+Mathematics,Fall,K,94,160
 Mathematics,Fall,1,94,180
 Mathematics,Fall,2,94,197
 Mathematics,Fall,3,94,208
@@ -3359,6 +3639,7 @@ Mathematics,Fall,9,94,252
 Mathematics,Fall,10,94,256
 Mathematics,Fall,11,94,261
 Mathematics,Fall,12,94,261
+Mathematics,Winter,K,94,170
 Mathematics,Winter,1,94,190
 Mathematics,Winter,2,94,206
 Mathematics,Winter,3,94,218
@@ -3371,6 +3652,7 @@ Mathematics,Winter,9,94,257
 Mathematics,Winter,10,94,261
 Mathematics,Winter,11,94,265
 Mathematics,Winter,12,94,264
+Mathematics,Spring,K,94,178
 Mathematics,Spring,1,94,197
 Mathematics,Spring,2,94,212
 Mathematics,Spring,3,94,226
@@ -3383,6 +3665,7 @@ Mathematics,Spring,9,94,262
 Mathematics,Spring,10,94,266
 Mathematics,Spring,11,94,269
 Mathematics,Spring,12,94,267
+Mathematics,Fall,K,95,161
 Mathematics,Fall,1,95,181
 Mathematics,Fall,2,95,198
 Mathematics,Fall,3,95,210
@@ -3395,6 +3678,7 @@ Mathematics,Fall,9,95,254
 Mathematics,Fall,10,95,257
 Mathematics,Fall,11,95,263
 Mathematics,Fall,12,95,263
+Mathematics,Winter,K,95,171
 Mathematics,Winter,1,95,191
 Mathematics,Winter,2,95,207
 Mathematics,Winter,3,95,220
@@ -3407,6 +3691,7 @@ Mathematics,Winter,9,95,259
 Mathematics,Winter,10,95,263
 Mathematics,Winter,11,95,267
 Mathematics,Winter,12,95,266
+Mathematics,Spring,K,95,179
 Mathematics,Spring,1,95,199
 Mathematics,Spring,2,95,214
 Mathematics,Spring,3,95,227
@@ -3419,6 +3704,7 @@ Mathematics,Spring,9,95,263
 Mathematics,Spring,10,95,268
 Mathematics,Spring,11,95,271
 Mathematics,Spring,12,95,269
+Mathematics,Fall,K,96,163
 Mathematics,Fall,1,96,183
 Mathematics,Fall,2,96,200
 Mathematics,Fall,3,96,211
@@ -3431,6 +3717,7 @@ Mathematics,Fall,9,96,256
 Mathematics,Fall,10,96,259
 Mathematics,Fall,11,96,265
 Mathematics,Fall,12,96,265
+Mathematics,Winter,K,96,173
 Mathematics,Winter,1,96,192
 Mathematics,Winter,2,96,209
 Mathematics,Winter,3,96,221
@@ -3443,6 +3730,7 @@ Mathematics,Winter,9,96,261
 Mathematics,Winter,10,96,265
 Mathematics,Winter,11,96,270
 Mathematics,Winter,12,96,268
+Mathematics,Spring,K,96,181
 Mathematics,Spring,1,96,200
 Mathematics,Spring,2,96,216
 Mathematics,Spring,3,96,229
@@ -3455,6 +3743,7 @@ Mathematics,Spring,9,96,266
 Mathematics,Spring,10,96,270
 Mathematics,Spring,11,96,274
 Mathematics,Spring,12,96,272
+Mathematics,Fall,K,97,164
 Mathematics,Fall,1,97,184
 Mathematics,Fall,2,97,202
 Mathematics,Fall,3,97,213
@@ -3467,6 +3756,7 @@ Mathematics,Fall,9,97,258
 Mathematics,Fall,10,97,262
 Mathematics,Fall,11,97,268
 Mathematics,Fall,12,97,268
+Mathematics,Winter,K,97,174
 Mathematics,Winter,1,97,194
 Mathematics,Winter,2,97,211
 Mathematics,Winter,3,97,223
@@ -3479,6 +3769,7 @@ Mathematics,Winter,9,97,263
 Mathematics,Winter,10,97,267
 Mathematics,Winter,11,97,272
 Mathematics,Winter,12,97,271
+Mathematics,Spring,K,97,182
 Mathematics,Spring,1,97,202
 Mathematics,Spring,2,97,218
 Mathematics,Spring,3,97,231
@@ -3491,6 +3782,7 @@ Mathematics,Spring,9,97,268
 Mathematics,Spring,10,97,273
 Mathematics,Spring,11,97,277
 Mathematics,Spring,12,97,275
+Mathematics,Fall,K,98,166
 Mathematics,Fall,1,98,187
 Mathematics,Fall,2,98,205
 Mathematics,Fall,3,98,216
@@ -3503,6 +3795,7 @@ Mathematics,Fall,9,98,261
 Mathematics,Fall,10,98,265
 Mathematics,Fall,11,98,271
 Mathematics,Fall,12,98,271
+Mathematics,Winter,K,98,176
 Mathematics,Winter,1,98,197
 Mathematics,Winter,2,98,213
 Mathematics,Winter,3,98,226
@@ -3515,6 +3808,7 @@ Mathematics,Winter,9,98,267
 Mathematics,Winter,10,98,271
 Mathematics,Winter,11,98,276
 Mathematics,Winter,12,98,275
+Mathematics,Spring,K,98,185
 Mathematics,Spring,1,98,204
 Mathematics,Spring,2,98,220
 Mathematics,Spring,3,98,234
@@ -3527,6 +3821,7 @@ Mathematics,Spring,9,98,272
 Mathematics,Spring,10,98,277
 Mathematics,Spring,11,98,281
 Mathematics,Spring,12,98,279
+Mathematics,Fall,K,99,170
 Mathematics,Fall,1,99,190
 Mathematics,Fall,2,99,209
 Mathematics,Fall,3,99,220
@@ -3539,6 +3834,7 @@ Mathematics,Fall,9,99,266
 Mathematics,Fall,10,99,270
 Mathematics,Fall,11,99,277
 Mathematics,Fall,12,99,277
+Mathematics,Winter,K,99,180
 Mathematics,Winter,1,99,200
 Mathematics,Winter,2,99,218
 Mathematics,Winter,3,99,231
@@ -3551,6 +3847,7 @@ Mathematics,Winter,9,99,272
 Mathematics,Winter,10,99,276
 Mathematics,Winter,11,99,282
 Mathematics,Winter,12,99,281
+Mathematics,Spring,K,99,188
 Mathematics,Spring,1,99,208
 Mathematics,Spring,2,99,225
 Mathematics,Spring,3,99,239
@@ -3563,6 +3860,7 @@ Mathematics,Spring,9,99,278
 Mathematics,Spring,10,99,283
 Mathematics,Spring,11,99,287
 Mathematics,Spring,12,99,285
+Reading,Fall,K,1,116
 Reading,Fall,1,1,125
 Reading,Fall,2,1,130
 Reading,Fall,3,1,142
@@ -3575,6 +3873,7 @@ Reading,Fall,9,1,174
 Reading,Fall,10,1,176
 Reading,Fall,11,1,176
 Reading,Fall,12,1,174
+Reading,Winter,K,1,120
 Reading,Winter,1,1,130
 Reading,Winter,2,1,137
 Reading,Winter,3,1,148
@@ -3587,6 +3886,7 @@ Reading,Winter,9,1,175
 Reading,Winter,10,1,176
 Reading,Winter,11,1,175
 Reading,Winter,12,1,173
+Reading,Spring,K,1,122
 Reading,Spring,1,1,132
 Reading,Spring,2,1,141
 Reading,Spring,3,1,152
@@ -3599,6 +3899,7 @@ Reading,Spring,9,1,175
 Reading,Spring,10,1,176
 Reading,Spring,11,1,174
 Reading,Spring,12,1,171
+Reading,Fall,K,2,119
 Reading,Fall,1,2,129
 Reading,Fall,2,2,135
 Reading,Fall,3,2,147
@@ -3611,6 +3912,7 @@ Reading,Fall,9,2,179
 Reading,Fall,10,2,181
 Reading,Fall,11,2,181
 Reading,Fall,12,2,179
+Reading,Winter,K,2,123
 Reading,Winter,1,2,134
 Reading,Winter,2,2,141
 Reading,Winter,3,2,153
@@ -3623,6 +3925,7 @@ Reading,Winter,9,2,180
 Reading,Winter,10,2,181
 Reading,Winter,11,2,180
 Reading,Winter,12,2,178
+Reading,Spring,K,2,126
 Reading,Spring,1,2,136
 Reading,Spring,2,2,146
 Reading,Spring,3,2,157
@@ -3635,6 +3938,7 @@ Reading,Spring,9,2,180
 Reading,Spring,10,2,181
 Reading,Spring,11,2,179
 Reading,Spring,12,2,176
+Reading,Fall,K,3,120
 Reading,Fall,1,3,131
 Reading,Fall,2,3,138
 Reading,Fall,3,3,150
@@ -3647,6 +3951,7 @@ Reading,Fall,9,3,182
 Reading,Fall,10,3,184
 Reading,Fall,11,3,184
 Reading,Fall,12,3,182
+Reading,Winter,K,3,125
 Reading,Winter,1,3,136
 Reading,Winter,2,3,144
 Reading,Winter,3,3,156
@@ -3659,6 +3964,7 @@ Reading,Winter,9,3,183
 Reading,Winter,10,3,184
 Reading,Winter,11,3,183
 Reading,Winter,12,3,181
+Reading,Spring,K,3,128
 Reading,Spring,1,3,139
 Reading,Spring,2,3,149
 Reading,Spring,3,3,160
@@ -3671,6 +3977,7 @@ Reading,Spring,9,3,183
 Reading,Spring,10,3,184
 Reading,Spring,11,3,182
 Reading,Spring,12,3,180
+Reading,Fall,K,4,122
 Reading,Fall,1,4,133
 Reading,Fall,2,4,140
 Reading,Fall,3,4,153
@@ -3683,6 +3990,7 @@ Reading,Fall,9,4,185
 Reading,Fall,10,4,186
 Reading,Fall,11,4,186
 Reading,Fall,12,4,185
+Reading,Winter,K,4,127
 Reading,Winter,1,4,138
 Reading,Winter,2,4,147
 Reading,Winter,3,4,158
@@ -3695,6 +4003,7 @@ Reading,Winter,9,4,185
 Reading,Winter,10,4,187
 Reading,Winter,11,4,186
 Reading,Winter,12,4,184
+Reading,Spring,K,4,130
 Reading,Spring,1,4,141
 Reading,Spring,2,4,151
 Reading,Spring,3,4,162
@@ -3707,6 +4016,7 @@ Reading,Spring,9,4,185
 Reading,Spring,10,4,186
 Reading,Spring,11,4,185
 Reading,Spring,12,4,182
+Reading,Fall,K,5,123
 Reading,Fall,1,5,134
 Reading,Fall,2,5,142
 Reading,Fall,3,5,155
@@ -3719,6 +4029,7 @@ Reading,Fall,9,5,186
 Reading,Fall,10,5,188
 Reading,Fall,11,5,188
 Reading,Fall,12,5,187
+Reading,Winter,K,5,128
 Reading,Winter,1,5,139
 Reading,Winter,2,5,149
 Reading,Winter,3,5,160
@@ -3731,6 +4042,7 @@ Reading,Winter,9,5,187
 Reading,Winter,10,5,188
 Reading,Winter,11,5,188
 Reading,Winter,12,5,186
+Reading,Spring,K,5,131
 Reading,Spring,1,5,142
 Reading,Spring,2,5,153
 Reading,Spring,3,5,164
@@ -3743,6 +4055,7 @@ Reading,Spring,9,5,187
 Reading,Spring,10,5,188
 Reading,Spring,11,5,187
 Reading,Spring,12,5,184
+Reading,Fall,K,6,124
 Reading,Fall,1,6,135
 Reading,Fall,2,6,143
 Reading,Fall,3,6,156
@@ -3755,6 +4068,7 @@ Reading,Fall,9,6,188
 Reading,Fall,10,6,190
 Reading,Fall,11,6,190
 Reading,Fall,12,6,188
+Reading,Winter,K,6,129
 Reading,Winter,1,6,141
 Reading,Winter,2,6,150
 Reading,Winter,3,6,162
@@ -3767,6 +4081,7 @@ Reading,Winter,9,6,189
 Reading,Winter,10,6,190
 Reading,Winter,11,6,189
 Reading,Winter,12,6,187
+Reading,Spring,K,6,132
 Reading,Spring,1,6,144
 Reading,Spring,2,6,155
 Reading,Spring,3,6,166
@@ -3779,6 +4094,7 @@ Reading,Spring,9,6,189
 Reading,Spring,10,6,190
 Reading,Spring,11,6,189
 Reading,Spring,12,6,186
+Reading,Fall,K,7,124
 Reading,Fall,1,7,136
 Reading,Fall,2,7,145
 Reading,Fall,3,7,158
@@ -3791,6 +4107,7 @@ Reading,Fall,9,7,189
 Reading,Fall,10,7,191
 Reading,Fall,11,7,191
 Reading,Fall,12,7,190
+Reading,Winter,K,7,130
 Reading,Winter,1,7,142
 Reading,Winter,2,7,151
 Reading,Winter,3,7,163
@@ -3803,6 +4120,7 @@ Reading,Winter,9,7,190
 Reading,Winter,10,7,192
 Reading,Winter,11,7,191
 Reading,Winter,12,7,189
+Reading,Spring,K,7,133
 Reading,Spring,1,7,145
 Reading,Spring,2,7,156
 Reading,Spring,3,7,167
@@ -3815,6 +4133,7 @@ Reading,Spring,9,7,190
 Reading,Spring,10,7,192
 Reading,Spring,11,7,190
 Reading,Spring,12,7,187
+Reading,Fall,K,8,125
 Reading,Fall,1,8,137
 Reading,Fall,2,8,146
 Reading,Fall,3,8,159
@@ -3827,6 +4146,7 @@ Reading,Fall,9,8,191
 Reading,Fall,10,8,192
 Reading,Fall,11,8,193
 Reading,Fall,12,8,191
+Reading,Winter,K,8,131
 Reading,Winter,1,8,143
 Reading,Winter,2,8,153
 Reading,Winter,3,8,164
@@ -3839,6 +4159,7 @@ Reading,Winter,9,8,191
 Reading,Winter,10,8,193
 Reading,Winter,11,8,192
 Reading,Winter,12,8,190
+Reading,Spring,K,8,134
 Reading,Spring,1,8,146
 Reading,Spring,2,8,157
 Reading,Spring,3,8,168
@@ -3851,6 +4172,7 @@ Reading,Spring,9,8,191
 Reading,Spring,10,8,193
 Reading,Spring,11,8,191
 Reading,Spring,12,8,189
+Reading,Fall,K,9,126
 Reading,Fall,1,9,138
 Reading,Fall,2,9,147
 Reading,Fall,3,9,160
@@ -3863,6 +4185,7 @@ Reading,Fall,9,9,192
 Reading,Fall,10,9,194
 Reading,Fall,11,9,194
 Reading,Fall,12,9,192
+Reading,Winter,K,9,131
 Reading,Winter,1,9,144
 Reading,Winter,2,9,154
 Reading,Winter,3,9,166
@@ -3875,6 +4198,7 @@ Reading,Winter,9,9,192
 Reading,Winter,10,9,194
 Reading,Winter,11,9,193
 Reading,Winter,12,9,191
+Reading,Spring,K,9,135
 Reading,Spring,1,9,147
 Reading,Spring,2,9,158
 Reading,Spring,3,9,169
@@ -3887,6 +4211,7 @@ Reading,Spring,9,9,193
 Reading,Spring,10,9,194
 Reading,Spring,11,9,193
 Reading,Spring,12,9,190
+Reading,Fall,K,10,126
 Reading,Fall,1,10,139
 Reading,Fall,2,10,148
 Reading,Fall,3,10,161
@@ -3899,6 +4224,7 @@ Reading,Fall,9,10,193
 Reading,Fall,10,10,195
 Reading,Fall,11,10,195
 Reading,Fall,12,10,193
+Reading,Winter,K,10,132
 Reading,Winter,1,10,145
 Reading,Winter,2,10,155
 Reading,Winter,3,10,167
@@ -3911,6 +4237,7 @@ Reading,Winter,9,10,194
 Reading,Winter,10,10,195
 Reading,Winter,11,10,194
 Reading,Winter,12,10,192
+Reading,Spring,K,10,136
 Reading,Spring,1,10,148
 Reading,Spring,2,10,159
 Reading,Spring,3,10,171
@@ -3923,6 +4250,7 @@ Reading,Spring,9,10,194
 Reading,Spring,10,10,195
 Reading,Spring,11,10,194
 Reading,Spring,12,10,191
+Reading,Fall,K,11,127
 Reading,Fall,1,11,140
 Reading,Fall,2,11,149
 Reading,Fall,3,11,162
@@ -3935,6 +4263,7 @@ Reading,Fall,9,11,194
 Reading,Fall,10,11,196
 Reading,Fall,11,11,196
 Reading,Fall,12,11,194
+Reading,Winter,K,11,133
 Reading,Winter,1,11,145
 Reading,Winter,2,11,156
 Reading,Winter,3,11,168
@@ -3947,6 +4276,7 @@ Reading,Winter,9,11,195
 Reading,Winter,10,11,196
 Reading,Winter,11,11,195
 Reading,Winter,12,11,194
+Reading,Spring,K,11,136
 Reading,Spring,1,11,149
 Reading,Spring,2,11,160
 Reading,Spring,3,11,172
@@ -3959,6 +4289,7 @@ Reading,Spring,9,11,195
 Reading,Spring,10,11,196
 Reading,Spring,11,11,195
 Reading,Spring,12,11,192
+Reading,Fall,K,12,127
 Reading,Fall,1,12,140
 Reading,Fall,2,12,150
 Reading,Fall,3,12,163
@@ -3971,6 +4302,7 @@ Reading,Fall,9,12,195
 Reading,Fall,10,12,197
 Reading,Fall,11,12,197
 Reading,Fall,12,12,195
+Reading,Winter,K,12,133
 Reading,Winter,1,12,146
 Reading,Winter,2,12,157
 Reading,Winter,3,12,169
@@ -3983,6 +4315,7 @@ Reading,Winter,9,12,195
 Reading,Winter,10,12,197
 Reading,Winter,11,12,196
 Reading,Winter,12,12,195
+Reading,Spring,K,12,137
 Reading,Spring,1,12,150
 Reading,Spring,2,12,161
 Reading,Spring,3,12,172
@@ -3995,6 +4328,7 @@ Reading,Spring,9,12,196
 Reading,Spring,10,12,197
 Reading,Spring,11,12,196
 Reading,Spring,12,12,193
+Reading,Fall,K,13,128
 Reading,Fall,1,13,141
 Reading,Fall,2,13,151
 Reading,Fall,3,13,164
@@ -4007,6 +4341,7 @@ Reading,Fall,9,13,196
 Reading,Fall,10,13,198
 Reading,Fall,11,13,198
 Reading,Fall,12,13,196
+Reading,Winter,K,13,134
 Reading,Winter,1,13,147
 Reading,Winter,2,13,157
 Reading,Winter,3,13,169
@@ -4019,6 +4354,7 @@ Reading,Winter,9,13,196
 Reading,Winter,10,13,198
 Reading,Winter,11,13,197
 Reading,Winter,12,13,195
+Reading,Spring,K,13,138
 Reading,Spring,1,13,150
 Reading,Spring,2,13,162
 Reading,Spring,3,13,173
@@ -4031,6 +4367,7 @@ Reading,Spring,9,13,197
 Reading,Spring,10,13,198
 Reading,Spring,11,13,197
 Reading,Spring,12,13,194
+Reading,Fall,K,14,128
 Reading,Fall,1,14,141
 Reading,Fall,2,14,152
 Reading,Fall,3,14,165
@@ -4043,6 +4380,7 @@ Reading,Fall,9,14,197
 Reading,Fall,10,14,198
 Reading,Fall,11,14,199
 Reading,Fall,12,14,197
+Reading,Winter,K,14,134
 Reading,Winter,1,14,147
 Reading,Winter,2,14,158
 Reading,Winter,3,14,170
@@ -4055,6 +4393,7 @@ Reading,Winter,9,14,197
 Reading,Winter,10,14,199
 Reading,Winter,11,14,198
 Reading,Winter,12,14,196
+Reading,Spring,K,14,138
 Reading,Spring,1,14,151
 Reading,Spring,2,14,163
 Reading,Spring,3,14,174
@@ -4067,6 +4406,7 @@ Reading,Spring,9,14,197
 Reading,Spring,10,14,199
 Reading,Spring,11,14,198
 Reading,Spring,12,14,195
+Reading,Fall,K,15,128
 Reading,Fall,1,15,142
 Reading,Fall,2,15,152
 Reading,Fall,3,15,166
@@ -4079,6 +4419,7 @@ Reading,Fall,9,15,197
 Reading,Fall,10,15,199
 Reading,Fall,11,15,199
 Reading,Fall,12,15,198
+Reading,Winter,K,15,135
 Reading,Winter,1,15,148
 Reading,Winter,2,15,159
 Reading,Winter,3,15,171
@@ -4091,6 +4432,7 @@ Reading,Winter,9,15,198
 Reading,Winter,10,15,199
 Reading,Winter,11,15,199
 Reading,Winter,12,15,197
+Reading,Spring,K,15,139
 Reading,Spring,1,15,152
 Reading,Spring,2,15,164
 Reading,Spring,3,15,175
@@ -4103,6 +4445,7 @@ Reading,Spring,9,15,198
 Reading,Spring,10,15,200
 Reading,Spring,11,15,198
 Reading,Spring,12,15,196
+Reading,Fall,K,16,129
 Reading,Fall,1,16,143
 Reading,Fall,2,16,153
 Reading,Fall,3,16,166
@@ -4115,6 +4458,7 @@ Reading,Fall,9,16,198
 Reading,Fall,10,16,200
 Reading,Fall,11,16,200
 Reading,Fall,12,16,199
+Reading,Winter,K,16,135
 Reading,Winter,1,16,149
 Reading,Winter,2,16,160
 Reading,Winter,3,16,172
@@ -4127,6 +4471,7 @@ Reading,Winter,9,16,199
 Reading,Winter,10,16,200
 Reading,Winter,11,16,200
 Reading,Winter,12,16,198
+Reading,Spring,K,16,139
 Reading,Spring,1,16,152
 Reading,Spring,2,16,164
 Reading,Spring,3,16,176
@@ -4139,6 +4484,7 @@ Reading,Spring,9,16,199
 Reading,Spring,10,16,200
 Reading,Spring,11,16,199
 Reading,Spring,12,16,197
+Reading,Fall,K,17,129
 Reading,Fall,1,17,143
 Reading,Fall,2,17,154
 Reading,Fall,3,17,167
@@ -4151,6 +4497,7 @@ Reading,Fall,9,17,199
 Reading,Fall,10,17,201
 Reading,Fall,11,17,201
 Reading,Fall,12,17,200
+Reading,Winter,K,17,136
 Reading,Winter,1,17,149
 Reading,Winter,2,17,160
 Reading,Winter,3,17,173
@@ -4163,6 +4510,7 @@ Reading,Winter,9,17,199
 Reading,Winter,10,17,201
 Reading,Winter,11,17,200
 Reading,Winter,12,17,199
+Reading,Spring,K,17,140
 Reading,Spring,1,17,153
 Reading,Spring,2,17,165
 Reading,Spring,3,17,176
@@ -4175,6 +4523,7 @@ Reading,Spring,9,17,200
 Reading,Spring,10,17,201
 Reading,Spring,11,17,200
 Reading,Spring,12,17,198
+Reading,Fall,K,18,130
 Reading,Fall,1,18,144
 Reading,Fall,2,18,154
 Reading,Fall,3,18,168
@@ -4187,6 +4536,7 @@ Reading,Fall,9,18,200
 Reading,Fall,10,18,201
 Reading,Fall,11,18,202
 Reading,Fall,12,18,200
+Reading,Winter,K,18,136
 Reading,Winter,1,18,150
 Reading,Winter,2,18,161
 Reading,Winter,3,18,173
@@ -4199,6 +4549,7 @@ Reading,Winter,9,18,200
 Reading,Winter,10,18,202
 Reading,Winter,11,18,201
 Reading,Winter,12,18,199
+Reading,Spring,K,18,140
 Reading,Spring,1,18,154
 Reading,Spring,2,18,166
 Reading,Spring,3,18,177
@@ -4211,6 +4562,7 @@ Reading,Spring,9,18,200
 Reading,Spring,10,18,202
 Reading,Spring,11,18,201
 Reading,Spring,12,18,198
+Reading,Fall,K,19,130
 Reading,Fall,1,19,144
 Reading,Fall,2,19,155
 Reading,Fall,3,19,169
@@ -4223,6 +4575,7 @@ Reading,Fall,9,19,200
 Reading,Fall,10,19,202
 Reading,Fall,11,19,202
 Reading,Fall,12,19,201
+Reading,Winter,K,19,136
 Reading,Winter,1,19,150
 Reading,Winter,2,19,162
 Reading,Winter,3,19,174
@@ -4235,6 +4588,7 @@ Reading,Winter,9,19,201
 Reading,Winter,10,19,202
 Reading,Winter,11,19,202
 Reading,Winter,12,19,200
+Reading,Spring,K,19,141
 Reading,Spring,1,19,154
 Reading,Spring,2,19,166
 Reading,Spring,3,19,178
@@ -4247,6 +4601,7 @@ Reading,Spring,9,19,201
 Reading,Spring,10,19,202
 Reading,Spring,11,19,201
 Reading,Spring,12,19,199
+Reading,Fall,K,20,130
 Reading,Fall,1,20,145
 Reading,Fall,2,20,156
 Reading,Fall,3,20,169
@@ -4259,6 +4614,7 @@ Reading,Fall,9,20,201
 Reading,Fall,10,20,203
 Reading,Fall,11,20,203
 Reading,Fall,12,20,202
+Reading,Winter,K,20,137
 Reading,Winter,1,20,151
 Reading,Winter,2,20,162
 Reading,Winter,3,20,175
@@ -4271,6 +4627,7 @@ Reading,Winter,9,20,201
 Reading,Winter,10,20,203
 Reading,Winter,11,20,203
 Reading,Winter,12,20,201
+Reading,Spring,K,20,141
 Reading,Spring,1,20,155
 Reading,Spring,2,20,167
 Reading,Spring,3,20,179
@@ -4283,6 +4640,7 @@ Reading,Spring,9,20,202
 Reading,Spring,10,20,203
 Reading,Spring,11,20,202
 Reading,Spring,12,20,200
+Reading,Fall,K,21,131
 Reading,Fall,1,21,145
 Reading,Fall,2,21,156
 Reading,Fall,3,21,170
@@ -4295,6 +4653,7 @@ Reading,Fall,9,21,202
 Reading,Fall,10,21,203
 Reading,Fall,11,21,204
 Reading,Fall,12,21,202
+Reading,Winter,K,21,137
 Reading,Winter,1,21,151
 Reading,Winter,2,21,163
 Reading,Winter,3,21,175
@@ -4307,6 +4666,7 @@ Reading,Winter,9,21,202
 Reading,Winter,10,21,204
 Reading,Winter,11,21,203
 Reading,Winter,12,21,202
+Reading,Spring,K,21,142
 Reading,Spring,1,21,155
 Reading,Spring,2,21,168
 Reading,Spring,3,21,179
@@ -4319,6 +4679,7 @@ Reading,Spring,9,21,202
 Reading,Spring,10,21,204
 Reading,Spring,11,21,203
 Reading,Spring,12,21,201
+Reading,Fall,K,22,131
 Reading,Fall,1,22,145
 Reading,Fall,2,22,157
 Reading,Fall,3,22,171
@@ -4331,6 +4692,7 @@ Reading,Fall,9,22,202
 Reading,Fall,10,22,204
 Reading,Fall,11,22,204
 Reading,Fall,12,22,203
+Reading,Winter,K,22,138
 Reading,Winter,1,22,152
 Reading,Winter,2,22,163
 Reading,Winter,3,22,176
@@ -4343,6 +4705,7 @@ Reading,Winter,9,22,203
 Reading,Winter,10,22,204
 Reading,Winter,11,22,204
 Reading,Winter,12,22,202
+Reading,Spring,K,22,142
 Reading,Spring,1,22,156
 Reading,Spring,2,22,168
 Reading,Spring,3,22,180
@@ -4355,6 +4718,7 @@ Reading,Spring,9,22,203
 Reading,Spring,10,22,204
 Reading,Spring,11,22,203
 Reading,Spring,12,22,201
+Reading,Fall,K,23,131
 Reading,Fall,1,23,146
 Reading,Fall,2,23,157
 Reading,Fall,3,23,171
@@ -4367,6 +4731,7 @@ Reading,Fall,9,23,203
 Reading,Fall,10,23,204
 Reading,Fall,11,23,205
 Reading,Fall,12,23,204
+Reading,Winter,K,23,138
 Reading,Winter,1,23,152
 Reading,Winter,2,23,164
 Reading,Winter,3,23,176
@@ -4379,6 +4744,7 @@ Reading,Winter,9,23,203
 Reading,Winter,10,23,205
 Reading,Winter,11,23,204
 Reading,Winter,12,23,203
+Reading,Spring,K,23,143
 Reading,Spring,1,23,156
 Reading,Spring,2,23,169
 Reading,Spring,3,23,180
@@ -4391,6 +4757,7 @@ Reading,Spring,9,23,204
 Reading,Spring,10,23,205
 Reading,Spring,11,23,204
 Reading,Spring,12,23,202
+Reading,Fall,K,24,131
 Reading,Fall,1,24,146
 Reading,Fall,2,24,158
 Reading,Fall,3,24,172
@@ -4403,6 +4770,7 @@ Reading,Fall,9,24,203
 Reading,Fall,10,24,205
 Reading,Fall,11,24,205
 Reading,Fall,12,24,204
+Reading,Winter,K,24,138
 Reading,Winter,1,24,153
 Reading,Winter,2,24,165
 Reading,Winter,3,24,177
@@ -4415,6 +4783,7 @@ Reading,Winter,9,24,204
 Reading,Winter,10,24,205
 Reading,Winter,11,24,205
 Reading,Winter,12,24,203
+Reading,Spring,K,24,143
 Reading,Spring,1,24,157
 Reading,Spring,2,24,169
 Reading,Spring,3,24,181
@@ -4427,6 +4796,7 @@ Reading,Spring,9,24,204
 Reading,Spring,10,24,206
 Reading,Spring,11,24,205
 Reading,Spring,12,24,202
+Reading,Fall,K,25,132
 Reading,Fall,1,25,147
 Reading,Fall,2,25,159
 Reading,Fall,3,25,172
@@ -4439,6 +4809,7 @@ Reading,Fall,9,25,204
 Reading,Fall,10,25,206
 Reading,Fall,11,25,206
 Reading,Fall,12,25,205
+Reading,Winter,K,25,139
 Reading,Winter,1,25,153
 Reading,Winter,2,25,165
 Reading,Winter,3,25,178
@@ -4451,6 +4822,7 @@ Reading,Winter,9,25,205
 Reading,Winter,10,25,206
 Reading,Winter,11,25,206
 Reading,Winter,12,25,204
+Reading,Spring,K,25,143
 Reading,Spring,1,25,157
 Reading,Spring,2,25,170
 Reading,Spring,3,25,182
@@ -4463,6 +4835,7 @@ Reading,Spring,9,25,205
 Reading,Spring,10,25,206
 Reading,Spring,11,25,205
 Reading,Spring,12,25,203
+Reading,Fall,K,26,132
 Reading,Fall,1,26,147
 Reading,Fall,2,26,159
 Reading,Fall,3,26,173
@@ -4475,6 +4848,7 @@ Reading,Fall,9,26,205
 Reading,Fall,10,26,206
 Reading,Fall,11,26,207
 Reading,Fall,12,26,205
+Reading,Winter,K,26,139
 Reading,Winter,1,26,153
 Reading,Winter,2,26,166
 Reading,Winter,3,26,178
@@ -4487,6 +4861,7 @@ Reading,Winter,9,26,205
 Reading,Winter,10,26,207
 Reading,Winter,11,26,206
 Reading,Winter,12,26,205
+Reading,Spring,K,26,144
 Reading,Spring,1,26,158
 Reading,Spring,2,26,171
 Reading,Spring,3,26,182
@@ -4499,6 +4874,7 @@ Reading,Spring,9,26,205
 Reading,Spring,10,26,207
 Reading,Spring,11,26,206
 Reading,Spring,12,26,204
+Reading,Fall,K,27,132
 Reading,Fall,1,27,147
 Reading,Fall,2,27,160
 Reading,Fall,3,27,173
@@ -4511,6 +4887,7 @@ Reading,Fall,9,27,205
 Reading,Fall,10,27,207
 Reading,Fall,11,27,207
 Reading,Fall,12,27,206
+Reading,Winter,K,27,139
 Reading,Winter,1,27,154
 Reading,Winter,2,27,166
 Reading,Winter,3,27,179
@@ -4523,6 +4900,7 @@ Reading,Winter,9,27,206
 Reading,Winter,10,27,207
 Reading,Winter,11,27,207
 Reading,Winter,12,27,205
+Reading,Spring,K,27,144
 Reading,Spring,1,27,158
 Reading,Spring,2,27,171
 Reading,Spring,3,27,183
@@ -4535,6 +4913,7 @@ Reading,Spring,9,27,206
 Reading,Spring,10,27,207
 Reading,Spring,11,27,206
 Reading,Spring,12,27,204
+Reading,Fall,K,28,133
 Reading,Fall,1,28,148
 Reading,Fall,2,28,160
 Reading,Fall,3,28,174
@@ -4547,6 +4926,7 @@ Reading,Fall,9,28,206
 Reading,Fall,10,28,207
 Reading,Fall,11,28,208
 Reading,Fall,12,28,207
+Reading,Winter,K,28,140
 Reading,Winter,1,28,154
 Reading,Winter,2,28,167
 Reading,Winter,3,28,179
@@ -4559,6 +4939,7 @@ Reading,Winter,9,28,206
 Reading,Winter,10,28,208
 Reading,Winter,11,28,207
 Reading,Winter,12,28,206
+Reading,Spring,K,28,145
 Reading,Spring,1,28,159
 Reading,Spring,2,28,172
 Reading,Spring,3,28,183
@@ -4571,6 +4952,7 @@ Reading,Spring,9,28,207
 Reading,Spring,10,28,208
 Reading,Spring,11,28,207
 Reading,Spring,12,28,205
+Reading,Fall,K,29,133
 Reading,Fall,1,29,148
 Reading,Fall,2,29,161
 Reading,Fall,3,29,175
@@ -4583,6 +4965,7 @@ Reading,Fall,9,29,206
 Reading,Fall,10,29,208
 Reading,Fall,11,29,208
 Reading,Fall,12,29,207
+Reading,Winter,K,29,140
 Reading,Winter,1,29,155
 Reading,Winter,2,29,167
 Reading,Winter,3,29,180
@@ -4595,6 +4978,7 @@ Reading,Winter,9,29,207
 Reading,Winter,10,29,208
 Reading,Winter,11,29,208
 Reading,Winter,12,29,206
+Reading,Spring,K,29,145
 Reading,Spring,1,29,159
 Reading,Spring,2,29,172
 Reading,Spring,3,29,184
@@ -4607,6 +4991,7 @@ Reading,Spring,9,29,207
 Reading,Spring,10,29,208
 Reading,Spring,11,29,207
 Reading,Spring,12,29,205
+Reading,Fall,K,30,133
 Reading,Fall,1,30,149
 Reading,Fall,2,30,161
 Reading,Fall,3,30,175
@@ -4619,6 +5004,7 @@ Reading,Fall,9,30,207
 Reading,Fall,10,30,208
 Reading,Fall,11,30,209
 Reading,Fall,12,30,208
+Reading,Winter,K,30,140
 Reading,Winter,1,30,155
 Reading,Winter,2,30,168
 Reading,Winter,3,30,180
@@ -4631,6 +5017,7 @@ Reading,Winter,9,30,207
 Reading,Winter,10,30,209
 Reading,Winter,11,30,208
 Reading,Winter,12,30,207
+Reading,Spring,K,30,145
 Reading,Spring,1,30,160
 Reading,Spring,2,30,173
 Reading,Spring,3,30,184
@@ -4643,6 +5030,7 @@ Reading,Spring,9,30,208
 Reading,Spring,10,30,209
 Reading,Spring,11,30,208
 Reading,Spring,12,30,206
+Reading,Fall,K,31,133
 Reading,Fall,1,31,149
 Reading,Fall,2,31,162
 Reading,Fall,3,31,176
@@ -4655,6 +5043,7 @@ Reading,Fall,9,31,207
 Reading,Fall,10,31,209
 Reading,Fall,11,31,209
 Reading,Fall,12,31,208
+Reading,Winter,K,31,141
 Reading,Winter,1,31,156
 Reading,Winter,2,31,168
 Reading,Winter,3,31,181
@@ -4667,6 +5056,7 @@ Reading,Winter,9,31,208
 Reading,Winter,10,31,209
 Reading,Winter,11,31,209
 Reading,Winter,12,31,207
+Reading,Spring,K,31,146
 Reading,Spring,1,31,160
 Reading,Spring,2,31,173
 Reading,Spring,3,31,185
@@ -4679,6 +5069,7 @@ Reading,Spring,9,31,208
 Reading,Spring,10,31,209
 Reading,Spring,11,31,208
 Reading,Spring,12,31,207
+Reading,Fall,K,32,134
 Reading,Fall,1,32,149
 Reading,Fall,2,32,162
 Reading,Fall,3,32,176
@@ -4691,6 +5082,7 @@ Reading,Fall,9,32,208
 Reading,Fall,10,32,209
 Reading,Fall,11,32,210
 Reading,Fall,12,32,209
+Reading,Winter,K,32,141
 Reading,Winter,1,32,156
 Reading,Winter,2,32,169
 Reading,Winter,3,32,181
@@ -4703,6 +5095,7 @@ Reading,Winter,9,32,208
 Reading,Winter,10,32,210
 Reading,Winter,11,32,209
 Reading,Winter,12,32,208
+Reading,Spring,K,32,146
 Reading,Spring,1,32,161
 Reading,Spring,2,32,174
 Reading,Spring,3,32,185
@@ -4715,6 +5108,7 @@ Reading,Spring,9,32,209
 Reading,Spring,10,32,210
 Reading,Spring,11,32,209
 Reading,Spring,12,32,207
+Reading,Fall,K,33,134
 Reading,Fall,1,33,150
 Reading,Fall,2,33,163
 Reading,Fall,3,33,177
@@ -4727,6 +5121,7 @@ Reading,Fall,9,33,208
 Reading,Fall,10,33,210
 Reading,Fall,11,33,210
 Reading,Fall,12,33,209
+Reading,Winter,K,33,141
 Reading,Winter,1,33,156
 Reading,Winter,2,33,169
 Reading,Winter,3,33,182
@@ -4739,6 +5134,7 @@ Reading,Winter,9,33,209
 Reading,Winter,10,33,210
 Reading,Winter,11,33,210
 Reading,Winter,12,33,208
+Reading,Spring,K,33,146
 Reading,Spring,1,33,161
 Reading,Spring,2,33,174
 Reading,Spring,3,33,186
@@ -4751,6 +5147,7 @@ Reading,Spring,9,33,209
 Reading,Spring,10,33,210
 Reading,Spring,11,33,210
 Reading,Spring,12,33,208
+Reading,Fall,K,34,134
 Reading,Fall,1,34,150
 Reading,Fall,2,34,163
 Reading,Fall,3,34,177
@@ -4763,6 +5160,7 @@ Reading,Fall,9,34,209
 Reading,Fall,10,34,210
 Reading,Fall,11,34,211
 Reading,Fall,12,34,210
+Reading,Winter,K,34,141
 Reading,Winter,1,34,157
 Reading,Winter,2,34,170
 Reading,Winter,3,34,182
@@ -4775,6 +5173,7 @@ Reading,Winter,9,34,209
 Reading,Winter,10,34,211
 Reading,Winter,11,34,210
 Reading,Winter,12,34,209
+Reading,Spring,K,34,147
 Reading,Spring,1,34,161
 Reading,Spring,2,34,175
 Reading,Spring,3,34,186
@@ -4787,6 +5186,7 @@ Reading,Spring,9,34,210
 Reading,Spring,10,34,211
 Reading,Spring,11,34,210
 Reading,Spring,12,34,208
+Reading,Fall,K,35,134
 Reading,Fall,1,35,150
 Reading,Fall,2,35,163
 Reading,Fall,3,35,178
@@ -4799,6 +5199,7 @@ Reading,Fall,9,35,209
 Reading,Fall,10,35,211
 Reading,Fall,11,35,211
 Reading,Fall,12,35,210
+Reading,Winter,K,35,142
 Reading,Winter,1,35,157
 Reading,Winter,2,35,170
 Reading,Winter,3,35,183
@@ -4811,6 +5212,7 @@ Reading,Winter,9,35,210
 Reading,Winter,10,35,211
 Reading,Winter,11,35,211
 Reading,Winter,12,35,210
+Reading,Spring,K,35,147
 Reading,Spring,1,35,162
 Reading,Spring,2,35,175
 Reading,Spring,3,35,187
@@ -4823,6 +5225,7 @@ Reading,Spring,9,35,210
 Reading,Spring,10,35,211
 Reading,Spring,11,35,211
 Reading,Spring,12,35,209
+Reading,Fall,K,36,135
 Reading,Fall,1,36,151
 Reading,Fall,2,36,164
 Reading,Fall,3,36,178
@@ -4835,6 +5238,7 @@ Reading,Fall,9,36,210
 Reading,Fall,10,36,211
 Reading,Fall,11,36,212
 Reading,Fall,12,36,211
+Reading,Winter,K,36,142
 Reading,Winter,1,36,157
 Reading,Winter,2,36,171
 Reading,Winter,3,36,183
@@ -4847,6 +5251,7 @@ Reading,Winter,9,36,210
 Reading,Winter,10,36,212
 Reading,Winter,11,36,211
 Reading,Winter,12,36,210
+Reading,Spring,K,36,147
 Reading,Spring,1,36,162
 Reading,Spring,2,36,175
 Reading,Spring,3,36,187
@@ -4859,6 +5264,7 @@ Reading,Spring,9,36,211
 Reading,Spring,10,36,212
 Reading,Spring,11,36,211
 Reading,Spring,12,36,209
+Reading,Fall,K,37,135
 Reading,Fall,1,37,151
 Reading,Fall,2,37,164
 Reading,Fall,3,37,179
@@ -4871,6 +5277,7 @@ Reading,Fall,9,37,210
 Reading,Fall,10,37,212
 Reading,Fall,11,37,212
 Reading,Fall,12,37,211
+Reading,Winter,K,37,142
 Reading,Winter,1,37,158
 Reading,Winter,2,37,171
 Reading,Winter,3,37,184
@@ -4883,6 +5290,7 @@ Reading,Winter,9,37,211
 Reading,Winter,10,37,212
 Reading,Winter,11,37,212
 Reading,Winter,12,37,211
+Reading,Spring,K,37,148
 Reading,Spring,1,37,163
 Reading,Spring,2,37,176
 Reading,Spring,3,37,188
@@ -4895,6 +5303,7 @@ Reading,Spring,9,37,211
 Reading,Spring,10,37,212
 Reading,Spring,11,37,212
 Reading,Spring,12,37,210
+Reading,Fall,K,38,135
 Reading,Fall,1,38,151
 Reading,Fall,2,38,165
 Reading,Fall,3,38,179
@@ -4907,6 +5316,7 @@ Reading,Fall,9,38,211
 Reading,Fall,10,38,212
 Reading,Fall,11,38,213
 Reading,Fall,12,38,212
+Reading,Winter,K,38,143
 Reading,Winter,1,38,158
 Reading,Winter,2,38,171
 Reading,Winter,3,38,184
@@ -4919,6 +5329,7 @@ Reading,Winter,9,38,211
 Reading,Winter,10,38,213
 Reading,Winter,11,38,212
 Reading,Winter,12,38,211
+Reading,Spring,K,38,148
 Reading,Spring,1,38,163
 Reading,Spring,2,38,176
 Reading,Spring,3,38,188
@@ -4931,6 +5342,7 @@ Reading,Spring,9,38,212
 Reading,Spring,10,38,213
 Reading,Spring,11,38,212
 Reading,Spring,12,38,210
+Reading,Fall,K,39,135
 Reading,Fall,1,39,152
 Reading,Fall,2,39,165
 Reading,Fall,3,39,180
@@ -4943,6 +5355,7 @@ Reading,Fall,9,39,211
 Reading,Fall,10,39,213
 Reading,Fall,11,39,213
 Reading,Fall,12,39,212
+Reading,Winter,K,39,143
 Reading,Winter,1,39,159
 Reading,Winter,2,39,172
 Reading,Winter,3,39,185
@@ -4955,6 +5368,7 @@ Reading,Winter,9,39,212
 Reading,Winter,10,39,213
 Reading,Winter,11,39,213
 Reading,Winter,12,39,212
+Reading,Spring,K,39,148
 Reading,Spring,1,39,164
 Reading,Spring,2,39,177
 Reading,Spring,3,39,189
@@ -4967,6 +5381,7 @@ Reading,Spring,9,39,212
 Reading,Spring,10,39,213
 Reading,Spring,11,39,213
 Reading,Spring,12,39,211
+Reading,Fall,K,40,136
 Reading,Fall,1,40,152
 Reading,Fall,2,40,166
 Reading,Fall,3,40,180
@@ -4979,6 +5394,7 @@ Reading,Fall,9,40,212
 Reading,Fall,10,40,213
 Reading,Fall,11,40,214
 Reading,Fall,12,40,213
+Reading,Winter,K,40,143
 Reading,Winter,1,40,159
 Reading,Winter,2,40,172
 Reading,Winter,3,40,185
@@ -4991,6 +5407,7 @@ Reading,Winter,9,40,212
 Reading,Winter,10,40,214
 Reading,Winter,11,40,213
 Reading,Winter,12,40,212
+Reading,Spring,K,40,149
 Reading,Spring,1,40,164
 Reading,Spring,2,40,177
 Reading,Spring,3,40,189
@@ -5003,6 +5420,7 @@ Reading,Spring,9,40,213
 Reading,Spring,10,40,214
 Reading,Spring,11,40,213
 Reading,Spring,12,40,211
+Reading,Fall,K,41,136
 Reading,Fall,1,41,152
 Reading,Fall,2,41,166
 Reading,Fall,3,41,181
@@ -5015,6 +5433,7 @@ Reading,Fall,9,41,212
 Reading,Fall,10,41,214
 Reading,Fall,11,41,214
 Reading,Fall,12,41,213
+Reading,Winter,K,41,144
 Reading,Winter,1,41,159
 Reading,Winter,2,41,173
 Reading,Winter,3,41,186
@@ -5027,6 +5446,7 @@ Reading,Winter,9,41,213
 Reading,Winter,10,41,214
 Reading,Winter,11,41,214
 Reading,Winter,12,41,213
+Reading,Spring,K,41,149
 Reading,Spring,1,41,164
 Reading,Spring,2,41,178
 Reading,Spring,3,41,190
@@ -5039,6 +5459,7 @@ Reading,Spring,9,41,213
 Reading,Spring,10,41,214
 Reading,Spring,11,41,214
 Reading,Spring,12,41,212
+Reading,Fall,K,42,136
 Reading,Fall,1,42,153
 Reading,Fall,2,42,167
 Reading,Fall,3,42,181
@@ -5051,6 +5472,7 @@ Reading,Fall,9,42,213
 Reading,Fall,10,42,214
 Reading,Fall,11,42,215
 Reading,Fall,12,42,214
+Reading,Winter,K,42,144
 Reading,Winter,1,42,160
 Reading,Winter,2,42,173
 Reading,Winter,3,42,186
@@ -5063,6 +5485,7 @@ Reading,Winter,9,42,213
 Reading,Winter,10,42,215
 Reading,Winter,11,42,214
 Reading,Winter,12,42,213
+Reading,Spring,K,42,149
 Reading,Spring,1,42,165
 Reading,Spring,2,42,178
 Reading,Spring,3,42,190
@@ -5075,6 +5498,7 @@ Reading,Spring,9,42,213
 Reading,Spring,10,42,215
 Reading,Spring,11,42,214
 Reading,Spring,12,42,212
+Reading,Fall,K,43,136
 Reading,Fall,1,43,153
 Reading,Fall,2,43,167
 Reading,Fall,3,43,181
@@ -5087,6 +5511,7 @@ Reading,Fall,9,43,213
 Reading,Fall,10,43,215
 Reading,Fall,11,43,215
 Reading,Fall,12,43,214
+Reading,Winter,K,43,144
 Reading,Winter,1,43,160
 Reading,Winter,2,43,174
 Reading,Winter,3,43,187
@@ -5099,6 +5524,7 @@ Reading,Winter,9,43,214
 Reading,Winter,10,43,215
 Reading,Winter,11,43,215
 Reading,Winter,12,43,213
+Reading,Spring,K,43,150
 Reading,Spring,1,43,165
 Reading,Spring,2,43,179
 Reading,Spring,3,43,191
@@ -5111,6 +5537,7 @@ Reading,Spring,9,43,214
 Reading,Spring,10,43,215
 Reading,Spring,11,43,214
 Reading,Spring,12,43,213
+Reading,Fall,K,44,137
 Reading,Fall,1,44,153
 Reading,Fall,2,44,167
 Reading,Fall,3,44,182
@@ -5123,6 +5550,7 @@ Reading,Fall,9,44,213
 Reading,Fall,10,44,215
 Reading,Fall,11,44,215
 Reading,Fall,12,44,215
+Reading,Winter,K,44,144
 Reading,Winter,1,44,160
 Reading,Winter,2,44,174
 Reading,Winter,3,44,187
@@ -5135,6 +5563,7 @@ Reading,Winter,9,44,214
 Reading,Winter,10,44,215
 Reading,Winter,11,44,215
 Reading,Winter,12,44,214
+Reading,Spring,K,44,150
 Reading,Spring,1,44,166
 Reading,Spring,2,44,179
 Reading,Spring,3,44,191
@@ -5147,6 +5576,7 @@ Reading,Spring,9,44,214
 Reading,Spring,10,44,216
 Reading,Spring,11,44,215
 Reading,Spring,12,44,213
+Reading,Fall,K,45,137
 Reading,Fall,1,45,154
 Reading,Fall,2,45,168
 Reading,Fall,3,45,182
@@ -5159,6 +5589,7 @@ Reading,Fall,9,45,214
 Reading,Fall,10,45,216
 Reading,Fall,11,45,216
 Reading,Fall,12,45,215
+Reading,Winter,K,45,145
 Reading,Winter,1,45,161
 Reading,Winter,2,45,175
 Reading,Winter,3,45,188
@@ -5171,6 +5602,7 @@ Reading,Winter,9,45,214
 Reading,Winter,10,45,216
 Reading,Winter,11,45,216
 Reading,Winter,12,45,214
+Reading,Spring,K,45,150
 Reading,Spring,1,45,166
 Reading,Spring,2,45,180
 Reading,Spring,3,45,192
@@ -5183,6 +5615,7 @@ Reading,Spring,9,45,215
 Reading,Spring,10,45,216
 Reading,Spring,11,45,215
 Reading,Spring,12,45,214
+Reading,Fall,K,46,137
 Reading,Fall,1,46,154
 Reading,Fall,2,46,168
 Reading,Fall,3,46,183
@@ -5195,6 +5628,7 @@ Reading,Fall,9,46,214
 Reading,Fall,10,46,216
 Reading,Fall,11,46,216
 Reading,Fall,12,46,216
+Reading,Winter,K,46,145
 Reading,Winter,1,46,161
 Reading,Winter,2,46,175
 Reading,Winter,3,46,188
@@ -5207,6 +5641,7 @@ Reading,Winter,9,46,215
 Reading,Winter,10,46,216
 Reading,Winter,11,46,216
 Reading,Winter,12,46,215
+Reading,Spring,K,46,151
 Reading,Spring,1,46,166
 Reading,Spring,2,46,180
 Reading,Spring,3,46,192
@@ -5219,6 +5654,7 @@ Reading,Spring,9,46,215
 Reading,Spring,10,46,217
 Reading,Spring,11,46,216
 Reading,Spring,12,46,214
+Reading,Fall,K,47,137
 Reading,Fall,1,47,154
 Reading,Fall,2,47,169
 Reading,Fall,3,47,183
@@ -5231,6 +5667,7 @@ Reading,Fall,9,47,215
 Reading,Fall,10,47,216
 Reading,Fall,11,47,217
 Reading,Fall,12,47,216
+Reading,Winter,K,47,145
 Reading,Winter,1,47,161
 Reading,Winter,2,47,175
 Reading,Winter,3,47,189
@@ -5243,6 +5680,7 @@ Reading,Winter,9,47,215
 Reading,Winter,10,47,217
 Reading,Winter,11,47,217
 Reading,Winter,12,47,215
+Reading,Spring,K,47,151
 Reading,Spring,1,47,167
 Reading,Spring,2,47,180
 Reading,Spring,3,47,192
@@ -5255,6 +5693,7 @@ Reading,Spring,9,47,216
 Reading,Spring,10,47,217
 Reading,Spring,11,47,216
 Reading,Spring,12,47,215
+Reading,Fall,K,48,138
 Reading,Fall,1,48,155
 Reading,Fall,2,48,169
 Reading,Fall,3,48,184
@@ -5267,6 +5706,7 @@ Reading,Fall,9,48,215
 Reading,Fall,10,48,217
 Reading,Fall,11,48,217
 Reading,Fall,12,48,217
+Reading,Winter,K,48,145
 Reading,Winter,1,48,162
 Reading,Winter,2,48,176
 Reading,Winter,3,48,189
@@ -5279,6 +5719,7 @@ Reading,Winter,9,48,216
 Reading,Winter,10,48,217
 Reading,Winter,11,48,217
 Reading,Winter,12,48,216
+Reading,Spring,K,48,151
 Reading,Spring,1,48,167
 Reading,Spring,2,48,181
 Reading,Spring,3,48,193
@@ -5291,6 +5732,7 @@ Reading,Spring,9,48,216
 Reading,Spring,10,48,218
 Reading,Spring,11,48,217
 Reading,Spring,12,48,215
+Reading,Fall,K,49,138
 Reading,Fall,1,49,155
 Reading,Fall,2,49,170
 Reading,Fall,3,49,184
@@ -5303,6 +5745,7 @@ Reading,Fall,9,49,216
 Reading,Fall,10,49,217
 Reading,Fall,11,49,218
 Reading,Fall,12,49,217
+Reading,Winter,K,49,146
 Reading,Winter,1,49,162
 Reading,Winter,2,49,176
 Reading,Winter,3,49,189
@@ -5315,6 +5758,7 @@ Reading,Winter,9,49,216
 Reading,Winter,10,49,218
 Reading,Winter,11,49,218
 Reading,Winter,12,49,216
+Reading,Spring,K,49,152
 Reading,Spring,1,49,167
 Reading,Spring,2,49,181
 Reading,Spring,3,49,193
@@ -5327,6 +5771,7 @@ Reading,Spring,9,49,217
 Reading,Spring,10,49,218
 Reading,Spring,11,49,217
 Reading,Spring,12,49,216
+Reading,Fall,K,50,138
 Reading,Fall,1,50,155
 Reading,Fall,2,50,170
 Reading,Fall,3,50,185
@@ -5339,6 +5784,7 @@ Reading,Fall,9,50,216
 Reading,Fall,10,50,218
 Reading,Fall,11,50,218
 Reading,Fall,12,50,218
+Reading,Winter,K,50,146
 Reading,Winter,1,50,163
 Reading,Winter,2,50,177
 Reading,Winter,3,50,190
@@ -5351,6 +5797,7 @@ Reading,Winter,9,50,217
 Reading,Winter,10,50,218
 Reading,Winter,11,50,218
 Reading,Winter,12,50,217
+Reading,Spring,K,50,152
 Reading,Spring,1,50,168
 Reading,Spring,2,50,182
 Reading,Spring,3,50,194
@@ -5363,6 +5810,7 @@ Reading,Spring,9,50,217
 Reading,Spring,10,50,218
 Reading,Spring,11,50,218
 Reading,Spring,12,50,216
+Reading,Fall,K,51,138
 Reading,Fall,1,51,156
 Reading,Fall,2,51,170
 Reading,Fall,3,51,185
@@ -5375,6 +5823,7 @@ Reading,Fall,9,51,217
 Reading,Fall,10,51,218
 Reading,Fall,11,51,219
 Reading,Fall,12,51,218
+Reading,Winter,K,51,146
 Reading,Winter,1,51,163
 Reading,Winter,2,51,177
 Reading,Winter,3,51,190
@@ -5387,6 +5836,7 @@ Reading,Winter,9,51,217
 Reading,Winter,10,51,219
 Reading,Winter,11,51,218
 Reading,Winter,12,51,217
+Reading,Spring,K,51,152
 Reading,Spring,1,51,168
 Reading,Spring,2,51,182
 Reading,Spring,3,51,194
@@ -5399,6 +5849,7 @@ Reading,Spring,9,51,218
 Reading,Spring,10,51,219
 Reading,Spring,11,51,218
 Reading,Spring,12,51,217
+Reading,Fall,K,52,139
 Reading,Fall,1,52,156
 Reading,Fall,2,52,171
 Reading,Fall,3,52,186
@@ -5411,6 +5862,7 @@ Reading,Fall,9,52,217
 Reading,Fall,10,52,219
 Reading,Fall,11,52,219
 Reading,Fall,12,52,219
+Reading,Winter,K,52,147
 Reading,Winter,1,52,163
 Reading,Winter,2,52,178
 Reading,Winter,3,52,191
@@ -5423,6 +5875,7 @@ Reading,Winter,9,52,218
 Reading,Winter,10,52,219
 Reading,Winter,11,52,219
 Reading,Winter,12,52,218
+Reading,Spring,K,52,153
 Reading,Spring,1,52,169
 Reading,Spring,2,52,183
 Reading,Spring,3,52,195
@@ -5435,6 +5888,7 @@ Reading,Spring,9,52,218
 Reading,Spring,10,52,219
 Reading,Spring,11,52,219
 Reading,Spring,12,52,217
+Reading,Fall,K,53,139
 Reading,Fall,1,53,156
 Reading,Fall,2,53,171
 Reading,Fall,3,53,186
@@ -5447,6 +5901,7 @@ Reading,Fall,9,53,218
 Reading,Fall,10,53,219
 Reading,Fall,11,53,220
 Reading,Fall,12,53,219
+Reading,Winter,K,53,147
 Reading,Winter,1,53,164
 Reading,Winter,2,53,178
 Reading,Winter,3,53,191
@@ -5459,6 +5914,7 @@ Reading,Winter,9,53,218
 Reading,Winter,10,53,220
 Reading,Winter,11,53,219
 Reading,Winter,12,53,218
+Reading,Spring,K,53,153
 Reading,Spring,1,53,169
 Reading,Spring,2,53,183
 Reading,Spring,3,53,195
@@ -5471,6 +5927,7 @@ Reading,Spring,9,53,219
 Reading,Spring,10,53,220
 Reading,Spring,11,53,219
 Reading,Spring,12,53,218
+Reading,Fall,K,54,139
 Reading,Fall,1,54,157
 Reading,Fall,2,54,172
 Reading,Fall,3,54,187
@@ -5483,6 +5940,7 @@ Reading,Fall,9,54,218
 Reading,Fall,10,54,220
 Reading,Fall,11,54,220
 Reading,Fall,12,54,220
+Reading,Winter,K,54,147
 Reading,Winter,1,54,164
 Reading,Winter,2,54,178
 Reading,Winter,3,54,192
@@ -5495,6 +5953,7 @@ Reading,Winter,9,54,219
 Reading,Winter,10,54,220
 Reading,Winter,11,54,220
 Reading,Winter,12,54,219
+Reading,Spring,K,54,153
 Reading,Spring,1,54,169
 Reading,Spring,2,54,183
 Reading,Spring,3,54,196
@@ -5507,6 +5966,7 @@ Reading,Spring,9,54,219
 Reading,Spring,10,54,220
 Reading,Spring,11,54,220
 Reading,Spring,12,54,218
+Reading,Fall,K,55,139
 Reading,Fall,1,55,157
 Reading,Fall,2,55,172
 Reading,Fall,3,55,187
@@ -5519,6 +5979,7 @@ Reading,Fall,9,55,218
 Reading,Fall,10,55,220
 Reading,Fall,11,55,220
 Reading,Fall,12,55,220
+Reading,Winter,K,55,147
 Reading,Winter,1,55,164
 Reading,Winter,2,55,179
 Reading,Winter,3,55,192
@@ -5531,6 +5992,7 @@ Reading,Winter,9,55,219
 Reading,Winter,10,55,220
 Reading,Winter,11,55,220
 Reading,Winter,12,55,219
+Reading,Spring,K,55,154
 Reading,Spring,1,55,170
 Reading,Spring,2,55,184
 Reading,Spring,3,55,196
@@ -5543,6 +6005,7 @@ Reading,Spring,9,55,219
 Reading,Spring,10,55,221
 Reading,Spring,11,55,220
 Reading,Spring,12,55,219
+Reading,Fall,K,56,139
 Reading,Fall,1,56,157
 Reading,Fall,2,56,173
 Reading,Fall,3,56,187
@@ -5555,6 +6018,7 @@ Reading,Fall,9,56,219
 Reading,Fall,10,56,220
 Reading,Fall,11,56,221
 Reading,Fall,12,56,220
+Reading,Winter,K,56,148
 Reading,Winter,1,56,165
 Reading,Winter,2,56,179
 Reading,Winter,3,56,193
@@ -5567,6 +6031,7 @@ Reading,Winter,9,56,219
 Reading,Winter,10,56,221
 Reading,Winter,11,56,221
 Reading,Winter,12,56,220
+Reading,Spring,K,56,154
 Reading,Spring,1,56,170
 Reading,Spring,2,56,184
 Reading,Spring,3,56,197
@@ -5579,6 +6044,7 @@ Reading,Spring,9,56,220
 Reading,Spring,10,56,221
 Reading,Spring,11,56,221
 Reading,Spring,12,56,219
+Reading,Fall,K,57,140
 Reading,Fall,1,57,158
 Reading,Fall,2,57,173
 Reading,Fall,3,57,188
@@ -5591,6 +6057,7 @@ Reading,Fall,9,57,219
 Reading,Fall,10,57,221
 Reading,Fall,11,57,221
 Reading,Fall,12,57,221
+Reading,Winter,K,57,148
 Reading,Winter,1,57,165
 Reading,Winter,2,57,180
 Reading,Winter,3,57,193
@@ -5603,6 +6070,7 @@ Reading,Winter,9,57,220
 Reading,Winter,10,57,221
 Reading,Winter,11,57,221
 Reading,Winter,12,57,220
+Reading,Spring,K,57,154
 Reading,Spring,1,57,171
 Reading,Spring,2,57,185
 Reading,Spring,3,57,197
@@ -5615,6 +6083,7 @@ Reading,Spring,9,57,220
 Reading,Spring,10,57,222
 Reading,Spring,11,57,221
 Reading,Spring,12,57,220
+Reading,Fall,K,58,140
 Reading,Fall,1,58,158
 Reading,Fall,2,58,174
 Reading,Fall,3,58,188
@@ -5627,6 +6096,7 @@ Reading,Fall,9,58,220
 Reading,Fall,10,58,221
 Reading,Fall,11,58,222
 Reading,Fall,12,58,221
+Reading,Winter,K,58,148
 Reading,Winter,1,58,165
 Reading,Winter,2,58,180
 Reading,Winter,3,58,194
@@ -5639,6 +6109,7 @@ Reading,Winter,9,58,220
 Reading,Winter,10,58,222
 Reading,Winter,11,58,222
 Reading,Winter,12,58,221
+Reading,Spring,K,58,155
 Reading,Spring,1,58,171
 Reading,Spring,2,58,185
 Reading,Spring,3,58,197
@@ -5651,6 +6122,7 @@ Reading,Spring,9,58,221
 Reading,Spring,10,58,222
 Reading,Spring,11,58,222
 Reading,Spring,12,58,220
+Reading,Fall,K,59,140
 Reading,Fall,1,59,158
 Reading,Fall,2,59,174
 Reading,Fall,3,59,189
@@ -5663,6 +6135,7 @@ Reading,Fall,9,59,220
 Reading,Fall,10,59,222
 Reading,Fall,11,59,222
 Reading,Fall,12,59,222
+Reading,Winter,K,59,149
 Reading,Winter,1,59,166
 Reading,Winter,2,59,181
 Reading,Winter,3,59,194
@@ -5675,6 +6148,7 @@ Reading,Winter,9,59,221
 Reading,Winter,10,59,222
 Reading,Winter,11,59,222
 Reading,Winter,12,59,221
+Reading,Spring,K,59,155
 Reading,Spring,1,59,171
 Reading,Spring,2,59,186
 Reading,Spring,3,59,198
@@ -5687,6 +6161,7 @@ Reading,Spring,9,59,221
 Reading,Spring,10,59,223
 Reading,Spring,11,59,222
 Reading,Spring,12,59,221
+Reading,Fall,K,60,140
 Reading,Fall,1,60,159
 Reading,Fall,2,60,174
 Reading,Fall,3,60,189
@@ -5699,6 +6174,7 @@ Reading,Fall,9,60,221
 Reading,Fall,10,60,222
 Reading,Fall,11,60,223
 Reading,Fall,12,60,222
+Reading,Winter,K,60,149
 Reading,Winter,1,60,166
 Reading,Winter,2,60,181
 Reading,Winter,3,60,194
@@ -5711,6 +6187,7 @@ Reading,Winter,9,60,221
 Reading,Winter,10,60,223
 Reading,Winter,11,60,223
 Reading,Winter,12,60,222
+Reading,Spring,K,60,155
 Reading,Spring,1,60,172
 Reading,Spring,2,60,186
 Reading,Spring,3,60,198
@@ -5723,6 +6200,7 @@ Reading,Spring,9,60,222
 Reading,Spring,10,60,223
 Reading,Spring,11,60,223
 Reading,Spring,12,60,221
+Reading,Fall,K,61,141
 Reading,Fall,1,61,159
 Reading,Fall,2,61,175
 Reading,Fall,3,61,190
@@ -5735,6 +6213,7 @@ Reading,Fall,9,61,221
 Reading,Fall,10,61,223
 Reading,Fall,11,61,223
 Reading,Fall,12,61,223
+Reading,Winter,K,61,149
 Reading,Winter,1,61,166
 Reading,Winter,2,61,181
 Reading,Winter,3,61,195
@@ -5747,6 +6226,7 @@ Reading,Winter,9,61,222
 Reading,Winter,10,61,223
 Reading,Winter,11,61,223
 Reading,Winter,12,61,222
+Reading,Spring,K,61,156
 Reading,Spring,1,61,172
 Reading,Spring,2,61,187
 Reading,Spring,3,61,199
@@ -5759,6 +6239,7 @@ Reading,Spring,9,61,222
 Reading,Spring,10,61,224
 Reading,Spring,11,61,223
 Reading,Spring,12,61,222
+Reading,Fall,K,62,141
 Reading,Fall,1,62,159
 Reading,Fall,2,62,175
 Reading,Fall,3,62,190
@@ -5771,6 +6252,7 @@ Reading,Fall,9,62,222
 Reading,Fall,10,62,223
 Reading,Fall,11,62,224
 Reading,Fall,12,62,223
+Reading,Winter,K,62,149
 Reading,Winter,1,62,167
 Reading,Winter,2,62,182
 Reading,Winter,3,62,195
@@ -5783,6 +6265,7 @@ Reading,Winter,9,62,222
 Reading,Winter,10,62,224
 Reading,Winter,11,62,224
 Reading,Winter,12,62,223
+Reading,Spring,K,62,156
 Reading,Spring,1,62,173
 Reading,Spring,2,62,187
 Reading,Spring,3,62,199
@@ -5795,6 +6278,7 @@ Reading,Spring,9,62,223
 Reading,Spring,10,62,224
 Reading,Spring,11,62,224
 Reading,Spring,12,62,222
+Reading,Fall,K,63,141
 Reading,Fall,1,63,160
 Reading,Fall,2,63,176
 Reading,Fall,3,63,191
@@ -5807,6 +6291,7 @@ Reading,Fall,9,63,222
 Reading,Fall,10,63,224
 Reading,Fall,11,63,224
 Reading,Fall,12,63,224
+Reading,Winter,K,63,150
 Reading,Winter,1,63,167
 Reading,Winter,2,63,182
 Reading,Winter,3,63,196
@@ -5819,6 +6304,7 @@ Reading,Winter,9,63,223
 Reading,Winter,10,63,224
 Reading,Winter,11,63,224
 Reading,Winter,12,63,223
+Reading,Spring,K,63,156
 Reading,Spring,1,63,173
 Reading,Spring,2,63,187
 Reading,Spring,3,63,200
@@ -5831,6 +6317,7 @@ Reading,Spring,9,63,223
 Reading,Spring,10,63,225
 Reading,Spring,11,63,224
 Reading,Spring,12,63,223
+Reading,Fall,K,64,141
 Reading,Fall,1,64,160
 Reading,Fall,2,64,176
 Reading,Fall,3,64,191
@@ -5843,6 +6330,7 @@ Reading,Fall,9,64,223
 Reading,Fall,10,64,224
 Reading,Fall,11,64,225
 Reading,Fall,12,64,224
+Reading,Winter,K,64,150
 Reading,Winter,1,64,168
 Reading,Winter,2,64,183
 Reading,Winter,3,64,196
@@ -5855,6 +6343,7 @@ Reading,Winter,9,64,223
 Reading,Winter,10,64,225
 Reading,Winter,11,64,225
 Reading,Winter,12,64,224
+Reading,Spring,K,64,157
 Reading,Spring,1,64,173
 Reading,Spring,2,64,188
 Reading,Spring,3,64,200
@@ -5867,6 +6356,7 @@ Reading,Spring,9,64,224
 Reading,Spring,10,64,225
 Reading,Spring,11,64,225
 Reading,Spring,12,64,223
+Reading,Fall,K,65,142
 Reading,Fall,1,65,160
 Reading,Fall,2,65,177
 Reading,Fall,3,65,192
@@ -5879,6 +6369,7 @@ Reading,Fall,9,65,223
 Reading,Fall,10,65,225
 Reading,Fall,11,65,225
 Reading,Fall,12,65,225
+Reading,Winter,K,65,150
 Reading,Winter,1,65,168
 Reading,Winter,2,65,183
 Reading,Winter,3,65,197
@@ -5891,6 +6382,7 @@ Reading,Winter,9,65,224
 Reading,Winter,10,65,225
 Reading,Winter,11,65,225
 Reading,Winter,12,65,224
+Reading,Spring,K,65,157
 Reading,Spring,1,65,174
 Reading,Spring,2,65,188
 Reading,Spring,3,65,201
@@ -5903,6 +6395,7 @@ Reading,Spring,9,65,224
 Reading,Spring,10,65,225
 Reading,Spring,11,65,225
 Reading,Spring,12,65,224
+Reading,Fall,K,66,142
 Reading,Fall,1,66,161
 Reading,Fall,2,66,177
 Reading,Fall,3,66,192
@@ -5915,6 +6408,7 @@ Reading,Fall,9,66,224
 Reading,Fall,10,66,225
 Reading,Fall,11,66,226
 Reading,Fall,12,66,225
+Reading,Winter,K,66,151
 Reading,Winter,1,66,168
 Reading,Winter,2,66,184
 Reading,Winter,3,66,197
@@ -5927,6 +6421,7 @@ Reading,Winter,9,66,224
 Reading,Winter,10,66,226
 Reading,Winter,11,66,226
 Reading,Winter,12,66,225
+Reading,Spring,K,66,157
 Reading,Spring,1,66,174
 Reading,Spring,2,66,189
 Reading,Spring,3,66,201
@@ -5939,6 +6434,7 @@ Reading,Spring,9,66,225
 Reading,Spring,10,66,226
 Reading,Spring,11,66,226
 Reading,Spring,12,66,224
+Reading,Fall,K,67,142
 Reading,Fall,1,67,161
 Reading,Fall,2,67,178
 Reading,Fall,3,67,193
@@ -5951,6 +6447,7 @@ Reading,Fall,9,67,224
 Reading,Fall,10,67,226
 Reading,Fall,11,67,226
 Reading,Fall,12,67,226
+Reading,Winter,K,67,151
 Reading,Winter,1,67,169
 Reading,Winter,2,67,184
 Reading,Winter,3,67,198
@@ -5963,6 +6460,7 @@ Reading,Winter,9,67,225
 Reading,Winter,10,67,226
 Reading,Winter,11,67,226
 Reading,Winter,12,67,225
+Reading,Spring,K,67,158
 Reading,Spring,1,67,175
 Reading,Spring,2,67,189
 Reading,Spring,3,67,202
@@ -5975,6 +6473,7 @@ Reading,Spring,9,67,225
 Reading,Spring,10,67,226
 Reading,Spring,11,67,226
 Reading,Spring,12,67,225
+Reading,Fall,K,68,142
 Reading,Fall,1,68,161
 Reading,Fall,2,68,178
 Reading,Fall,3,68,193
@@ -5987,6 +6486,7 @@ Reading,Fall,9,68,225
 Reading,Fall,10,68,226
 Reading,Fall,11,68,227
 Reading,Fall,12,68,226
+Reading,Winter,K,68,151
 Reading,Winter,1,68,169
 Reading,Winter,2,68,185
 Reading,Winter,3,68,198
@@ -5999,6 +6499,7 @@ Reading,Winter,9,68,225
 Reading,Winter,10,68,227
 Reading,Winter,11,68,227
 Reading,Winter,12,68,226
+Reading,Spring,K,68,158
 Reading,Spring,1,68,175
 Reading,Spring,2,68,190
 Reading,Spring,3,68,202
@@ -6011,6 +6512,7 @@ Reading,Spring,9,68,226
 Reading,Spring,10,68,227
 Reading,Spring,11,68,227
 Reading,Spring,12,68,225
+Reading,Fall,K,69,143
 Reading,Fall,1,69,162
 Reading,Fall,2,69,179
 Reading,Fall,3,69,194
@@ -6023,6 +6525,7 @@ Reading,Fall,9,69,225
 Reading,Fall,10,69,227
 Reading,Fall,11,69,227
 Reading,Fall,12,69,227
+Reading,Winter,K,69,151
 Reading,Winter,1,69,169
 Reading,Winter,2,69,185
 Reading,Winter,3,69,199
@@ -6035,6 +6538,7 @@ Reading,Winter,9,69,226
 Reading,Winter,10,69,227
 Reading,Winter,11,69,227
 Reading,Winter,12,69,226
+Reading,Spring,K,69,158
 Reading,Spring,1,69,176
 Reading,Spring,2,69,190
 Reading,Spring,3,69,203
@@ -6047,6 +6551,7 @@ Reading,Spring,9,69,226
 Reading,Spring,10,69,228
 Reading,Spring,11,69,227
 Reading,Spring,12,69,226
+Reading,Fall,K,70,143
 Reading,Fall,1,70,162
 Reading,Fall,2,70,179
 Reading,Fall,3,70,194
@@ -6059,6 +6564,7 @@ Reading,Fall,9,70,226
 Reading,Fall,10,70,227
 Reading,Fall,11,70,228
 Reading,Fall,12,70,228
+Reading,Winter,K,70,152
 Reading,Winter,1,70,170
 Reading,Winter,2,70,186
 Reading,Winter,3,70,199
@@ -6071,6 +6577,7 @@ Reading,Winter,9,70,226
 Reading,Winter,10,70,228
 Reading,Winter,11,70,228
 Reading,Winter,12,70,227
+Reading,Spring,K,70,159
 Reading,Spring,1,70,176
 Reading,Spring,2,70,191
 Reading,Spring,3,70,203
@@ -6083,6 +6590,7 @@ Reading,Spring,9,70,227
 Reading,Spring,10,70,228
 Reading,Spring,11,70,228
 Reading,Spring,12,70,226
+Reading,Fall,K,71,143
 Reading,Fall,1,71,162
 Reading,Fall,2,71,180
 Reading,Fall,3,71,195
@@ -6095,6 +6603,7 @@ Reading,Fall,9,71,226
 Reading,Fall,10,71,228
 Reading,Fall,11,71,228
 Reading,Fall,12,71,228
+Reading,Winter,K,71,152
 Reading,Winter,1,71,170
 Reading,Winter,2,71,186
 Reading,Winter,3,71,200
@@ -6107,6 +6616,7 @@ Reading,Winter,9,71,227
 Reading,Winter,10,71,228
 Reading,Winter,11,71,228
 Reading,Winter,12,71,227
+Reading,Spring,K,71,159
 Reading,Spring,1,71,176
 Reading,Spring,2,71,191
 Reading,Spring,3,71,204
@@ -6119,6 +6629,7 @@ Reading,Spring,9,71,227
 Reading,Spring,10,71,229
 Reading,Spring,11,71,228
 Reading,Spring,12,71,227
+Reading,Fall,K,72,144
 Reading,Fall,1,72,163
 Reading,Fall,2,72,180
 Reading,Fall,3,72,195
@@ -6131,6 +6642,7 @@ Reading,Fall,9,72,227
 Reading,Fall,10,72,228
 Reading,Fall,11,72,229
 Reading,Fall,12,72,229
+Reading,Winter,K,72,152
 Reading,Winter,1,72,171
 Reading,Winter,2,72,187
 Reading,Winter,3,72,200
@@ -6143,6 +6655,7 @@ Reading,Winter,9,72,227
 Reading,Winter,10,72,229
 Reading,Winter,11,72,229
 Reading,Winter,12,72,228
+Reading,Spring,K,72,159
 Reading,Spring,1,72,177
 Reading,Spring,2,72,192
 Reading,Spring,3,72,204
@@ -6155,6 +6668,7 @@ Reading,Spring,9,72,228
 Reading,Spring,10,72,229
 Reading,Spring,11,72,229
 Reading,Spring,12,72,228
+Reading,Fall,K,73,144
 Reading,Fall,1,73,163
 Reading,Fall,2,73,181
 Reading,Fall,3,73,196
@@ -6167,6 +6681,7 @@ Reading,Fall,9,73,227
 Reading,Fall,10,73,229
 Reading,Fall,11,73,229
 Reading,Fall,12,73,229
+Reading,Winter,K,73,153
 Reading,Winter,1,73,171
 Reading,Winter,2,73,187
 Reading,Winter,3,73,201
@@ -6179,6 +6694,7 @@ Reading,Winter,9,73,228
 Reading,Winter,10,73,229
 Reading,Winter,11,73,229
 Reading,Winter,12,73,228
+Reading,Spring,K,73,160
 Reading,Spring,1,73,177
 Reading,Spring,2,73,192
 Reading,Spring,3,73,205
@@ -6191,6 +6707,7 @@ Reading,Spring,9,73,228
 Reading,Spring,10,73,230
 Reading,Spring,11,73,229
 Reading,Spring,12,73,228
+Reading,Fall,K,74,144
 Reading,Fall,1,74,164
 Reading,Fall,2,74,181
 Reading,Fall,3,74,196
@@ -6203,6 +6720,7 @@ Reading,Fall,9,74,228
 Reading,Fall,10,74,229
 Reading,Fall,11,74,230
 Reading,Fall,12,74,230
+Reading,Winter,K,74,153
 Reading,Winter,1,74,172
 Reading,Winter,2,74,188
 Reading,Winter,3,74,202
@@ -6215,6 +6733,7 @@ Reading,Winter,9,74,228
 Reading,Winter,10,74,230
 Reading,Winter,11,74,230
 Reading,Winter,12,74,229
+Reading,Spring,K,74,160
 Reading,Spring,1,74,178
 Reading,Spring,2,74,193
 Reading,Spring,3,74,205
@@ -6227,6 +6746,7 @@ Reading,Spring,9,74,229
 Reading,Spring,10,74,230
 Reading,Spring,11,74,230
 Reading,Spring,12,74,229
+Reading,Fall,K,75,144
 Reading,Fall,1,75,164
 Reading,Fall,2,75,182
 Reading,Fall,3,75,197
@@ -6239,6 +6759,7 @@ Reading,Fall,9,75,228
 Reading,Fall,10,75,230
 Reading,Fall,11,75,230
 Reading,Fall,12,75,230
+Reading,Winter,K,75,153
 Reading,Winter,1,75,172
 Reading,Winter,2,75,188
 Reading,Winter,3,75,202
@@ -6251,6 +6772,7 @@ Reading,Winter,9,75,229
 Reading,Winter,10,75,230
 Reading,Winter,11,75,230
 Reading,Winter,12,75,230
+Reading,Spring,K,75,161
 Reading,Spring,1,75,178
 Reading,Spring,2,75,193
 Reading,Spring,3,75,206
@@ -6263,6 +6785,7 @@ Reading,Spring,9,75,230
 Reading,Spring,10,75,231
 Reading,Spring,11,75,230
 Reading,Spring,12,75,229
+Reading,Fall,K,76,145
 Reading,Fall,1,76,164
 Reading,Fall,2,76,182
 Reading,Fall,3,76,198
@@ -6275,6 +6798,7 @@ Reading,Fall,9,76,229
 Reading,Fall,10,76,230
 Reading,Fall,11,76,231
 Reading,Fall,12,76,231
+Reading,Winter,K,76,154
 Reading,Winter,1,76,172
 Reading,Winter,2,76,189
 Reading,Winter,3,76,203
@@ -6287,6 +6811,7 @@ Reading,Winter,9,76,230
 Reading,Winter,10,76,231
 Reading,Winter,11,76,231
 Reading,Winter,12,76,230
+Reading,Spring,K,76,161
 Reading,Spring,1,76,179
 Reading,Spring,2,76,194
 Reading,Spring,3,76,207
@@ -6299,6 +6824,7 @@ Reading,Spring,9,76,230
 Reading,Spring,10,76,231
 Reading,Spring,11,76,231
 Reading,Spring,12,76,230
+Reading,Fall,K,77,145
 Reading,Fall,1,77,165
 Reading,Fall,2,77,183
 Reading,Fall,3,77,198
@@ -6311,6 +6837,7 @@ Reading,Fall,9,77,230
 Reading,Fall,10,77,231
 Reading,Fall,11,77,232
 Reading,Fall,12,77,232
+Reading,Winter,K,77,154
 Reading,Winter,1,77,173
 Reading,Winter,2,77,189
 Reading,Winter,3,77,203
@@ -6323,6 +6850,7 @@ Reading,Winter,9,77,230
 Reading,Winter,10,77,231
 Reading,Winter,11,77,232
 Reading,Winter,12,77,231
+Reading,Spring,K,77,161
 Reading,Spring,1,77,179
 Reading,Spring,2,77,194
 Reading,Spring,3,77,207
@@ -6335,6 +6863,7 @@ Reading,Spring,9,77,231
 Reading,Spring,10,77,232
 Reading,Spring,11,77,232
 Reading,Spring,12,77,231
+Reading,Fall,K,78,145
 Reading,Fall,1,78,165
 Reading,Fall,2,78,183
 Reading,Fall,3,78,199
@@ -6347,6 +6876,7 @@ Reading,Fall,9,78,230
 Reading,Fall,10,78,232
 Reading,Fall,11,78,232
 Reading,Fall,12,78,232
+Reading,Winter,K,78,155
 Reading,Winter,1,78,173
 Reading,Winter,2,78,190
 Reading,Winter,3,78,204
@@ -6359,6 +6889,7 @@ Reading,Winter,9,78,231
 Reading,Winter,10,78,232
 Reading,Winter,11,78,232
 Reading,Winter,12,78,231
+Reading,Spring,K,78,162
 Reading,Spring,1,78,180
 Reading,Spring,2,78,195
 Reading,Spring,3,78,208
@@ -6371,6 +6902,7 @@ Reading,Spring,9,78,231
 Reading,Spring,10,78,233
 Reading,Spring,11,78,232
 Reading,Spring,12,78,231
+Reading,Fall,K,79,146
 Reading,Fall,1,79,166
 Reading,Fall,2,79,184
 Reading,Fall,3,79,199
@@ -6383,6 +6915,7 @@ Reading,Fall,9,79,231
 Reading,Fall,10,79,232
 Reading,Fall,11,79,233
 Reading,Fall,12,79,233
+Reading,Winter,K,79,155
 Reading,Winter,1,79,174
 Reading,Winter,2,79,191
 Reading,Winter,3,79,205
@@ -6395,6 +6928,7 @@ Reading,Winter,9,79,231
 Reading,Winter,10,79,233
 Reading,Winter,11,79,233
 Reading,Winter,12,79,232
+Reading,Spring,K,79,162
 Reading,Spring,1,79,180
 Reading,Spring,2,79,196
 Reading,Spring,3,79,208
@@ -6407,6 +6941,7 @@ Reading,Spring,9,79,232
 Reading,Spring,10,79,233
 Reading,Spring,11,79,233
 Reading,Spring,12,79,232
+Reading,Fall,K,80,146
 Reading,Fall,1,80,166
 Reading,Fall,2,80,184
 Reading,Fall,3,80,200
@@ -6419,6 +6954,7 @@ Reading,Fall,9,80,231
 Reading,Fall,10,80,233
 Reading,Fall,11,80,233
 Reading,Fall,12,80,234
+Reading,Winter,K,80,155
 Reading,Winter,1,80,174
 Reading,Winter,2,80,191
 Reading,Winter,3,80,205
@@ -6431,6 +6967,7 @@ Reading,Winter,9,80,232
 Reading,Winter,10,80,233
 Reading,Winter,11,80,233
 Reading,Winter,12,80,233
+Reading,Spring,K,80,163
 Reading,Spring,1,80,181
 Reading,Spring,2,80,196
 Reading,Spring,3,80,209
@@ -6443,6 +6980,7 @@ Reading,Spring,9,80,233
 Reading,Spring,10,80,234
 Reading,Spring,11,80,234
 Reading,Spring,12,80,233
+Reading,Fall,K,81,146
 Reading,Fall,1,81,167
 Reading,Fall,2,81,185
 Reading,Fall,3,81,201
@@ -6455,6 +6993,7 @@ Reading,Fall,9,81,232
 Reading,Fall,10,81,234
 Reading,Fall,11,81,234
 Reading,Fall,12,81,234
+Reading,Winter,K,81,156
 Reading,Winter,1,81,175
 Reading,Winter,2,81,192
 Reading,Winter,3,81,206
@@ -6467,6 +7006,7 @@ Reading,Winter,9,81,233
 Reading,Winter,10,81,234
 Reading,Winter,11,81,234
 Reading,Winter,12,81,234
+Reading,Spring,K,81,163
 Reading,Spring,1,81,181
 Reading,Spring,2,81,197
 Reading,Spring,3,81,210
@@ -6479,6 +7019,7 @@ Reading,Spring,9,81,233
 Reading,Spring,10,81,234
 Reading,Spring,11,81,234
 Reading,Spring,12,81,233
+Reading,Fall,K,82,147
 Reading,Fall,1,82,167
 Reading,Fall,2,82,186
 Reading,Fall,3,82,201
@@ -6491,6 +7032,7 @@ Reading,Fall,9,82,233
 Reading,Fall,10,82,234
 Reading,Fall,11,82,235
 Reading,Fall,12,82,235
+Reading,Winter,K,82,156
 Reading,Winter,1,82,175
 Reading,Winter,2,82,192
 Reading,Winter,3,82,206
@@ -6503,6 +7045,7 @@ Reading,Winter,9,82,233
 Reading,Winter,10,82,235
 Reading,Winter,11,82,235
 Reading,Winter,12,82,234
+Reading,Spring,K,82,164
 Reading,Spring,1,82,182
 Reading,Spring,2,82,198
 Reading,Spring,3,82,210
@@ -6515,6 +7058,7 @@ Reading,Spring,9,82,234
 Reading,Spring,10,82,235
 Reading,Spring,11,82,235
 Reading,Spring,12,82,234
+Reading,Fall,K,83,147
 Reading,Fall,1,83,168
 Reading,Fall,2,83,186
 Reading,Fall,3,83,202
@@ -6527,6 +7071,7 @@ Reading,Fall,9,83,233
 Reading,Fall,10,83,235
 Reading,Fall,11,83,236
 Reading,Fall,12,83,236
+Reading,Winter,K,83,157
 Reading,Winter,1,83,176
 Reading,Winter,2,83,193
 Reading,Winter,3,83,207
@@ -6539,6 +7084,7 @@ Reading,Winter,9,83,234
 Reading,Winter,10,83,235
 Reading,Winter,11,83,236
 Reading,Winter,12,83,235
+Reading,Spring,K,83,164
 Reading,Spring,1,83,183
 Reading,Spring,2,83,198
 Reading,Spring,3,83,211
@@ -6551,6 +7097,7 @@ Reading,Spring,9,83,235
 Reading,Spring,10,83,236
 Reading,Spring,11,83,236
 Reading,Spring,12,83,235
+Reading,Fall,K,84,147
 Reading,Fall,1,84,168
 Reading,Fall,2,84,187
 Reading,Fall,3,84,203
@@ -6563,6 +7110,7 @@ Reading,Fall,9,84,234
 Reading,Fall,10,84,236
 Reading,Fall,11,84,236
 Reading,Fall,12,84,236
+Reading,Winter,K,84,157
 Reading,Winter,1,84,176
 Reading,Winter,2,84,194
 Reading,Winter,3,84,208
@@ -6575,6 +7123,7 @@ Reading,Winter,9,84,235
 Reading,Winter,10,84,236
 Reading,Winter,11,84,236
 Reading,Winter,12,84,236
+Reading,Spring,K,84,165
 Reading,Spring,1,84,183
 Reading,Spring,2,84,199
 Reading,Spring,3,84,212
@@ -6587,6 +7136,7 @@ Reading,Spring,9,84,235
 Reading,Spring,10,84,237
 Reading,Spring,11,84,236
 Reading,Spring,12,84,236
+Reading,Fall,K,85,148
 Reading,Fall,1,85,169
 Reading,Fall,2,85,188
 Reading,Fall,3,85,204
@@ -6599,6 +7149,7 @@ Reading,Fall,9,85,235
 Reading,Fall,10,85,236
 Reading,Fall,11,85,237
 Reading,Fall,12,85,237
+Reading,Winter,K,85,157
 Reading,Winter,1,85,177
 Reading,Winter,2,85,194
 Reading,Winter,3,85,209
@@ -6611,6 +7162,7 @@ Reading,Winter,9,85,236
 Reading,Winter,10,85,237
 Reading,Winter,11,85,237
 Reading,Winter,12,85,237
+Reading,Spring,K,85,165
 Reading,Spring,1,85,184
 Reading,Spring,2,85,200
 Reading,Spring,3,85,213
@@ -6623,6 +7175,7 @@ Reading,Spring,9,85,236
 Reading,Spring,10,85,237
 Reading,Spring,11,85,237
 Reading,Spring,12,85,236
+Reading,Fall,K,86,148
 Reading,Fall,1,86,169
 Reading,Fall,2,86,189
 Reading,Fall,3,86,204
@@ -6635,6 +7188,7 @@ Reading,Fall,9,86,236
 Reading,Fall,10,86,237
 Reading,Fall,11,86,238
 Reading,Fall,12,86,238
+Reading,Winter,K,86,158
 Reading,Winter,1,86,178
 Reading,Winter,2,86,195
 Reading,Winter,3,86,209
@@ -6647,6 +7201,7 @@ Reading,Winter,9,86,236
 Reading,Winter,10,86,238
 Reading,Winter,11,86,238
 Reading,Winter,12,86,237
+Reading,Spring,K,86,166
 Reading,Spring,1,86,185
 Reading,Spring,2,86,200
 Reading,Spring,3,86,213
@@ -6659,6 +7214,7 @@ Reading,Spring,9,86,237
 Reading,Spring,10,86,238
 Reading,Spring,11,86,238
 Reading,Spring,12,86,237
+Reading,Fall,K,87,149
 Reading,Fall,1,87,170
 Reading,Fall,2,87,189
 Reading,Fall,3,87,205
@@ -6671,6 +7227,7 @@ Reading,Fall,9,87,237
 Reading,Fall,10,87,238
 Reading,Fall,11,87,239
 Reading,Fall,12,87,239
+Reading,Winter,K,87,158
 Reading,Winter,1,87,178
 Reading,Winter,2,87,196
 Reading,Winter,3,87,210
@@ -6683,6 +7240,7 @@ Reading,Winter,9,87,237
 Reading,Winter,10,87,238
 Reading,Winter,11,87,239
 Reading,Winter,12,87,238
+Reading,Spring,K,87,166
 Reading,Spring,1,87,185
 Reading,Spring,2,87,201
 Reading,Spring,3,87,214
@@ -6695,6 +7253,7 @@ Reading,Spring,9,87,238
 Reading,Spring,10,87,239
 Reading,Spring,11,87,239
 Reading,Spring,12,87,238
+Reading,Fall,K,88,149
 Reading,Fall,1,88,170
 Reading,Fall,2,88,190
 Reading,Fall,3,88,206
@@ -6707,6 +7266,7 @@ Reading,Fall,9,88,237
 Reading,Fall,10,88,239
 Reading,Fall,11,88,240
 Reading,Fall,12,88,240
+Reading,Winter,K,88,159
 Reading,Winter,1,88,179
 Reading,Winter,2,88,197
 Reading,Winter,3,88,211
@@ -6719,6 +7279,7 @@ Reading,Winter,9,88,238
 Reading,Winter,10,88,239
 Reading,Winter,11,88,240
 Reading,Winter,12,88,239
+Reading,Spring,K,88,167
 Reading,Spring,1,88,186
 Reading,Spring,2,88,202
 Reading,Spring,3,88,215
@@ -6731,6 +7292,7 @@ Reading,Spring,9,88,239
 Reading,Spring,10,88,240
 Reading,Spring,11,88,240
 Reading,Spring,12,88,239
+Reading,Fall,K,89,150
 Reading,Fall,1,89,171
 Reading,Fall,2,89,191
 Reading,Fall,3,89,207
@@ -6743,6 +7305,7 @@ Reading,Fall,9,89,238
 Reading,Fall,10,89,240
 Reading,Fall,11,89,240
 Reading,Fall,12,89,241
+Reading,Winter,K,89,160
 Reading,Winter,1,89,180
 Reading,Winter,2,89,198
 Reading,Winter,3,89,212
@@ -6755,6 +7318,7 @@ Reading,Winter,9,89,239
 Reading,Winter,10,89,240
 Reading,Winter,11,89,241
 Reading,Winter,12,89,240
+Reading,Spring,K,89,168
 Reading,Spring,1,89,187
 Reading,Spring,2,89,203
 Reading,Spring,3,89,216
@@ -6767,6 +7331,7 @@ Reading,Spring,9,89,240
 Reading,Spring,10,89,241
 Reading,Spring,11,89,241
 Reading,Spring,12,89,240
+Reading,Fall,K,90,150
 Reading,Fall,1,90,172
 Reading,Fall,2,90,192
 Reading,Fall,3,90,208
@@ -6779,6 +7344,7 @@ Reading,Fall,9,90,239
 Reading,Fall,10,90,241
 Reading,Fall,11,90,241
 Reading,Fall,12,90,242
+Reading,Winter,K,90,160
 Reading,Winter,1,90,181
 Reading,Winter,2,90,199
 Reading,Winter,3,90,213
@@ -6791,6 +7357,7 @@ Reading,Winter,9,90,240
 Reading,Winter,10,90,241
 Reading,Winter,11,90,242
 Reading,Winter,12,90,241
+Reading,Spring,K,90,168
 Reading,Spring,1,90,188
 Reading,Spring,2,90,204
 Reading,Spring,3,90,217
@@ -6803,6 +7370,7 @@ Reading,Spring,9,90,241
 Reading,Spring,10,90,242
 Reading,Spring,11,90,242
 Reading,Spring,12,90,241
+Reading,Fall,K,91,151
 Reading,Fall,1,91,173
 Reading,Fall,2,91,193
 Reading,Fall,3,91,209
@@ -6815,6 +7383,7 @@ Reading,Fall,9,91,240
 Reading,Fall,10,91,242
 Reading,Fall,11,91,243
 Reading,Fall,12,91,243
+Reading,Winter,K,91,161
 Reading,Winter,1,91,181
 Reading,Winter,2,91,200
 Reading,Winter,3,91,214
@@ -6827,6 +7396,7 @@ Reading,Winter,9,91,241
 Reading,Winter,10,91,242
 Reading,Winter,11,91,243
 Reading,Winter,12,91,242
+Reading,Spring,K,91,169
 Reading,Spring,1,91,189
 Reading,Spring,2,91,205
 Reading,Spring,3,91,218
@@ -6839,6 +7409,7 @@ Reading,Spring,9,91,242
 Reading,Spring,10,91,243
 Reading,Spring,11,91,243
 Reading,Spring,12,91,242
+Reading,Fall,K,92,151
 Reading,Fall,1,92,173
 Reading,Fall,2,92,194
 Reading,Fall,3,92,210
@@ -6851,6 +7422,7 @@ Reading,Fall,9,92,242
 Reading,Fall,10,92,243
 Reading,Fall,11,92,244
 Reading,Fall,12,92,244
+Reading,Winter,K,92,161
 Reading,Winter,1,92,182
 Reading,Winter,2,92,201
 Reading,Winter,3,92,215
@@ -6863,6 +7435,7 @@ Reading,Winter,9,92,242
 Reading,Winter,10,92,244
 Reading,Winter,11,92,244
 Reading,Winter,12,92,244
+Reading,Spring,K,92,170
 Reading,Spring,1,92,190
 Reading,Spring,2,92,206
 Reading,Spring,3,92,219
@@ -6875,6 +7448,7 @@ Reading,Spring,9,92,243
 Reading,Spring,10,92,244
 Reading,Spring,11,92,244
 Reading,Spring,12,92,244
+Reading,Fall,K,93,152
 Reading,Fall,1,93,174
 Reading,Fall,2,93,195
 Reading,Fall,3,93,212
@@ -6887,6 +7461,7 @@ Reading,Fall,9,93,243
 Reading,Fall,10,93,244
 Reading,Fall,11,93,245
 Reading,Fall,12,93,245
+Reading,Winter,K,93,162
 Reading,Winter,1,93,183
 Reading,Winter,2,93,202
 Reading,Winter,3,93,217
@@ -6899,6 +7474,7 @@ Reading,Winter,9,93,244
 Reading,Winter,10,93,245
 Reading,Winter,11,93,245
 Reading,Winter,12,93,245
+Reading,Spring,K,93,171
 Reading,Spring,1,93,191
 Reading,Spring,2,93,207
 Reading,Spring,3,93,221
@@ -6911,6 +7487,7 @@ Reading,Spring,9,93,244
 Reading,Spring,10,93,245
 Reading,Spring,11,93,246
 Reading,Spring,12,93,245
+Reading,Fall,K,94,153
 Reading,Fall,1,94,175
 Reading,Fall,2,94,197
 Reading,Fall,3,94,213
@@ -6923,6 +7500,7 @@ Reading,Fall,9,94,244
 Reading,Fall,10,94,246
 Reading,Fall,11,94,246
 Reading,Fall,12,94,247
+Reading,Winter,K,94,163
 Reading,Winter,1,94,184
 Reading,Winter,2,94,203
 Reading,Winter,3,94,218
@@ -6935,6 +7513,7 @@ Reading,Winter,9,94,245
 Reading,Winter,10,94,246
 Reading,Winter,11,94,247
 Reading,Winter,12,94,246
+Reading,Spring,K,94,172
 Reading,Spring,1,94,192
 Reading,Spring,2,94,209
 Reading,Spring,3,94,222
@@ -6947,6 +7526,7 @@ Reading,Spring,9,94,246
 Reading,Spring,10,94,247
 Reading,Spring,11,94,247
 Reading,Spring,12,94,247
+Reading,Fall,K,95,153
 Reading,Fall,1,95,177
 Reading,Fall,2,95,198
 Reading,Fall,3,95,215
@@ -6959,6 +7539,7 @@ Reading,Fall,9,95,246
 Reading,Fall,10,95,247
 Reading,Fall,11,95,248
 Reading,Fall,12,95,249
+Reading,Winter,K,95,164
 Reading,Winter,1,95,186
 Reading,Winter,2,95,205
 Reading,Winter,3,95,220
@@ -6971,6 +7552,7 @@ Reading,Winter,9,95,247
 Reading,Winter,10,95,248
 Reading,Winter,11,95,248
 Reading,Winter,12,95,248
+Reading,Spring,K,95,173
 Reading,Spring,1,95,193
 Reading,Spring,2,95,210
 Reading,Spring,3,95,224
@@ -6983,6 +7565,7 @@ Reading,Spring,9,95,247
 Reading,Spring,10,95,248
 Reading,Spring,11,95,249
 Reading,Spring,12,95,248
+Reading,Fall,K,96,154
 Reading,Fall,1,96,178
 Reading,Fall,2,96,200
 Reading,Fall,3,96,217
@@ -6995,6 +7578,7 @@ Reading,Fall,9,96,248
 Reading,Fall,10,96,249
 Reading,Fall,11,96,250
 Reading,Fall,12,96,251
+Reading,Winter,K,96,165
 Reading,Winter,1,96,187
 Reading,Winter,2,96,207
 Reading,Winter,3,96,222
@@ -7007,6 +7591,7 @@ Reading,Winter,9,96,249
 Reading,Winter,10,96,250
 Reading,Winter,11,96,250
 Reading,Winter,12,96,250
+Reading,Spring,K,96,174
 Reading,Spring,1,96,195
 Reading,Spring,2,96,212
 Reading,Spring,3,96,226
@@ -7019,6 +7604,7 @@ Reading,Spring,9,96,249
 Reading,Spring,10,96,250
 Reading,Spring,11,96,251
 Reading,Spring,12,96,250
+Reading,Fall,K,97,156
 Reading,Fall,1,97,180
 Reading,Fall,2,97,202
 Reading,Fall,3,97,219
@@ -7031,6 +7617,7 @@ Reading,Fall,9,97,250
 Reading,Fall,10,97,252
 Reading,Fall,11,97,252
 Reading,Fall,12,97,253
+Reading,Winter,K,97,167
 Reading,Winter,1,97,189
 Reading,Winter,2,97,209
 Reading,Winter,3,97,224
@@ -7043,6 +7630,7 @@ Reading,Winter,9,97,251
 Reading,Winter,10,97,252
 Reading,Winter,11,97,253
 Reading,Winter,12,97,253
+Reading,Spring,K,97,176
 Reading,Spring,1,97,197
 Reading,Spring,2,97,214
 Reading,Spring,3,97,228
@@ -7055,6 +7643,7 @@ Reading,Spring,9,97,252
 Reading,Spring,10,97,253
 Reading,Spring,11,97,253
 Reading,Spring,12,97,253
+Reading,Fall,K,98,157
 Reading,Fall,1,98,182
 Reading,Fall,2,98,205
 Reading,Fall,3,98,222
@@ -7067,6 +7656,7 @@ Reading,Fall,9,98,253
 Reading,Fall,10,98,255
 Reading,Fall,11,98,255
 Reading,Fall,12,98,256
+Reading,Winter,K,98,169
 Reading,Winter,1,98,191
 Reading,Winter,2,98,212
 Reading,Winter,3,98,227
@@ -7079,6 +7669,7 @@ Reading,Winter,9,98,254
 Reading,Winter,10,98,255
 Reading,Winter,11,98,256
 Reading,Winter,12,98,256
+Reading,Spring,K,98,178
 Reading,Spring,1,98,200
 Reading,Spring,2,98,217
 Reading,Spring,3,98,231
@@ -7091,6 +7682,7 @@ Reading,Spring,9,98,255
 Reading,Spring,10,98,256
 Reading,Spring,11,98,256
 Reading,Spring,12,98,256
+Reading,Fall,K,99,160
 Reading,Fall,1,99,185
 Reading,Fall,2,99,210
 Reading,Fall,3,99,227
@@ -7103,6 +7695,7 @@ Reading,Fall,9,99,258
 Reading,Fall,10,99,260
 Reading,Fall,11,99,260
 Reading,Fall,12,99,262
+Reading,Winter,K,99,172
 Reading,Winter,1,99,195
 Reading,Winter,2,99,217
 Reading,Winter,3,99,232
@@ -7115,6 +7708,7 @@ Reading,Winter,9,99,259
 Reading,Winter,10,99,260
 Reading,Winter,11,99,261
 Reading,Winter,12,99,261
+Reading,Spring,K,99,182
 Reading,Spring,1,99,204
 Reading,Spring,2,99,222
 Reading,Spring,3,99,236

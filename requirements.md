@@ -19,3 +19,7 @@ student progress animation
   - conditional growth index - this is the number of standard deviations above the norm of the student's growth.  0 means growth was typical.  1 means the student growth was 1 standard deviation above the norm
 - once we have the table, we will filter for student / subject combinations above .8 std deviations.  How many student subject combinations are there? How many student subject combinations total?
 - then we will build a web app, where you can select a student subject combination, and show a simple growth animation with percentile 0-99 augmented by 99th grade levels on the Y-axis and fall, winter, spring on the X axis.
+
+## Future Analysis
+- Try thread scores
+- Do fast math analysis - who did fast math and who did well

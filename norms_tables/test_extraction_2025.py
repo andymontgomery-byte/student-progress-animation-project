@@ -102,10 +102,10 @@ def test_grade_coverage():
         subject_grades[subject].add(grade)
 
     expected = {
-        'Mathematics': {str(i) for i in range(1, 13)},      # 1-12
-        'Reading': {str(i) for i in range(1, 13)},          # 1-12
-        'Language Usage': {str(i) for i in range(2, 12)},   # 2-11
-        'Science': {str(i) for i in range(2, 11)},          # 2-10
+        'Mathematics': {'K'} | {str(i) for i in range(1, 13)},  # K-12
+        'Reading': {'K'} | {str(i) for i in range(1, 13)},      # K-12
+        'Language Usage': {str(i) for i in range(2, 12)},       # 2-11
+        'Science': {str(i) for i in range(2, 11)},              # 2-10
     }
 
     for subject, exp_grades in expected.items():
@@ -167,17 +167,46 @@ def test_row_count():
     """Test expected row count"""
     csv_data = load_csv()
 
-    # Math: 12 grades × 99 percentiles × 3 terms = 3564
-    # Reading: 12 grades × 99 percentiles × 3 terms = 3564
+    # Math: 13 grades × 99 percentiles × 3 terms = 3861
+    # Reading: 13 grades × 99 percentiles × 3 terms = 3861
     # Language Usage: 10 grades × 99 percentiles × 3 terms = 2970
     # Science: 9 grades × 99 percentiles × 3 terms = 2673
-    # Total: 12771
+    # Total: 13365
 
-    expected = 12771
+    expected = 13365
     actual = len(csv_data)
 
     assert actual == expected, f"Expected {expected} rows, got {actual}"
     print(f"✓ Row count correct ({actual})")
+
+def test_aggregate_sums_match_excel():
+    """Test that sum of all RIT values matches Excel source"""
+    csv_data = load_csv()
+    wb = load_workbook(EXCEL_FILE)
+
+    for subject in ['Mathematics', 'Reading', 'Language Usage', 'Science']:
+        csv_sum = sum(v for k, v in csv_data.items() if k[0] == subject)
+
+        ws = wb[SHEET_TO_SUBJECT[subject] if subject != 'Mathematics' else 'Math']
+        if subject == 'Mathematics':
+            ws = wb['Math']
+        elif subject == 'Reading':
+            ws = wb['Reading']
+        elif subject == 'Language Usage':
+            ws = wb['Language Usage']
+        else:
+            ws = wb['Science']
+
+        excel_sum = 0
+        for row in ws.iter_rows(min_row=8, values_only=True):
+            if row[0] and str(row[0]).startswith('P'):
+                for val in row[1:]:
+                    if val and isinstance(val, (int, float)):
+                        excel_sum += int(val)
+
+        assert csv_sum == excel_sum, f"{subject}: CSV sum {csv_sum} != Excel sum {excel_sum}"
+
+    print("✓ Aggregate sums match Excel for all subjects")
 
 def run_all_tests():
     """Run all tests"""
@@ -196,6 +225,7 @@ def run_all_tests():
         test_rit_scores_valid_range,
         test_rit_scores_monotonic,
         test_row_count,
+        test_aggregate_sums_match_excel,
     ]
 
     passed = 0
