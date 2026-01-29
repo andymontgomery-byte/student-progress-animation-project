@@ -9,7 +9,7 @@ import os
 import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-WEBAPP_DIR = os.path.join(BASE_DIR, 'webapp')
+WEBAPP_DIR = os.path.join(BASE_DIR, 'docs')
 DATA_JSON = os.path.join(WEBAPP_DIR, 'data.json')
 INDEX_HTML = os.path.join(WEBAPP_DIR, 'index.html')
 
