@@ -10,7 +10,7 @@ import sys
 from collections import defaultdict
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TABLE_CSV = os.path.join(BASE_DIR, 'student_progress.csv')
+TABLE_CSV = os.path.join(BASE_DIR, 'data', 'output', 'student_progress.csv')
 NORMS_CSV = os.path.join(BASE_DIR, 'norms_tables', 'csv', 'student_status_percentiles.csv')
 
 def load_table():
