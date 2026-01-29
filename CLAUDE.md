@@ -3,8 +3,10 @@
 ## Overview
 Web app showing student growth animations for high-growth MAP test takers (CGI > 0.8).
 
-## Live URL
-https://andymontgomery-byte.github.io/student-progress-animation-project/
+## Live URLs
+- **Main webapp:** https://andymontgomery-byte.github.io/student-progress-animation-project/
+- **Strata webapp:** https://andymontgomery-byte.github.io/student-progress-animation-project/strata/
+- **Norms comparison:** https://andymontgomery-byte.github.io/student-progress-animation-project/norms_comparison.html
 
 ## Project Structure
 ```
@@ -15,9 +17,14 @@ student_progress_animation/
 ├── data/
 │   ├── input/                   # Raw data (checked in)
 │   │   ├── fall_data.xlsx
-│   │   └── winter_data.xlsx
+│   │   ├── winter_data.xlsx
+│   │   └── archive_2025-01-29/  # Previous data files
 │   └── output/                  # Generated (NOT checked in)
-│       └── student_progress.csv
+│       ├── student_progress.csv
+│       ├── student_progress_2020.csv  # Table built with 2020 norms (for QC)
+│       └── student_progress_2025_old.csv  # Previous 2025 table
+├── scripts/
+│   └── build_table.py           # Builds student_progress.csv from data + norms
 ├── norms_tables/
 │   ├── CLAUDE.md                # Norms extraction docs
 │   ├── NormsTables.pdf          # NWEA 2020 norms (NOT checked in, too large)
@@ -25,12 +32,19 @@ student_progress_animation/
 │   ├── norms_comparison.html    # 2020 vs 2025 visual comparison
 │   ├── csv/
 │   │   ├── student_status_percentiles.csv       # 2020 norms (13,365 rows)
-│   │   └── student_status_percentiles_2025.csv  # 2025 norms (13,365 rows)
+│   │   ├── student_status_percentiles_2025.csv  # 2025 norms (13,365 rows)
+│   │   ├── norms_2020_matrix.csv                # 2020 matrix format
+│   │   ├── norms_2025_matrix.csv                # 2025 matrix format
+│   │   └── norms_diff_matrix.csv                # 2025-2020 differences
 │   ├── test_extraction.py       # 2020 norms tests (8 tests)
 │   └── test_extraction_2025.py  # 2025 norms tests (10 tests)
-├── docs/                        # GitHub Pages (was: webapp/)
-│   ├── index.html               # Web app (checked in)
-│   └── data.json                # Filtered data (NOT checked in, generated)
+├── docs/                        # GitHub Pages
+│   ├── index.html               # Main web app
+│   ├── data.json                # Filtered data for main app
+│   ├── norms_comparison.html    # 2020 vs 2025 norms diff table
+│   └── strata/                  # Strata-only webapp
+│       ├── index.html
+│       └── data.json
 └── tests/
     ├── run_all_tests.py         # Master test runner
     ├── test_norms_extraction.py # 8 tests
@@ -48,41 +62,207 @@ student_progress_animation/
 | `tests/*` | `__pycache__/` |
 | `*.md`, `.gitignore` | `.claude/` |
 
-## Workflow for New Data
+## Quick Reference: Processing New Score Data
 
-### 1. Drop in new data files
-Replace files in `data/input/`:
-- `fall_data.xlsx` - columns: email, course, grade, districtname, schoolname, termname, testritscore, testpercentile
-- `winter_data.xlsx` - columns: email, course, grade, districtname, schoolname, termname, falltowinterconditionalgrowthindex, testritscore, testpercentile, falltowinterobservedgrowth
+When user provides new xlsx files, run these steps:
+
+```bash
+# 1. Archive old data
+mkdir -p data/input/archive_$(date +%Y-%m-%d)
+mv data/input/fall_data.xlsx data/input/archive_$(date +%Y-%m-%d)/
+mv data/input/winter_data.xlsx data/input/archive_$(date +%Y-%m-%d)/
+
+# 2. Copy new files (user will provide paths)
+cp "/path/to/fall_file.xlsx" data/input/fall_data.xlsx
+cp "/path/to/winter_file.xlsx" data/input/winter_data.xlsx
+
+# 3. Rebuild the student progress table
+python3 scripts/build_table.py
+
+# 4. Run tests
+python3 tests/run_all_tests.py
+
+# 5. Update webapp JSON files (see Python code below)
+
+# 6. Push to GitHub
+git add data/input/*.xlsx docs/data.json docs/strata/
+git commit -m "Update with new score data"
+git push
+```
+
+### Python: Update Webapp JSON Files
+Run this after rebuilding the table:
+```python
+import csv, json
+
+# Load table
+data = []
+with open('data/output/student_progress.csv') as f:
+    for row in csv.DictReader(f):
+        data.append({
+            'email': row['email'],
+            'grade': row['grade'],
+            'school': row['school'],
+            'course': row['course'],
+            'fall_pct': int(row['fall_pct']) if row['fall_pct'] else None,
+            'fall_99_levels': int(row['fall_99_levels']) if row['fall_99_levels'] else 0,
+            'winter_pct': int(row['winter_pct']) if row['winter_pct'] else None,
+            'winter_99_levels': int(row['winter_99_levels']) if row['winter_99_levels'] else 0,
+            'projected_pct': int(row['projected_pct']) if row['projected_pct'] else None,
+            'projected_99_levels': int(row['projected_99_levels']) if row['projected_99_levels'] else 0,
+            'cgi': float(row['cgi']) if row['cgi'] else None
+        })
+
+# Main webapp (CGI > 0.8)
+filtered = sorted([r for r in data if r['cgi'] and r['cgi'] > 0.8], key=lambda r: r['cgi'], reverse=True)
+with open('docs/data.json', 'w') as f:
+    json.dump(filtered, f, indent=2)
+
+# Strata webapp
+STRATA_SCHOOLS = {'AIE Elite Prep', 'All American Prep', 'DeepWater Prep', 'Modern Samurai Academy', 'The Bennett School'}
+strata = sorted([r for r in filtered if r['school'] in STRATA_SCHOOLS], key=lambda r: r['cgi'], reverse=True)
+with open('docs/strata/data.json', 'w') as f:
+    json.dump(strata, f, indent=2)
+
+print(f"Main: {len(filtered)} | Strata: {len(strata)}")
+```
+
+## Data File Formats
+
+### Input Excel Files
+Both files have: Row 1 = title, Row 2 = blank, Row 3 = headers, Row 4+ = data
+
+**fall_data.xlsx columns:**
+| Column | Description |
+|--------|-------------|
+| email | Student email |
+| course | Math K-12, Reading, Language Usage, Science K-12 |
+| grade | K, 1-12 (may be null for some records) |
+| districtname | District name |
+| schoolname | School name |
+| termname | Term (Fall) |
+| testritscore | RIT score |
+| testpercentile | Achievement percentile (1-99) |
+
+**winter_data.xlsx columns:**
+| Column | Description |
+|--------|-------------|
+| email | Student email |
+| course | Math K-12, Reading, Language Usage, Science K-12 |
+| grade | K, 1-12 |
+| districtname | District name |
+| schoolname | School name |
+| termname | Term (Winter) |
+| falltowinterconditionalgrowthindex | CGI - std devs above expected growth |
+| testritscore | Winter RIT score |
+| testpercentile | Winter achievement percentile |
+| falltowinterobservedgrowth | RIT point gain from fall to winter |
+
+### Course to Subject Mapping
+```python
+COURSE_TO_SUBJECT = {
+    'Math K-12': 'Mathematics',
+    'Reading': 'Reading',
+    'Language Usage': 'Language Usage',
+    'Science K-12': 'Science'
+}
+```
+
+### Norms CSV Files
+Located in `norms_tables/csv/`:
+| File | Description |
+|------|-------------|
+| `student_status_percentiles.csv` | 2020 norms (subject, term, grade, percentile, rit_score) |
+| `student_status_percentiles_2025.csv` | 2025 norms (same format) |
+| `norms_2020_matrix.csv` | 2020 in matrix format (rows=percentiles, cols=subject/term/grade) |
+| `norms_2025_matrix.csv` | 2025 in matrix format |
+| `norms_diff_matrix.csv` | 2025-2020 difference (positive=harder, negative=easier) |
+
+## Workflow for New Data (Detailed)
+
+### 1. Archive old data and drop in new files
+```bash
+# Archive old data
+mkdir -p data/input/archive_YYYY-MM-DD
+mv data/input/fall_data.xlsx data/input/archive_YYYY-MM-DD/
+mv data/input/winter_data.xlsx data/input/archive_YYYY-MM-DD/
+
+# Copy new files
+cp /path/to/new_fall_data.xlsx data/input/fall_data.xlsx
+cp /path/to/new_winter_data.xlsx data/input/winter_data.xlsx
+```
 
 ### 2. If new norms tables
-- Copy PDF to `norms_tables/`
-- DO NOT read PDF directly (too large) - break into chunks first
+- Copy PDF/Excel to `norms_tables/`
+- DO NOT read large PDFs directly - break into chunks first
 - Re-extract to CSV
-- Run: `python3 norms_tables/test_extraction.py`
+- Run: `python3 norms_tables/test_extraction.py` or `test_extraction_2025.py`
 
 ### 3. Rebuild the table
-Ask Claude to rebuild `data/output/student_progress.csv` from the new data files.
+```bash
+python3 scripts/build_table.py
+```
+This builds `data/output/student_progress.csv` using 2025 norms.
 
 ### 4. Run all tests
 ```bash
 python3 tests/run_all_tests.py
 ```
 
-### 5. Update webapp and deploy
+### 5. Update webapp data and deploy
 ```bash
-# Regenerate webapp/data.json (Claude will do this)
+# Update docs/data.json and docs/strata/data.json (use Python code above)
 # Then push to GitHub
-git add .
+git add data/input/*.xlsx docs/data.json docs/strata/data.json
 git commit -m "Update data"
 git push
 ```
 
-## Key Metrics
-- Total student/subject combinations: 361
-- High-growth (CGI > 0.8): 188 (52.1%)
+## Key Metrics (as of 2025-01-29)
+- Fall records: 5,782
+- Winter records: 889
+- Total student/subject combinations with CGI: 889
+- High-growth (CGI > 0.8): 490 (55.1%)
 - Subjects: Math K-12, Reading, Language Usage, Science K-12
 - Grades: K-12
+
+## Strata Schools
+Schools filtered for the Strata webapp:
+- AIE Elite Prep
+- All American Prep (no winter data yet)
+- DeepWater Prep (no winter data yet)
+- Modern Samurai Academy
+- The Bennett School
+
+Current Strata high-growth students: 9
+
+## Comparing Old vs New Data
+
+When new data files arrive, compare before replacing:
+```python
+from openpyxl import load_workbook
+
+def compare_xlsx(old_path, new_path, name):
+    def load(path):
+        wb = load_workbook(path)
+        ws = wb.active
+        headers = None
+        data = {}
+        for row in ws.iter_rows(values_only=True):
+            if row[0] == 'email':
+                headers = row
+                continue
+            if headers and row[0]:
+                rec = dict(zip(headers, row))
+                key = (rec['email'], rec['course'])
+                data[key] = rec
+        return data
+
+    old, new = load(old_path), load(new_path)
+    print(f"{name}: {len(old)} -> {len(new)} ({len(new)-len(old):+d})")
+    print(f"  Only in old: {len(set(old.keys()) - set(new.keys()))}")
+    print(f"  Only in new: {len(set(new.keys()) - set(old.keys()))}")
+```
 
 ## Test Coverage
 - **Norms extraction**: 8 tests (subjects, terms, percentiles, grades, RIT ranges, monotonicity, row counts, spot checks)
