@@ -397,14 +397,23 @@
 
     // Load data
     fetch('../data.json')
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then(data => {
+        console.log(`Loaded ${data.length} students`);
         allStudents = data;
         filteredStudents = data;
         populateFilters();
         populateStudentSelects();
         drawEmptyChart(ctxA, canvasA);
         drawEmptyChart(ctxB, canvasB);
+        studentCountEl.textContent = `${data.length} students`;
+      })
+      .catch(err => {
+        console.error('Failed to load data:', err);
+        studentCountEl.textContent = 'Error loading data';
       });
 
     function populateFilters() {
