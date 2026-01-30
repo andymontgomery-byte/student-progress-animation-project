@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from test_norms_extraction import run_all_tests as test_norms
 from test_table_building import run_all_tests as test_table
 from test_webapp import run_all_tests as test_webapp
+from test_compare_webapp import run_all_tests as test_compare
 
 def main():
     print()
@@ -34,6 +35,10 @@ def main():
     # Run webapp tests
     print("\n" + "=" * 60)
     results['webapp'] = test_webapp()
+
+    # Run comparison webapp tests
+    print("\n" + "=" * 60)
+    results['compare'] = test_compare()
 
     # Summary
     print("\n" + "=" * 60)

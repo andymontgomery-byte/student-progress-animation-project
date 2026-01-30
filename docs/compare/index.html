@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Progress Comparison</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .filters {
+      background: #16213e;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .filters h3 {
+      margin-bottom: 15px;
+      color: #888;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    .filter-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .filter-group {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .filter-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .filter-group select {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      border: none;
+      border-radius: 6px;
+      background: #1a1a2e;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .comparison {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .student-panel {
+      background: #16213e;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .panel-header {
+      margin-bottom: 15px;
+    }
+
+    .panel-title {
+      font-size: 1rem;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .student-select-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .student-select-row select {
+      flex: 1;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      border: none;
+      border-radius: 8px;
+      background: #1a1a2e;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .student-select-row select:focus {
+      outline: 2px solid #4a9eff;
+    }
+
+    .student-select-row button {
+      padding: 12px 20px;
+      font-size: 0.95rem;
+      border: none;
+      border-radius: 8px;
+      background: #4a9eff;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .student-select-row button:hover {
+      background: #3a8eef;
+    }
+
+    .chart-container {
+      margin: 15px 0;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+      font-size: 0.8rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .student-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .info-card {
+      text-align: center;
+      padding: 12px;
+      background: #1a1a2e;
+      border-radius: 6px;
+    }
+
+    .info-card .label {
+      color: #888;
+      font-size: 0.75rem;
+      margin-bottom: 4px;
+    }
+
+    .info-card .value {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #4a9eff;
+    }
+
+    .info-card .value.gold {
+      color: #ffd700;
+    }
+
+    .no-students {
+      text-align: center;
+      color: #666;
+      padding: 40px;
+    }
+
+    .filter-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .chip {
+      background: #1a1a2e;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .chip.active {
+      background: #4a9eff;
+      color: #fff;
+    }
+
+    .clear-filters {
+      background: transparent;
+      border: 1px solid #444;
+      color: #888;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .clear-filters:hover {
+      border-color: #666;
+      color: #aaa;
+    }
+
+    .student-count {
+      color: #888;
+      font-size: 0.85rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Progress Comparison</h1>
+    <p class="subtitle">Compare two high-growth students side by side</p>
+
+    <div class="filters">
+      <h3>Filter Students</h3>
+      <div class="filter-row">
+        <div class="filter-group">
+          <label>Schools</label>
+          <select id="schoolFilter" multiple size="1">
+            <option value="">All Schools</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Subjects</label>
+          <select id="subjectFilter">
+            <option value="">All Subjects</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Grades</label>
+          <select id="gradeFilter">
+            <option value="">All Grades</option>
+          </select>
+        </div>
+      </div>
+      <div class="student-count" id="studentCount">490 students</div>
+      <button class="clear-filters" id="clearFilters">Clear Filters</button>
+    </div>
+
+    <div class="comparison">
+      <div class="student-panel">
+        <div class="panel-header">
+          <div class="panel-title">Student A</div>
+          <div class="student-select-row">
+            <select id="studentSelectA">
+              <option value="">Select a student...</option>
+            </select>
+            <button id="animateBtnA">Animate</button>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="chartA" width="500" height="300"></canvas>
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-dot" style="background: #4a9eff;"></div>
+              <span>Percentile</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot" style="background: #ffd700;"></div>
+              <span>99th + Levels</span>
+            </div>
+          </div>
+        </div>
+        <div class="student-info" id="infoA" style="display: none;">
+          <div class="info-card">
+            <div class="label">School</div>
+            <div class="value" id="infoSchoolA">-</div>
+          </div>
+          <div class="info-card">
+            <div class="label">Grade</div>
+            <div class="value" id="infoGradeA">-</div>
+          </div>
+          <div class="info-card">
+            <div class="label">Subject</div>
+            <div class="value" id="infoCourseA">-</div>
+          </div>
+          <div class="info-card">
+            <div class="label">CGI</div>
+            <div class="value gold" id="infoCGIA">-</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="student-panel">
+        <div class="panel-header">
+          <div class="panel-title">Student B</div>
+          <div class="student-select-row">
+            <select id="studentSelectB">
+              <option value="">Select a student...</option>
+            </select>
+            <button id="animateBtnB">Animate</button>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="chartB" width="500" height="300"></canvas>
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-dot" style="background: #4a9eff;"></div>
+              <span>Percentile</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot" style="background: #ffd700;"></div>
+              <span>99th + Levels</span>
+            </div>
+          </div>
+        </div>
+        <div class="student-info" id="infoB" style="display: none;">
+          <div class="info-card">
+            <div class="label">School</div>
+            <div class="value" id="infoSchoolB">-</div>
+          </div>
+          <div class="info-card">
+            <div class="label">Grade</div>
+            <div class="value" id="infoGradeB">-</div>
+          </div>
+          <div class="info-card">
+            <div class="label">Subject</div>
+            <div class="value" id="infoCourseB">-</div>
+          </div>
+          <div class="info-card">
+            <div class="label">CGI</div>
+            <div class="value gold" id="infoCGIB">-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allStudents = [];
+    let filteredStudents = [];
+    let studentA = null;
+    let studentB = null;
+    let animationFrameA = null;
+    let animationFrameB = null;
+
+    const schoolFilter = document.getElementById('schoolFilter');
+    const subjectFilter = document.getElementById('subjectFilter');
+    const gradeFilter = document.getElementById('gradeFilter');
+    const studentSelectA = document.getElementById('studentSelectA');
+    const studentSelectB = document.getElementById('studentSelectB');
+    const animateBtnA = document.getElementById('animateBtnA');
+    const animateBtnB = document.getElementById('animateBtnB');
+    const clearFiltersBtn = document.getElementById('clearFilters');
+    const studentCountEl = document.getElementById('studentCount');
+
+    const canvasA = document.getElementById('chartA');
+    const ctxA = canvasA.getContext('2d');
+    const canvasB = document.getElementById('chartB');
+    const ctxB = canvasB.getContext('2d');
+
+    // Load data
+    fetch('../data.json')
+      .then(res => res.json())
+      .then(data => {
+        allStudents = data;
+        filteredStudents = data;
+        populateFilters();
+        populateStudentSelects();
+        drawEmptyChart(ctxA, canvasA);
+        drawEmptyChart(ctxB, canvasB);
+      });
+
+    function populateFilters() {
+      // Schools
+      const schools = [...new Set(allStudents.map(s => s.school))].sort();
+      schools.forEach(school => {
+        const opt = document.createElement('option');
+        opt.value = school;
+        opt.textContent = school;
+        schoolFilter.appendChild(opt);
+      });
+
+      // Subjects
+      const subjects = [...new Set(allStudents.map(s => s.course))].sort();
+      subjects.forEach(subject => {
+        const opt = document.createElement('option');
+        opt.value = subject;
+        opt.textContent = subject;
+        subjectFilter.appendChild(opt);
+      });
+
+      // Grades
+      const grades = [...new Set(allStudents.map(s => s.grade))];
+      grades.sort((a, b) => {
+        if (a === 'K') return -1;
+        if (b === 'K') return 1;
+        return parseInt(a) - parseInt(b);
+      });
+      grades.forEach(grade => {
+        const opt = document.createElement('option');
+        opt.value = grade;
+        opt.textContent = `Grade ${grade}`;
+        gradeFilter.appendChild(opt);
+      });
+    }
+
+    function applyFilters() {
+      const school = schoolFilter.value;
+      const subject = subjectFilter.value;
+      const grade = gradeFilter.value;
+
+      filteredStudents = allStudents.filter(s => {
+        if (school && s.school !== school) return false;
+        if (subject && s.course !== subject) return false;
+        if (grade && s.grade !== grade) return false;
+        return true;
+      });
+
+      studentCountEl.textContent = `${filteredStudents.length} students`;
+      populateStudentSelects();
+    }
+
+    function populateStudentSelects() {
+      // Clear existing options
+      studentSelectA.innerHTML = '<option value="">Select a student...</option>';
+      studentSelectB.innerHTML = '<option value="">Select a student...</option>';
+
+      // Sort by CGI descending
+      const sorted = [...filteredStudents].sort((a, b) => b.cgi - a.cgi);
+
+      sorted.forEach((s, i) => {
+        const name = s.email.split('@')[0].replace('.', ' ');
+        const label = `${name} - ${s.course} G${s.grade} (Start: P${s.fall_pct}, CGI: ${s.cgi.toFixed(2)})`;
+
+        const optA = document.createElement('option');
+        optA.value = i;
+        optA.textContent = label;
+        studentSelectA.appendChild(optA);
+
+        const optB = document.createElement('option');
+        optB.value = i;
+        optB.textContent = label;
+        studentSelectB.appendChild(optB);
+      });
+    }
+
+    function getFilteredStudent(index) {
+      const sorted = [...filteredStudents].sort((a, b) => b.cgi - a.cgi);
+      return sorted[index];
+    }
+
+    // Event listeners
+    schoolFilter.addEventListener('change', applyFilters);
+    subjectFilter.addEventListener('change', applyFilters);
+    gradeFilter.addEventListener('change', applyFilters);
+
+    clearFiltersBtn.addEventListener('click', () => {
+      schoolFilter.value = '';
+      subjectFilter.value = '';
+      gradeFilter.value = '';
+      applyFilters();
+    });
+
+    studentSelectA.addEventListener('change', () => {
+      if (studentSelectA.value === '') {
+        studentA = null;
+        drawEmptyChart(ctxA, canvasA);
+        document.getElementById('infoA').style.display = 'none';
+        return;
+      }
+      studentA = getFilteredStudent(parseInt(studentSelectA.value));
+      updateStudentInfo('A', studentA);
+      drawChart(ctxA, canvasA, studentA, 3);
+    });
+
+    studentSelectB.addEventListener('change', () => {
+      if (studentSelectB.value === '') {
+        studentB = null;
+        drawEmptyChart(ctxB, canvasB);
+        document.getElementById('infoB').style.display = 'none';
+        return;
+      }
+      studentB = getFilteredStudent(parseInt(studentSelectB.value));
+      updateStudentInfo('B', studentB);
+      drawChart(ctxB, canvasB, studentB, 3);
+    });
+
+    animateBtnA.addEventListener('click', () => {
+      if (studentA) animateChart(ctxA, canvasA, studentA, 'A');
+    });
+
+    animateBtnB.addEventListener('click', () => {
+      if (studentB) animateChart(ctxB, canvasB, studentB, 'B');
+    });
+
+    function updateStudentInfo(panel, student) {
+      document.getElementById(`infoSchool${panel}`).textContent = student.school;
+      document.getElementById(`infoGrade${panel}`).textContent = student.grade;
+      document.getElementById(`infoCourse${panel}`).textContent = student.course;
+      document.getElementById(`infoCGI${panel}`).textContent = student.cgi.toFixed(2);
+      document.getElementById(`info${panel}`).style.display = 'grid';
+    }
+
+    // Chart drawing functions
+    function getChartDimensions(canvas) {
+      const margin = { top: 30, right: 30, bottom: 50, left: 50 };
+      const width = canvas.width - margin.left - margin.right;
+      const height = canvas.height - margin.top - margin.bottom;
+      return { margin, width, height };
+    }
+
+    function percentileToY(pct, levels99, height, margin) {
+      const baseHeight = height * 0.75;
+      const extendedHeight = height * 0.25;
+
+      if (pct < 99 || levels99 === 0) {
+        const ratio = pct / 99;
+        return margin.top + height - (ratio * baseHeight);
+      } else {
+        const maxLevels = 8;
+        const levelRatio = Math.min(levels99, maxLevels) / maxLevels;
+        return margin.top + (1 - levelRatio) * extendedHeight;
+      }
+    }
+
+    function drawAxes(ctx, canvas) {
+      const { margin, width, height } = getChartDimensions(canvas);
+
+      ctx.strokeStyle = '#444';
+      ctx.lineWidth = 1;
+
+      // Y-axis
+      ctx.beginPath();
+      ctx.moveTo(margin.left, margin.top);
+      ctx.lineTo(margin.left, margin.top + height);
+      ctx.stroke();
+
+      // X-axis
+      ctx.beginPath();
+      ctx.moveTo(margin.left, margin.top + height);
+      ctx.lineTo(margin.left + width, margin.top + height);
+      ctx.stroke();
+
+      // Y-axis labels
+      ctx.fillStyle = '#888';
+      ctx.font = '11px sans-serif';
+      ctx.textAlign = 'right';
+
+      [0, 25, 50, 75, 99].forEach(pct => {
+        const y = percentileToY(pct, 0, height, margin);
+        ctx.fillText(pct.toString(), margin.left - 8, y + 4);
+
+        ctx.strokeStyle = '#333';
+        ctx.beginPath();
+        ctx.moveTo(margin.left, y);
+        ctx.lineTo(margin.left + width, y);
+        ctx.stroke();
+      });
+
+      // 99+ labels
+      ctx.fillStyle = '#ffd700';
+      for (let lvl = 2; lvl <= 8; lvl += 2) {
+        const y = percentileToY(99, lvl, height, margin);
+        if (y >= margin.top) {
+          ctx.fillText(`99+${lvl}`, margin.left - 8, y + 4);
+        }
+      }
+
+      // X-axis labels
+      ctx.fillStyle = '#888';
+      ctx.textAlign = 'center';
+      const terms = ['Fall', 'Winter', 'Spring'];
+      terms.forEach((term, i) => {
+        const x = margin.left + (i + 0.5) * (width / 3);
+        ctx.fillText(term, x, margin.top + height + 25);
+      });
+    }
+
+    function drawEmptyChart(ctx, canvas) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawAxes(ctx, canvas);
+
+      const { margin, width, height } = getChartDimensions(canvas);
+      ctx.fillStyle = '#666';
+      ctx.font = '14px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Select a student', margin.left + width / 2, margin.top + height / 2);
+    }
+
+    function drawChart(ctx, canvas, student, visiblePoints = 3) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawAxes(ctx, canvas);
+
+      const { margin, width, height } = getChartDimensions(canvas);
+
+      const points = [
+        { term: 0, pct: student.fall_pct, levels: student.fall_99_levels },
+        { term: 1, pct: student.winter_pct, levels: student.winter_99_levels },
+        { term: 2, pct: student.projected_pct, levels: student.projected_99_levels }
+      ];
+
+      // Draw line
+      ctx.strokeStyle = '#4a9eff';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+
+      for (let i = 0; i < Math.min(visiblePoints, points.length); i++) {
+        const p = points[i];
+        const x = margin.left + (p.term + 0.5) * (width / 3);
+        const y = percentileToY(p.pct, p.levels, height, margin);
+
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+
+      // Draw points
+      for (let i = 0; i < Math.min(visiblePoints, points.length); i++) {
+        const p = points[i];
+        const x = margin.left + (p.term + 0.5) * (width / 3);
+        const y = percentileToY(p.pct, p.levels, height, margin);
+
+        ctx.beginPath();
+        ctx.arc(x, y, 10, 0, Math.PI * 2);
+        ctx.fillStyle = p.pct >= 99 && p.levels > 0 ? '#ffd700' : '#4a9eff';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(x, y, 5, 0, Math.PI * 2);
+        ctx.fillStyle = '#16213e';
+        ctx.fill();
+
+        // Label
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 12px sans-serif';
+        ctx.textAlign = 'center';
+        const label = p.pct >= 99 && p.levels > 0 ? `99+${p.levels}` : `${p.pct}`;
+        ctx.fillText(label, x, y - 18);
+      }
+    }
+
+    function animateChart(ctx, canvas, student, panel) {
+      if (panel === 'A' && animationFrameA) cancelAnimationFrame(animationFrameA);
+      if (panel === 'B' && animationFrameB) cancelAnimationFrame(animationFrameB);
+
+      const delays = [0, 800, 1600];
+      const startTime = performance.now();
+
+      function animate(time) {
+        const elapsed = time - startTime;
+
+        let visiblePoints = 1;
+        if (elapsed >= delays[2]) visiblePoints = 3;
+        else if (elapsed >= delays[1]) visiblePoints = 2;
+
+        drawChart(ctx, canvas, student, visiblePoints);
+
+        if (visiblePoints < 3) {
+          if (panel === 'A') animationFrameA = requestAnimationFrame(animate);
+          else animationFrameB = requestAnimationFrame(animate);
+        }
+      }
+
+      if (panel === 'A') animationFrameA = requestAnimationFrame(animate);
+      else animationFrameB = requestAnimationFrame(animate);
+    }
+  </script>
+</body>
+</html>
