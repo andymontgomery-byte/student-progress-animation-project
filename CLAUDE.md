@@ -6,6 +6,7 @@ Web app showing student growth animations for high-growth MAP test takers (CGI >
 ## Live URLs
 - **Main webapp:** https://andymontgomery-byte.github.io/student-progress-animation-project/
 - **Strata webapp:** https://andymontgomery-byte.github.io/student-progress-animation-project/strata/
+- **Compare webapp:** https://andymontgomery-byte.github.io/student-progress-animation-project/compare/
 - **Norms comparison:** https://andymontgomery-byte.github.io/student-progress-animation-project/norms_comparison.html
 
 ## Project Structure
@@ -40,16 +41,22 @@ student_progress_animation/
 │   └── test_extraction_2025.py  # 2025 norms tests (10 tests)
 ├── docs/                        # GitHub Pages
 │   ├── index.html               # Main web app
-│   ├── data.json                # Filtered data for main app
+│   ├── data.json                # Filtered data for main app (CGI > 0.8)
 │   ├── norms_comparison.html    # 2020 vs 2025 norms diff table
-│   └── strata/                  # Strata-only webapp
-│       ├── index.html
-│       └── data.json
+│   ├── strata/                  # Strata-only webapp
+│   │   ├── index.html
+│   │   └── data.json
+│   └── compare/                 # Side-by-side comparison webapp
+│       └── index.html           # Uses ../data.json
 └── tests/
-    ├── run_all_tests.py         # Master test runner
-    ├── test_norms_extraction.py # 8 tests
-    ├── test_table_building.py   # 11 tests
-    └── test_webapp.py           # 11 tests
+    ├── run_all_tests.py           # Master test runner (75 tests)
+    ├── test_norms_extraction.py   # 8 tests
+    ├── test_table_building.py     # 11 tests
+    ├── test_webapp.py             # 11 structural tests
+    ├── test_compare_webapp.py     # 11 structural tests
+    ├── test_webapp_browser.py     # 8 browser tests (Playwright)
+    ├── test_strata_browser.py     # 7 browser tests (Playwright)
+    └── test_compare_browser.py    # 19 browser tests (Playwright)
 ```
 
 ## What's Checked In vs Not
@@ -223,6 +230,25 @@ git push
 - Subjects: Math K-12, Reading, Language Usage, Science K-12
 - Grades: K-12
 
+## Compare Webapp
+
+**Build:** Side-by-side comparison webapp at `/compare/` showing two student animations simultaneously.
+
+**Features:**
+- Two independent chart panels (Student A and Student B)
+- Filter dropdowns for school, subject, and grade
+- Student count updates as filters are applied
+- Dropdown shows starting percentile: `Name - Subject G# (Start: P##, CGI: #.##)`
+- Sorted by CGI descending
+
+**Verify before delivering:**
+1. All filter dropdowns populate from data
+2. Filtering reduces student count correctly
+3. Combined filters work (school + subject + grade)
+4. Selecting student in either panel displays chart
+5. Both panels work independently
+6. Browser tests pass: `python3 tests/test_compare_browser.py`
+
 ## Strata Webapp
 
 **Build:** Create a filtered webapp at `/strata/` showing only students from Strata schools with CGI > 0.8.
@@ -291,13 +317,44 @@ def compare_xlsx(old_path, new_path, name):
 ```
 
 ## Test Coverage
+
+### Structural Tests (41 tests)
 - **Norms extraction**: 8 tests (subjects, terms, percentiles, grades, RIT ranges, monotonicity, row counts, spot checks)
 - **Table building**: 11 tests (columns, validity, ranges, CGI filter, uniqueness)
 - **Webapp**: 11 tests (files exist, JSON valid, filtering, sorting, HTML structure)
+- **Compare webapp**: 11 tests (two charts, filters, student selects, data loading)
+
+### Browser Tests with Playwright (34 tests)
+These test actual browser functionality, not just HTML structure:
+- **Main webapp browser**: 8 tests (page loads, data loads, console errors, dropdown, canvas, student selection, animation)
+- **Strata webapp browser**: 7 tests (page loads, data loads, Strata-only schools, CGI threshold, student selection)
+- **Compare webapp browser**: 19 tests (page loads, all filters populate, filtering works, student counts, dropdowns show percentile, both charts work independently, animations)
+
+### Visual Dropdown Tests
+`test_dropdown_visual.py` - catches rendering bugs that programmatic tests miss:
+- Takes screenshots of dropdowns while open
+- Flags multi-select elements (which have cross-browser rendering issues)
+- Verifies option text is visually present, not just programmatically
+
+Run: `python3 tests/test_dropdown_visual.py`
 
 Run all tests: `python3 tests/run_all_tests.py`
 
+### Playwright Requirements
+Browser tests require Playwright. Already installed at:
+`/Library/Frameworks/Python.framework/Versions/3.11/bin/playwright`
+
+If needed: `pip3 install playwright && playwright install`
+
 ## Lessons Learned
+
+### Programmatic tests can pass while visual rendering fails
+- **Critical bug found**: Schools dropdown showed checkboxes with BLANK labels in Safari
+- Programmatic test: `select.options` had 28 items with correct text ✓
+- Visual reality: Users saw empty checkboxes with no text ✗
+- **Root cause**: `<select multiple size="1">` renders differently across browsers
+- **Fix**: Use visual tests that take screenshots of open dropdowns
+- **Rule**: If users interact with it visually, test it visually
 
 ### Always run tests before claiming something works
 - Don't assume extraction/transformation worked just because it ran without errors
