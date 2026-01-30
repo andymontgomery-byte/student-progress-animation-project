@@ -338,7 +338,39 @@ These test actual browser functionality, not just HTML structure:
 
 Run: `python3 tests/test_dropdown_visual.py`
 
-Run all tests: `python3 tests/run_all_tests.py`
+### Comprehensive Student Tests (43 tests)
+`test_10_students.py` - tests multiple students on every webapp:
+- 10 students on main webapp with screenshots
+- 9 students on strata webapp (all of them)
+- 10 student pairs on compare webapp
+- All filter combinations (schools, subjects, grades)
+- Combined filters and selection after filtering
+
+Run: `python3 tests/test_10_students.py`
+
+### Run Full Regression Suite
+```bash
+python3 tests/run_all_tests.py
+```
+
+## Testing Requirements - IMPORTANT
+
+**Before declaring any webapp "done", run the full regression suite.**
+
+This must include:
+1. **Visual verification with screenshots** - Every dropdown, filter, and student selection must be screenshotted and visually inspected
+2. **10+ students per webapp** - Not just index=1, test multiple students
+3. **All filter combinations** - Every school, subject, grade filter
+4. **Cross-browser consideration** - Flag multi-select elements that render differently in Safari vs Chrome
+5. **Live site verification** - Test the actual deployed GitHub Pages URLs
+
+**Do NOT tell the user "it works" based on:**
+- Programmatic tests alone (data can exist but not render)
+- Testing only the first student
+- Testing without screenshots
+- Testing only locally without checking deployed version
+
+**If you find yourself asking the user to test something, write a test instead.**
 
 ### Playwright Requirements
 Browser tests require Playwright. Already installed at:
