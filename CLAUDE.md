@@ -193,10 +193,7 @@ cp /path/to/new_winter_data.xlsx data/input/winter_data.xlsx
 ```
 
 ### 2. If new norms tables
-- Copy PDF/Excel to `norms_tables/`
-- DO NOT read large PDFs directly - break into chunks first
-- Re-extract to CSV
-- Run: `python3 norms_tables/test_extraction.py` or `test_extraction_2025.py`
+See "Building and Testing Norms Tables" section below.
 
 ### 3. Rebuild the table
 ```bash
@@ -235,6 +232,121 @@ Schools filtered for the Strata webapp:
 - The Bennett School
 
 Current Strata high-growth students: 9
+
+## Building and Testing Norms Tables
+
+### Extracting from Excel (2025 format)
+The 2025 norms come in `norms_tables/norms_2025.xlsx` with sheets: Math, Reading, Language Usage, Science.
+
+```python
+from openpyxl import load_workbook
+import csv
+
+SHEET_TO_SUBJECT = {
+    'Math': 'Mathematics',
+    'Reading': 'Reading',
+    'Language Usage': 'Language Usage',
+    'Science': 'Science'
+}
+
+wb = load_workbook('norms_tables/norms_2025.xlsx')
+rows = []
+
+for sheet_name, subject in SHEET_TO_SUBJECT.items():
+    ws = wb[sheet_name]
+    terms = list(ws.iter_rows(min_row=2, max_row=2, values_only=True))[0]
+    grades = list(ws.iter_rows(min_row=3, max_row=3, values_only=True))[0]
+
+    for row in ws.iter_rows(min_row=8, values_only=True):
+        if row[0] and str(row[0]).startswith('P'):
+            pct = int(row[0][1:])  # P1 -> 1, P99 -> 99
+            for col_idx in range(1, len(row)):
+                if terms[col_idx] and grades[col_idx] and row[col_idx]:
+                    term = terms[col_idx].capitalize()
+                    grade = str(grades[col_idx])
+                    if grade == '0':
+                        grade = 'K'  # IMPORTANT: Grade 0 = Kindergarten
+                    rows.append({
+                        'subject': subject,
+                        'term': term,
+                        'grade': grade,
+                        'percentile': pct,
+                        'rit_score': int(row[col_idx])
+                    })
+
+with open('norms_tables/csv/student_status_percentiles_2025.csv', 'w', newline='') as f:
+    writer = csv.DictWriter(f, fieldnames=['subject', 'term', 'grade', 'percentile', 'rit_score'])
+    writer.writeheader()
+    writer.writerows(rows)
+```
+
+### Testing Norms Extraction
+Run the test suite to verify extraction:
+```bash
+python3 norms_tables/test_extraction_2025.py
+```
+
+Tests verify:
+- All 4 subjects present (Mathematics, Reading, Language Usage, Science)
+- All 3 terms present (Fall, Winter, Spring)
+- Percentiles 1-99 for each subject/term/grade combination
+- Grade coverage: Math/Reading K-12, Language 2-11, Science 2-10
+- RIT scores in valid range (100-350)
+- RIT scores monotonically increase with percentile
+- Row count = 13,365
+- **Aggregate sums match Excel source** (catches missing data like Kindergarten)
+
+### Building Norms Diff Table
+Compare 2020 vs 2025 norms:
+
+```python
+import csv
+
+# Load both norms
+def load_norms(path):
+    norms = {}
+    with open(path) as f:
+        for row in csv.DictReader(f):
+            key = (row['subject'], row['term'], row['grade'], int(row['percentile']))
+            norms[key] = int(row['rit_score'])
+    return norms
+
+norms_2020 = load_norms('norms_tables/csv/student_status_percentiles.csv')
+norms_2025 = load_norms('norms_tables/csv/student_status_percentiles_2025.csv')
+
+# Create diff CSV
+with open('norms_tables/csv/norms_diff_matrix.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    # Header row with all subject/term/grade combinations
+    # Each cell = 2025 RIT - 2020 RIT
+    # Positive = harder (higher RIT needed), Negative = easier
+```
+
+### Building Visual Comparison HTML
+The `docs/norms_comparison.html` shows a color-coded diff table:
+- **Green**: 2025 requires higher RIT (harder to achieve percentile)
+- **Red**: 2025 requires lower RIT (easier to achieve percentile)
+- **Gray**: No change
+
+### Verifying Norms Diff Table
+```python
+import csv
+
+# Load diff matrix and verify against source CSVs
+norms_2020 = load_norms('norms_tables/csv/student_status_percentiles.csv')
+norms_2025 = load_norms('norms_tables/csv/student_status_percentiles_2025.csv')
+
+errors = []
+for key in norms_2020:
+    if key in norms_2025:
+        expected_diff = norms_2025[key] - norms_2020[key]
+        # Compare against diff table value
+
+# Also verify:
+# - Cell count matches (13,365 cells)
+# - Sum of all positive diffs + sum of all negative diffs
+# - Spot check specific known values
+```
 
 ## Comparing Old vs New Data
 
