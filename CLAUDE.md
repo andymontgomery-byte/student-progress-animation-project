@@ -319,3 +319,15 @@ Example: The 2025 norms extraction initially missed Kindergarten (grade 0). Spot
 - Integration tests: Data flows between components
 - Aggregate tests: Overall data integrity
 - Source comparison: Verify against original source files
+
+### Excel extraction gotchas
+- **Grade 0 is Kindergarten**: In Excel, grade 0 means K. Convert `'0'` to `'K'`.
+- **0 is falsy in Python**: Use `if cell is not None` not `if cell` when checking Excel values, because grade 0 is a valid value but evaluates to False.
+- **Row/column indexing**: Excel row 1 = index 0 in most libraries. Double-check header rows.
+- **Verify with multiple methods**: Extract the same data using different libraries (openpyxl vs pandas) and compare results.
+
+### PDF extraction gotchas
+- **Large PDFs crash context**: Break into chunks before reading.
+- **Table layouts vary**: Headers may span multiple rows, columns may be merged.
+- **Spot checks aren't enough**: Use aggregate sums to catch missing sections.
+- **Test suite is essential**: 240 random spot checks + structure verification.
