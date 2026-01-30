@@ -106,19 +106,18 @@ def test_filter_combinations():
     """Test various filter combinations return results"""
     data = load_data()
 
-    schools = list(set(r['school'] for r in data))[:5]
+    schools = list(set(r['school'] for r in data))
     subjects = list(set(r['course'] for r in data))
-    grades = list(set(r['grade'] for r in data))[:5]
 
-    # Test single filters
-    for school in schools[:2]:
+    # Test single filters - verify each school has students
+    for school in schools[:5]:
         filtered = [r for r in data if r['school'] == school]
         assert len(filtered) > 0, f"No students for school: {school}"
 
-    # Test combined filters
+    # Test combined filters - find ANY valid combinations across ALL schools/subjects
     combinations_tested = 0
-    for school in schools[:3]:
-        for subject in subjects[:2]:
+    for school in schools:
+        for subject in subjects:
             filtered = [r for r in data if r['school'] == school and r['course'] == subject]
             if len(filtered) > 0:
                 combinations_tested += 1

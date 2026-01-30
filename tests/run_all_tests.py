@@ -22,6 +22,7 @@ from test_compare_browser import run_browser_tests as test_compare_browser
 from test_dropdown_visual import run_visual_dropdown_tests as test_dropdown_visual
 from test_full_visual import run_all_visual_tests as test_full_visual
 from test_10_students import run_student_tests as test_10_students
+from test_visual_verification import run_visual_capture as test_visual_verification
 
 def main():
     print()
@@ -89,6 +90,24 @@ def main():
     print("\n" + "-" * 50)
     results['10_students'] = test_10_students()
 
+    # === CROSS-BROWSER VISUAL VERIFICATION ===
+    print("\n" + "=" * 70)
+    print("PART 6: CROSS-BROWSER VISUAL VERIFICATION (Chromium + WebKit)")
+    print("=" * 70)
+    print()
+    print("This captures screenshots in both browsers for vision verification.")
+    print("Screenshots are saved to tests/screenshots/verification/")
+    print()
+
+    print("\n" + "-" * 50)
+    try:
+        suite = test_visual_verification()
+        results['cross_browser_visual'] = len(suite.screenshots) >= 60  # Expect 60+ screenshots
+        print(f"  Captured {len(suite.screenshots)} screenshots for vision review")
+    except Exception as e:
+        print(f"  Error: {e}")
+        results['cross_browser_visual'] = False
+
     # === SUMMARY ===
     print("\n" + "=" * 70)
     print("REGRESSION TEST SUMMARY")
@@ -106,6 +125,10 @@ def main():
     if all_passed:
         print("ALL REGRESSION TESTS PASSED!")
         print("The system is verified working.")
+        print()
+        print("IMPORTANT: Vision verification required!")
+        print("Claude must review screenshots in tests/screenshots/verification/")
+        print("to confirm all elements render correctly (not just exist in DOM).")
     else:
         print("SOME TESTS FAILED - Review output above.")
     print("=" * 70)
