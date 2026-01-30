@@ -331,3 +331,9 @@ Example: The 2025 norms extraction initially missed Kindergarten (grade 0). Spot
 - **Table layouts vary**: Headers may span multiple rows, columns may be merged.
 - **Spot checks aren't enough**: Use aggregate sums to catch missing sections.
 - **Test suite is essential**: 240 random spot checks + structure verification.
+- **Full re-extraction verified**: 2020 norms re-extracted using pypdf, 13,365/13,365 (100%) match CSV.
+
+### Verification confidence levels
+- **2025 Excel norms**: HIGH - verified 3 ways (openpyxl, pandas, cell-by-cell)
+- **2020 PDF norms**: HIGH - full re-extraction matches 100%, plus 240 spot checks
+- **Diff matrix**: HIGH - computed from verified source CSVs
