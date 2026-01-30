@@ -223,15 +223,21 @@ git push
 - Subjects: Math K-12, Reading, Language Usage, Science K-12
 - Grades: K-12
 
-## Strata Schools
-Schools filtered for the Strata webapp:
+## Strata Webapp
+
+**Build:** Create a filtered webapp at `/strata/` showing only students from Strata schools with CGI > 0.8.
+
+**Strata schools:**
 - AIE Elite Prep
-- All American Prep (no winter data yet)
-- DeepWater Prep (no winter data yet)
+- All American Prep
+- DeepWater Prep
 - Modern Samurai Academy
 - The Bennett School
 
-Current Strata high-growth students: 9
+**Verify before delivering:**
+1. All records in `docs/strata/data.json` have school in Strata list
+2. All records have CGI > 0.8
+3. Sorted by CGI descending
 
 ## Building and Testing Norms Tables
 
