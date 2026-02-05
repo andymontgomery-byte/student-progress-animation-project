@@ -8,6 +8,7 @@ Web app showing student growth animations for high-growth MAP test takers (CGI >
 - **Strata webapp:** https://andymontgomery-byte.github.io/student-progress-animation-project/strata/
 - **Compare webapp:** https://andymontgomery-byte.github.io/student-progress-animation-project/compare/
 - **Norms comparison:** https://andymontgomery-byte.github.io/student-progress-animation-project/norms_comparison.html
+- **Projected growth:** https://andymontgomery-byte.github.io/student-progress-animation-project/projected_growth/
 
 ## Project Structure
 ```
@@ -42,12 +43,16 @@ student_progress_animation/
 ├── docs/                        # GitHub Pages
 │   ├── index.html               # Main web app
 │   ├── data.json                # Filtered data for main app (CGI > 0.8)
-│   ├── norms_comparison.html    # 2020 vs 2025 norms diff table
+│   ├── norms_comparison.html    # 2020 vs 2025 norms diff table (with diff/ratio toggle)
+│   ├── projected_growth_data.json  # Projected growth lookup tables
 │   ├── strata/                  # Strata-only webapp
 │   │   ├── index.html
 │   │   └── data.json
-│   └── compare/                 # Side-by-side comparison webapp
-│       └── index.html           # Uses ../data.json
+│   ├── compare/                 # Side-by-side comparison webapp
+│   │   └── index.html           # Uses ../data.json
+│   └── projected_growth/        # Projected growth comparison tool
+│       ├── index.html
+│       └── SPEC.md
 └── tests/
     ├── run_all_tests.py           # Master test runner (75 tests)
     ├── test_norms_extraction.py   # 8 tests
@@ -264,6 +269,42 @@ git push
 1. All records in `docs/strata/data.json` have school in Strata list
 2. All records have CGI > 0.8
 3. Sorted by CGI descending
+
+## Projected Growth Comparison Tool
+
+**URL:** https://andymontgomery-byte.github.io/student-progress-animation-project/projected_growth/
+
+Interactive tool to compare NWEA projected growth values between 2020 and 2025 norms.
+
+**Dimensions:**
+- **Subject**: Math, Reading, Language, Science
+- **Growth Period**: Fall-to-Fall, Fall-to-Winter, Winter-to-Winter, Fall-to-Spring, Winter-to-Spring, Spring-to-Spring
+- **View**: 2020 norms, 2025 norms, Diff (2025-2020), Ratio (2025/2020)
+
+**Color Coding:**
+| View | Meaning | Color |
+|------|---------|-------|
+| 2020/2025 | Higher growth | Green → Yellow |
+| Diff positive | Harder in 2025 | Red |
+| Diff negative | Easier in 2025 | Green |
+| Ratio > 1 | Harder in 2025 | Red |
+| Ratio < 1 | Easier in 2025 | Green |
+
+**Data Source:**
+- Extracted from MAP export CSV (`normsreferencedata` field indicates 2020 vs 2025)
+- 2020 norms: Tests through Spring 2024-2025
+- 2025 norms: Tests from Fall 2025-2026 onward
+
+**Files:**
+- `docs/projected_growth/index.html` - Webapp
+- `docs/projected_growth/SPEC.md` - Full specification
+- `docs/projected_growth_data.json` - Growth lookup tables
+
+**Regenerate data:**
+```python
+# Extract from MAP export CSV - see scripts or SPEC.md for full code
+# Saves to docs/projected_growth_data.json
+```
 
 ## Building and Testing Norms Tables
 
