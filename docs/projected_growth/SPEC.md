@@ -29,10 +29,10 @@ https://andymontgomery-byte.github.io/student-progress-animation-project/project
 ### Norms View
 | View | Description | Color Coding |
 |------|-------------|--------------|
-| 2020 | 2020 norms projected growth | Dark green → Yellow (high → low) |
-| 2025 | 2025 norms projected growth | Dark green → Yellow (high → low) |
-| Diff (2025-2020) | Difference between norms | Dark green → Dark red (positive → negative), threshold at 0 |
-| Ratio (2025/2020) | Ratio of norms | Dark green → Dark red (>1 → <1), threshold at 1.0 |
+| 2020 | 2020 norms projected growth | Dark green → Yellow (high → low growth) |
+| 2025 | 2025 norms projected growth | Dark green → Yellow (high → low growth) |
+| Diff (2025-2020) | Difference between norms | Dark red → Dark green (harder → easier), threshold at 0 |
+| Ratio (2025/2020) | Ratio of norms | Dark red → Dark green (>1 harder → <1 easier), threshold at 1.0 |
 
 ## Table Format
 
@@ -67,17 +67,17 @@ The 2025 norms generally show **higher projected growth** than 2020 norms, meani
 
 ### Interpretation
 
-| Diff Value | Meaning |
-|------------|---------|
-| Positive (green) | 2025 expects MORE growth than 2020 |
-| Zero (white) | Same expectations |
-| Negative (red) | 2025 expects LESS growth than 2020 |
+| Diff Value | Meaning | Color |
+|------------|---------|-------|
+| Positive (e.g., +2) | 2025 expects 2 MORE RIT points = HARDER | Red |
+| Zero | Same expectations | Gray |
+| Negative (e.g., -2) | 2025 expects 2 FEWER RIT points = EASIER | Green |
 
-| Ratio Value | Meaning |
-|-------------|---------|
-| > 1.0 (green) | 2025 expects MORE growth |
-| = 1.0 (white) | Same expectations |
-| < 1.0 (red) | 2025 expects LESS growth |
+| Ratio Value | Meaning | Color |
+|-------------|---------|-------|
+| > 1.0 (e.g., 1.5) | 2025 expects 50% MORE growth = HARDER | Red |
+| = 1.0 | Same expectations | Gray |
+| < 1.0 (e.g., 0.8) | 2025 expects 20% LESS growth = EASIER | Green |
 
 ## Data Availability
 
