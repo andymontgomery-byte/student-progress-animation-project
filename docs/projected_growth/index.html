@@ -210,8 +210,8 @@
         const viewDescriptions = {
             '2020': 'Showing projected growth from 2020 norms. Higher values (green) indicate more expected growth.',
             '2025': 'Showing projected growth from 2025 norms. Higher values (green) indicate more expected growth.',
-            'diff': 'Showing 2025 minus 2020. Positive (green) = 2025 expects MORE growth. Negative (red) = 2025 expects LESS growth.',
-            'ratio': 'Showing 2025 divided by 2020. Above 1.0 (green) = 2025 expects MORE growth. Below 1.0 (red) = 2025 expects LESS growth.'
+            'diff': 'Showing 2025 minus 2020. Positive (red) = HARDER in 2025. Negative (green) = EASIER in 2025.',
+            'ratio': 'Showing 2025 divided by 2020. Above 1.0 (red) = HARDER in 2025. Below 1.0 (green) = EASIER in 2025.'
         };
 
         const grades = ['K', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
@@ -236,27 +236,27 @@
         }
 
         function getColorDiff(value) {
-            // Red to green with 0 as midpoint
+            // Positive = harder = red, Negative = easier = green
             if (value === null) return '#1a1a2e';
-            if (value > 2) return '#006400';      // Dark green
-            if (value > 0.5) return '#228B22';    // Forest green
-            if (value > 0) return '#90EE90';      // Light green
-            if (value === 0) return '#888888';    // Gray
-            if (value > -0.5) return '#FFCCCB';   // Light red
-            if (value > -2) return '#CD5C5C';     // Indian red
-            return '#8B0000';                      // Dark red
+            if (value > 2) return '#8B0000';      // Dark red (much harder)
+            if (value > 0.5) return '#CD5C5C';    // Indian red (harder)
+            if (value > 0) return '#FFCCCB';      // Light red (slightly harder)
+            if (value === 0) return '#888888';    // Gray (same)
+            if (value > -0.5) return '#90EE90';   // Light green (slightly easier)
+            if (value > -2) return '#228B22';     // Forest green (easier)
+            return '#006400';                      // Dark green (much easier)
         }
 
         function getColorRatio(value) {
-            // Red to green with 1.0 as midpoint
+            // Above 1.0 = harder = red, Below 1.0 = easier = green
             if (value === null) return '#1a1a2e';
-            if (value > 1.2) return '#006400';    // Dark green
-            if (value > 1.05) return '#228B22';   // Forest green
-            if (value > 1.0) return '#90EE90';    // Light green
-            if (value === 1.0) return '#888888';  // Gray
-            if (value > 0.95) return '#FFCCCB';   // Light red
-            if (value > 0.8) return '#CD5C5C';    // Indian red
-            return '#8B0000';                      // Dark red
+            if (value > 1.2) return '#8B0000';    // Dark red (much harder)
+            if (value > 1.05) return '#CD5C5C';   // Indian red (harder)
+            if (value > 1.0) return '#FFCCCB';    // Light red (slightly harder)
+            if (value === 1.0) return '#888888';  // Gray (same)
+            if (value > 0.95) return '#90EE90';   // Light green (slightly easier)
+            if (value > 0.8) return '#228B22';    // Forest green (easier)
+            return '#006400';                      // Dark green (much easier)
         }
 
         function updateLegend(view) {
@@ -271,19 +271,19 @@
                 `;
             } else if (view === 'diff') {
                 legend.innerHTML = `
-                    <div class="legend-item"><div class="legend-box" style="background:#006400"></div>2025 higher (+2+)</div>
-                    <div class="legend-item"><div class="legend-box" style="background:#90EE90"></div>2025 slightly higher (0 to +2)</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#8B0000"></div>Much harder (+2+)</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#FFCCCB"></div>Slightly harder (0 to +2)</div>
                     <div class="legend-item"><div class="legend-box" style="background:#888"></div>Same (0)</div>
-                    <div class="legend-item"><div class="legend-box" style="background:#FFCCCB"></div>2025 slightly lower (0 to -2)</div>
-                    <div class="legend-item"><div class="legend-box" style="background:#8B0000"></div>2025 lower (-2+)</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#90EE90"></div>Slightly easier (0 to -2)</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#006400"></div>Much easier (-2+)</div>
                 `;
             } else if (view === 'ratio') {
                 legend.innerHTML = `
-                    <div class="legend-item"><div class="legend-box" style="background:#006400"></div>Ratio > 1.2</div>
-                    <div class="legend-item"><div class="legend-box" style="background:#90EE90"></div>Ratio 1.0-1.2</div>
-                    <div class="legend-item"><div class="legend-box" style="background:#888"></div>Ratio = 1.0</div>
-                    <div class="legend-item"><div class="legend-box" style="background:#FFCCCB"></div>Ratio 0.8-1.0</div>
-                    <div class="legend-item"><div class="legend-box" style="background:#8B0000"></div>Ratio < 0.8</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#8B0000"></div>Much harder (> 1.2)</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#FFCCCB"></div>Slightly harder (1.0-1.2)</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#888"></div>Same (1.0)</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#90EE90"></div>Slightly easier (0.8-1.0)</div>
+                    <div class="legend-item"><div class="legend-box" style="background:#006400"></div>Much easier (< 0.8)</div>
                 `;
             }
         }
