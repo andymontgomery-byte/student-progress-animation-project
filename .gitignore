@@ -21,5 +21,9 @@ Thumbs.db
 .vscode/
 *.swp
 
+# Test artifacts
+tests/screenshots/
+tests/ui_agent_results/
+
 # Claude local settings
 .claude/
